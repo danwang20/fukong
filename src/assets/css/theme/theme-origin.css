@@ -1,0 +1,63 @@
+/* 主题变量定义 */
+body {
+    --white: #fff;
+    --blue1: #40beff;
+    --blue2: #046393;
+    --blue3: #207bcd;
+    --blue4: #03287c;
+    --blue5: #062768;
+    /*--blue6: #112843;*/
+    --blue6: rgba(17, 40, 67, .9);
+    --blue7: #296787;
+    --blue-7: rgba(0, 18, 48, .8);
+    --blue-7-alpha: rgba(0, 18, 48, .5);
+    --blue-8: rgba(0, 44, 124, .8);
+    --blue-9: rgba(4, 29, 84, .9);
+    --red: #f00;
+    --red-alpha: rgba(255, 16, 0, 0.71);
+
+    --green: #32b50a;
+    --green-alpha: rgba(0, 214, 7, 0.4);
+
+    --yellow: yellow;
+    --yellow-alpha: rgba(255, 210, 42, 0.66);
+
+    --success-color: var(--green);
+    --success-color-alpha: var(--green-alpha);
+    --warn-color: var(--yellow);
+    --warn-color-alpha: var(--yellow-alpha);
+    --error-color: var(--red);
+    --error-color-alpha: var(--red-alpha);
+
+    --clear-color: var(--white);
+
+    --body-font-size: 14px;
+    --body-bg-color: #121218;
+    --hover-bg-color: rgba(32, 123, 205, 0.9);
+    --pop-window-background-color: var(--blue-9); /*弹出框背景色*/
+    --theme-color: var(--blue1); /* 主题颜色 */
+    /*--space-between: 5px; !* 右侧运行信息，越限等间距 *!*/
+    --space-between: 10px; /* 右侧运行信息，越限等间距 */
+    --space-padding: 10px; /* 所有左右的运行信息，侧边栏等内边距 */
+    --main-border: var(--blue1); /* 边框颜色 */
+    --form-border: rgb(11, 71, 127); /* 表单边框颜色 */
+    --main-title-bg: var(--blue6); /* 标题背景色 */
+    --main-bg: var(--blue-7); /* 内容背景色 */
+    --main-bg-alpha: var(--blue-7-alpha); /* 内容背景色 */
+    --main-guan: var(--blue2); /* 光字牌背景色 */
+    --default-transition-timing: 0.15s; /* 默认样式变换动画时间 */
+    --nav-border-color: var(--blue3); /* tab 标签边框颜色 */
+    --nav-bg-color: var(--blue2); /* tab 标签背景颜色 */
+    --bg-hover: var(--blue3); /* hover 是点击片的颜色*/
+    --btn-default-bg: var(--blue2); /* 默认按钮背景 */
+    --btn-default-border: var(--blue3); /* 默认按钮边框 */
+    --table-border-color: var(--blue6); /* 默认表格边框颜色 */
+    --table-bg-color: rgba(0, 44, 124, 0.9); /* 默认表格背景颜色 */
+    --table-bg-color-alpha: rgba(0, 44, 124, 0.6); /* 表格透明背景颜色 */
+    --abnormal-title: var(--blue7); /*abnormal-title 异常设备类title边框颜色*/
+    --select-title: var(--blue-8); /*下拉框的标题的背景色*/
+    --select-input: var(--blue-9); /*下拉框的框内背景色*/
+    --pandect-left-width: 310px; /*左侧菜单栏的宽度*/
+    --pandect-right-width: 360px; /*右侧菜单栏的宽度*/
+    /*--footer-width: 100%; !*页底菜单的宽度*!*/
+}

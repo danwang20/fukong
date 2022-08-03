@@ -1,0 +1,65 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "573564",
+      "name": "雷达感温",
+      "font_class": "leidaganwen",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "7335552",
+      "name": "水压",
+      "font_class": "shuiya",
+      "unicode": "eb33",
+      "unicode_decimal": 60211
+    },
+    {
+      "icon_id": "7762187",
+      "name": "控制点",
+      "font_class": "ziyuanxhdpi",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "8728353",
+      "name": "烟感",
+      "font_class": "yangan",
+      "unicode": "e52a",
+      "unicode_decimal": 58666
+    },
+    {
+      "icon_id": "9572487",
+      "name": "电压",
+      "font_class": "IOTtubiao_huabanfuben",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "10262050",
+      "name": "设 置",
+      "font_class": "shezhi",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "13805009",
+      "name": "液位",
+      "font_class": "yewei",
+      "unicode": "e788",
+      "unicode_decimal": 59272
+    },
+    {
+      "icon_id": "14478390",
+      "name": "关  闭",
+      "font_class": "guanbi",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    }
+  ]
+}

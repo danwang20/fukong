@@ -1,0 +1,1497 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "babylon.js glTF exporter for 3ds max 2015 v1.3.32"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "extensions": {}
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "translation": [
+        0,
+        258.426575,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Floor_35kV开关室"
+    },
+    {
+      "mesh": 0,
+      "translation": [
+        -4973.15625,
+        194.072876,
+        5693.3623
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.47999993,
+        0.47999993,
+        0.47999993
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_14"
+    },
+    {
+      "mesh": 1,
+      "translation": [
+        -9917.844,
+        194.072876,
+        5600.622
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.47999993,
+        0.47999993,
+        0.47999993
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_12"
+    },
+    {
+      "mesh": 2,
+      "translation": [
+        -11302.3438,
+        193.822815,
+        5670.17871
+      ],
+      "rotation": [
+        0,
+        1.509958e-7,
+        0,
+        1
+      ],
+      "scale": [
+        1.24999988,
+        1.24999988,
+        1.24999988
+      ],
+      "name": "NC_RM_Dev_灭火器箱_29-32"
+    },
+    {
+      "mesh": 3,
+      "translation": [
+        -11600.375,
+        194.322815,
+        3516.06152
+      ],
+      "rotation": [
+        0,
+        -0.7071068,
+        0,
+        0.7071067
+      ],
+      "scale": [
+        2.39999986,
+        2.39999986,
+        2.39999986
+      ],
+      "name": "NC_RM_Dev_手动报警器_27"
+    },
+    {
+      "mesh": 4,
+      "translation": [
+        -8643.094,
+        194.07312,
+        2764.91113
+      ],
+      "rotation": [
+        0,
+        0.7071068,
+        0,
+        0.7071067
+      ],
+      "scale": [
+        1.19999993,
+        1.19999993,
+        1.19999993
+      ],
+      "name": "NC_RM_Dev_声光报警器_016"
+    },
+    {
+      "mesh": 5,
+      "translation": [
+        -11618.9063,
+        194.072876,
+        163.087891
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.47999993,
+        0.47999993,
+        0.47999993
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_13"
+    },
+    {
+      "mesh": 6,
+      "translation": [
+        -11601.9688,
+        194.072876,
+        1933.81348
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.799999952,
+        0.799999952,
+        0.799999952
+      ],
+      "name": "NC_RM_Dev_线性光束感烟探测器_12"
+    },
+    {
+      "mesh": 7,
+      "translation": [
+        -11601.9688,
+        194.072876,
+        -2807.48828
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.799999952,
+        0.799999952,
+        0.799999952
+      ],
+      "name": "NC_RM_Dev_线性光束感烟探测器_013"
+    },
+    {
+      "mesh": 8,
+      "translation": [
+        4247.78125,
+        194.072876,
+        -5998.997
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.47999993,
+        0.47999993,
+        0.47999993
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_18"
+    },
+    {
+      "mesh": 9,
+      "translation": [
+        4247.78125,
+        194.072876,
+        5693.3623
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.47999993,
+        0.47999993,
+        0.47999993
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_15"
+    },
+    {
+      "mesh": 10,
+      "translation": [
+        11067.9063,
+        194.072876,
+        -166.719482
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.47999993,
+        0.47999993,
+        0.47999993
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_16"
+    },
+    {
+      "mesh": 11,
+      "translation": [
+        11093.2813,
+        193.822815,
+        -1805.72144
+      ],
+      "rotation": [
+        0,
+        0.707106948,
+        0,
+        0.7071066
+      ],
+      "scale": [
+        1.24999988,
+        1.24999988,
+        1.24999988
+      ],
+      "name": "NC_RM_Dev_灭火器箱_25-28"
+    },
+    {
+      "mesh": 12,
+      "translation": [
+        11067.7188,
+        194.322815,
+        -3862.461
+      ],
+      "rotation": [
+        0,
+        0.7071068,
+        0,
+        0.7071068
+      ],
+      "scale": [
+        2.39999986,
+        2.39999986,
+        2.39999986
+      ],
+      "name": "NC_RM_Dev_手动报警器_26"
+    },
+    {
+      "mesh": 13,
+      "translation": [
+        11104.9688,
+        257.6266,
+        -4299.75146
+      ],
+      "rotation": [
+        0,
+        0.7071068,
+        0,
+        0.7071067
+      ],
+      "scale": [
+        1.5999999,
+        1.5999999,
+        1.5999999
+      ],
+      "name": "NC_RM_Dev_输入输出模块_28"
+    },
+    {
+      "mesh": 14,
+      "translation": [
+        -4973.15625,
+        194.072876,
+        -5998.997
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.47999993,
+        0.47999993,
+        0.47999993
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_17"
+    },
+    {
+      "mesh": 15,
+      "translation": [
+        -3405.0625,
+        -258.426575,
+        -1155.001
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": ""
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 0,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_14"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TEXCOORD_0": 7
+          },
+          "indices": 4,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 1,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_12"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 9,
+            "NORMAL": 10,
+            "TEXCOORD_0": 11
+          },
+          "indices": 8,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 2,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_灭火器箱_29-32"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 13,
+            "NORMAL": 14,
+            "TEXCOORD_0": 15
+          },
+          "indices": 12,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 3,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_手动报警器_27"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 17,
+            "NORMAL": 18,
+            "TEXCOORD_0": 19
+          },
+          "indices": 16,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 4,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_声光报警器_016"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 21,
+            "NORMAL": 22,
+            "TEXCOORD_0": 23
+          },
+          "indices": 20,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 5,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_13"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 25,
+            "NORMAL": 26,
+            "TEXCOORD_0": 27
+          },
+          "indices": 24,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 6,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_线性光束感烟探测器_12"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 29,
+            "NORMAL": 30,
+            "TEXCOORD_0": 31
+          },
+          "indices": 28,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 7,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_线性光束感烟探测器_013"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 33,
+            "NORMAL": 34,
+            "TEXCOORD_0": 35
+          },
+          "indices": 32,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 8,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_18"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 37,
+            "NORMAL": 38,
+            "TEXCOORD_0": 39
+          },
+          "indices": 36,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 9,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_15"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 41,
+            "NORMAL": 42,
+            "TEXCOORD_0": 43
+          },
+          "indices": 40,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 10,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_16"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 45,
+            "NORMAL": 46,
+            "TEXCOORD_0": 47
+          },
+          "indices": 44,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 11,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_灭火器箱_25-28"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 49,
+            "NORMAL": 50,
+            "TEXCOORD_0": 51
+          },
+          "indices": 48,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 12,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_手动报警器_26"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 53,
+            "NORMAL": 54,
+            "TEXCOORD_0": 55
+          },
+          "indices": 52,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 13,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_输入输出模块_28"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 57,
+            "NORMAL": 58,
+            "TEXCOORD_0": 59
+          },
+          "indices": 56,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 14,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_17"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 61,
+            "NORMAL": 62,
+            "TEXCOORD_0": 63
+          },
+          "indices": 60,
+          "mode": 4,
+          "material": 1,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 15,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": ""
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5123,
+      "count": 774,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        301.2627,
+        0,
+        301.260742
+      ],
+      "min": [
+        -301.2627,
+        0,
+        -301.261719
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 774,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        301.261719,
+        0,
+        301.260742
+      ],
+      "min": [
+        -301.261719,
+        0,
+        -301.261719
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "max": [
+        175.000977,
+        0,
+        100.000488
+      ],
+      "min": [
+        -175,
+        0,
+        -100
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 207,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 73,
+      "max": [
+        75.3156738,
+        0.5,
+        75.31592
+      ],
+      "min": [
+        -75.3157959,
+        -0.5,
+        -75.31641
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 73,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 73,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 360,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 128,
+      "max": [
+        153.774414,
+        0.500091553,
+        87.87109
+      ],
+      "min": [
+        -153.774414,
+        -0.5001221,
+        -87.87109
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 128,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 128,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 774,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        301.261719,
+        0,
+        301.261658
+      ],
+      "min": [
+        -301.261719,
+        0,
+        -301.261658
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 594,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 204,
+      "max": [
+        220,
+        0,
+        528.769531
+      ],
+      "min": [
+        -220,
+        0,
+        -241.230469
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 204,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 204,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 594,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 204,
+      "max": [
+        220,
+        0,
+        528.769531
+      ],
+      "min": [
+        -220,
+        0,
+        -241.230469
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 204,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 204,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 774,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        301.2627,
+        0,
+        301.260742
+      ],
+      "min": [
+        -301.2627,
+        0,
+        -301.261719
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 774,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        301.2627,
+        0,
+        301.260742
+      ],
+      "min": [
+        -301.2627,
+        0,
+        -301.261719
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 774,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        301.259766,
+        0,
+        301.261627
+      ],
+      "min": [
+        -301.261719,
+        0,
+        -301.261658
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "max": [
+        175,
+        0,
+        100.000977
+      ],
+      "min": [
+        -174.999878,
+        0,
+        -100
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 207,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 73,
+      "max": [
+        75.31555,
+        0.5,
+        75.31543
+      ],
+      "min": [
+        -75.3157959,
+        -0.5,
+        -75.31592
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 73,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 73,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 822,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 280,
+      "max": [
+        75.31543,
+        0.5,
+        75.31592
+      ],
+      "min": [
+        -75.3156738,
+        -0.5,
+        -75.31543
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 280,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 280,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 774,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        301.2627,
+        0,
+        301.260742
+      ],
+      "min": [
+        -301.2627,
+        0,
+        -301.261719
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 6,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        16148.4609,
+        0,
+        8557.33
+      ],
+      "min": [
+        -9338.359,
+        0,
+        -6247.32764
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1210
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1212,
+      "byteLength": 1214
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2428,
+      "byteLength": 361
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2792,
+      "byteLength": 579
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3372,
+      "byteLength": 955
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4328,
+      "byteLength": 1470
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5800,
+      "byteLength": 1161
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 6964,
+      "byteLength": 1161
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8128,
+      "byteLength": 1210
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9340,
+      "byteLength": 1210
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10552,
+      "byteLength": 1423
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 11976,
+      "byteLength": 361
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12340,
+      "byteLength": 579
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12920,
+      "byteLength": 1648
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 14568,
+      "byteLength": 1210
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 15780,
+      "byteLength": 189
+    }
+  ],
+  "buffers": [
+    {
+      "name": "35KG",
+      "byteLength": 15972,
+      "uri": "35KG.bin"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.9
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "BLEND",
+      "name": "Material #424",
+      "doubleSided": false
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.9
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "BLEND",
+      "name": "Material #446",
+      "doubleSided": false
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "yansezonghe.jpg"
+    },
+    {
+      "sampler": 0,
+      "source": 1,
+      "name": "35kV开关室.tga"
+    }
+  ],
+  "images": [
+    {
+      "name": "yansezonghe",
+      "uri": "yansezonghe.jpg"
+    },
+    {
+      "name": "35kV开关室",
+      "uri": "35kV开关室.tga"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}

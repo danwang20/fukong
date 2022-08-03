@@ -1,0 +1,3691 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "babylon.js glTF exporter for 3ds max 2015 v1.3.32"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "extensions": {}
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1,
+        3,
+        6,
+        8,
+        11,
+        14,
+        18,
+        47
+      ],
+      "translation": [
+        0,
+        640.159851,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Floor_主控楼"
+    },
+    {
+      "children": [
+        2
+      ],
+      "translation": [
+        -8326.879,
+        638.460266,
+        -5883.92969
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Room_安全工具器室"
+    },
+    {
+      "mesh": 0,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_17"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "translation": [
+        -3786.29688,
+        616.608948,
+        -5883.92969
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Room_主控室"
+    },
+    {
+      "mesh": 1,
+      "translation": [
+        -805.6758,
+        -0.000244140625,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_18"
+    },
+    {
+      "mesh": 2,
+      "translation": [
+        805.6758,
+        0.000244140625,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_19"
+    },
+    {
+      "children": [
+        7
+      ],
+      "translation": [
+        122.835938,
+        616.1087,
+        -4805.944
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Room_资料室"
+    },
+    {
+      "mesh": 3,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_20"
+    },
+    {
+      "children": [
+        9,
+        10
+      ],
+      "translation": [
+        2948.914,
+        615.608948,
+        -6067.30957
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Room_蓄电池室（二）"
+    },
+    {
+      "mesh": 4,
+      "translation": [
+        -597.7969,
+        0.000244140625,
+        -1117.93115
+      ],
+      "rotation": [
+        0,
+        -0.70710665,
+        0,
+        0.7071069
+      ],
+      "scale": [
+        1.24999988,
+        1.24999988,
+        1.24999988
+      ],
+      "name": "NC_RM_Dev_灭火器箱_3-4"
+    },
+    {
+      "mesh": 5,
+      "translation": [
+        647.480469,
+        0,
+        1261.36572
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_21"
+    },
+    {
+      "children": [
+        12,
+        13
+      ],
+      "translation": [
+        5963.98047,
+        615.608948,
+        -6067.30957
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Room_蓄电池室（一）"
+    },
+    {
+      "mesh": 6,
+      "translation": [
+        -557.9219,
+        0.000244140625,
+        -1117.93115
+      ],
+      "rotation": [
+        0,
+        -0.70710665,
+        0,
+        0.7071069
+      ],
+      "scale": [
+        1.24999988,
+        1.24999988,
+        1.24999988
+      ],
+      "name": "NC_RM_Dev_灭火器箱_1-2"
+    },
+    {
+      "mesh": 7,
+      "translation": [
+        607.601563,
+        0,
+        1261.36572
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_22"
+    },
+    {
+      "children": [
+        15,
+        16,
+        17
+      ],
+      "translation": [
+        10224.2734,
+        615.608948,
+        -4926.449
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Room_门卫室"
+    },
+    {
+      "mesh": 8,
+      "translation": [
+        581.9531,
+        0.00122070313,
+        -51.215332
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.47999993,
+        0.47999993,
+        0.47999993
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_10"
+    },
+    {
+      "mesh": 9,
+      "translation": [
+        -651.25,
+        0,
+        120.504883
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_23"
+    },
+    {
+      "mesh": 10,
+      "translation": [
+        -1791.52344,
+        0.5,
+        1032.55811
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.6999999,
+        0.6999999,
+        0.6999999
+      ],
+      "name": "NC_RM_Dev_消防主机"
+    },
+    {
+      "children": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "translation": [
+        18.234375,
+        627.234436,
+        2945.878
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Room_继保室"
+    },
+    {
+      "mesh": 11,
+      "translation": [
+        -1343.40234,
+        -11.1257324,
+        -2248.9043
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_9"
+    },
+    {
+      "mesh": 12,
+      "translation": [
+        1905.73828,
+        -11.1257324,
+        -2248.9043
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_10"
+    },
+    {
+      "mesh": 13,
+      "translation": [
+        5154.879,
+        -11.6254883,
+        -2248.9043
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_11"
+    },
+    {
+      "mesh": 14,
+      "translation": [
+        8404.02,
+        -11.6254883,
+        -2248.9043
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_12"
+    },
+    {
+      "mesh": 15,
+      "translation": [
+        -4592.539,
+        -10.6257324,
+        -2248.9043
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_8"
+    },
+    {
+      "mesh": 16,
+      "translation": [
+        -7841.67969,
+        11.22583,
+        -2248.9043
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_7"
+    },
+    {
+      "mesh": 17,
+      "translation": [
+        6659.90234,
+        -11.6252441,
+        -5207.05
+      ],
+      "rotation": [
+        0,
+        -1,
+        0,
+        7.54979e-8
+      ],
+      "scale": [
+        1.24999988,
+        1.24999988,
+        1.24999988
+      ],
+      "name": "NC_RM_Dev_灭火器箱_9-12"
+    },
+    {
+      "mesh": 18,
+      "translation": [
+        9072.738,
+        -12.1254883,
+        -5196.27051
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.5999999,
+        1.5999999,
+        1.5999999
+      ],
+      "name": "NC_RM_Dev_输入输出模块_55"
+    },
+    {
+      "mesh": 19,
+      "translation": [
+        -5937.48438,
+        11.2253418,
+        -5215.205
+      ],
+      "rotation": [
+        0,
+        -1,
+        0,
+        7.54979e-8
+      ],
+      "scale": [
+        1.24999988,
+        1.24999988,
+        1.24999988
+      ],
+      "name": "NC_RM_Dev_灭火器箱_5-8"
+    },
+    {
+      "mesh": 20,
+      "translation": [
+        10787.9961,
+        -11.6242676,
+        -4149.744
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.47999993,
+        0.47999993,
+        0.47999993
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_1"
+    },
+    {
+      "mesh": 21,
+      "translation": [
+        10787.9961,
+        -11.6242676,
+        398.013672
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.47999993,
+        0.47999993,
+        0.47999993
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_2"
+    },
+    {
+      "mesh": 22,
+      "translation": [
+        7910.004,
+        -11.625,
+        -5181.176
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.47999993,
+        0.47999993,
+        0.47999993
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_3"
+    },
+    {
+      "mesh": 23,
+      "translation": [
+        2452.80859,
+        -11.1257324,
+        -5198.61133
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.47999993,
+        0.47999993,
+        0.47999993
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_4"
+    },
+    {
+      "mesh": 24,
+      "translation": [
+        -4010.28516,
+        -10.6257324,
+        -5303.23633
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.47999993,
+        0.47999993,
+        0.47999993
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_5"
+    },
+    {
+      "mesh": 25,
+      "translation": [
+        -7841.67969,
+        11.22583,
+        2160.59961
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_1"
+    },
+    {
+      "mesh": 26,
+      "translation": [
+        -4592.539,
+        -10.6257324,
+        2160.59961
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_2"
+    },
+    {
+      "mesh": 27,
+      "translation": [
+        -1343.40234,
+        -11.1257324,
+        2160.59961
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_3"
+    },
+    {
+      "mesh": 28,
+      "translation": [
+        1905.73828,
+        -11.1257324,
+        2160.59961
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_4"
+    },
+    {
+      "mesh": 29,
+      "translation": [
+        5154.879,
+        -11.6254883,
+        2160.59961
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_5"
+    },
+    {
+      "mesh": 30,
+      "translation": [
+        8404.02,
+        -11.6254883,
+        2160.59961
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": "NC_RM_Dev_感烟探测器_6"
+    },
+    {
+      "mesh": 31,
+      "translation": [
+        -5937.48438,
+        11.2253418,
+        5208.799
+      ],
+      "rotation": [
+        0,
+        1.509958e-7,
+        0,
+        1
+      ],
+      "scale": [
+        1.24999988,
+        1.24999988,
+        1.24999988
+      ],
+      "name": "NC_RM_Dev_灭火器箱_17-18"
+    },
+    {
+      "mesh": 32,
+      "translation": [
+        -9035.363,
+        11.7250977,
+        5303.23633
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.47999993,
+        0.47999993,
+        0.47999993
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_7"
+    },
+    {
+      "mesh": 33,
+      "translation": [
+        -3180.64453,
+        -10.6257324,
+        5139.926
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.47999993,
+        0.47999993,
+        0.47999993
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_8"
+    },
+    {
+      "mesh": 34,
+      "translation": [
+        8105.72266,
+        -11.625,
+        5140.203
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.47999993,
+        0.47999993,
+        0.47999993
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_9"
+    },
+    {
+      "mesh": 35,
+      "translation": [
+        7275.23047,
+        -11.6252441,
+        5209.074
+      ],
+      "rotation": [
+        0,
+        1.509958e-7,
+        0,
+        1
+      ],
+      "scale": [
+        1.24999988,
+        1.24999988,
+        1.24999988
+      ],
+      "name": "NC_RM_Dev_灭火器箱_13-16"
+    },
+    {
+      "mesh": 36,
+      "translation": [
+        -10771.0146,
+        11.7255859,
+        -1433.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.47999993,
+        0.47999993,
+        0.47999993
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_6"
+    },
+    {
+      "mesh": 37,
+      "translation": [
+        -10827.1553,
+        11.7255859,
+        -951.0293
+      ],
+      "rotation": [
+        0,
+        0.7071068,
+        0,
+        0.7071067
+      ],
+      "scale": [
+        1.19999993,
+        1.19999993,
+        1.19999993
+      ],
+      "name": "NC_RM_Dev_声光报警器_15"
+    },
+    {
+      "mesh": 38,
+      "translation": [
+        -10744.23,
+        11.7253418,
+        -199.8789
+      ],
+      "rotation": [
+        0,
+        -0.7071068,
+        0,
+        0.7071067
+      ],
+      "scale": [
+        2.39999986,
+        2.39999986,
+        2.39999986
+      ],
+      "name": "NC_RM_Dev_手动报警器_13"
+    },
+    {
+      "mesh": 39,
+      "translation": [
+        -7956.73047,
+        -640.159851,
+        -1615.415
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "name": ""
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 0,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_17"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TEXCOORD_0": 7
+          },
+          "indices": 4,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 1,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_18"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 9,
+            "NORMAL": 10,
+            "TEXCOORD_0": 11
+          },
+          "indices": 8,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 2,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_19"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 13,
+            "NORMAL": 14,
+            "TEXCOORD_0": 15
+          },
+          "indices": 12,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 3,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_20"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 17,
+            "NORMAL": 18,
+            "TEXCOORD_0": 19
+          },
+          "indices": 16,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 4,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_灭火器箱_3-4"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 21,
+            "NORMAL": 22,
+            "TEXCOORD_0": 23
+          },
+          "indices": 20,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 5,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_21"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 25,
+            "NORMAL": 26,
+            "TEXCOORD_0": 27
+          },
+          "indices": 24,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 6,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_灭火器箱_1-2"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 29,
+            "NORMAL": 30,
+            "TEXCOORD_0": 31
+          },
+          "indices": 28,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 7,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_22"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 33,
+            "NORMAL": 34,
+            "TEXCOORD_0": 35
+          },
+          "indices": 32,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 8,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_10"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 37,
+            "NORMAL": 38,
+            "TEXCOORD_0": 39
+          },
+          "indices": 36,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 9,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_23"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 41,
+            "NORMAL": 42,
+            "TEXCOORD_0": 43
+          },
+          "indices": 40,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 10,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_消防主机"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 45,
+            "NORMAL": 46,
+            "TEXCOORD_0": 47
+          },
+          "indices": 44,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 11,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_9"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 49,
+            "NORMAL": 50,
+            "TEXCOORD_0": 51
+          },
+          "indices": 48,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 12,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_10"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 53,
+            "NORMAL": 54,
+            "TEXCOORD_0": 55
+          },
+          "indices": 52,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 13,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_11"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 57,
+            "NORMAL": 58,
+            "TEXCOORD_0": 59
+          },
+          "indices": 56,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 14,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_12"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 61,
+            "NORMAL": 62,
+            "TEXCOORD_0": 63
+          },
+          "indices": 60,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 15,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_8"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 65,
+            "NORMAL": 66,
+            "TEXCOORD_0": 67
+          },
+          "indices": 64,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 16,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_7"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 69,
+            "NORMAL": 70,
+            "TEXCOORD_0": 71
+          },
+          "indices": 68,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 17,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_灭火器箱_9-12"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 73,
+            "NORMAL": 74,
+            "TEXCOORD_0": 75
+          },
+          "indices": 72,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 18,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_输入输出模块_55"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 77,
+            "NORMAL": 78,
+            "TEXCOORD_0": 79
+          },
+          "indices": 76,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 19,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_灭火器箱_5-8"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 81,
+            "NORMAL": 82,
+            "TEXCOORD_0": 83
+          },
+          "indices": 80,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 20,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_1"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 85,
+            "NORMAL": 86,
+            "TEXCOORD_0": 87
+          },
+          "indices": 84,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 21,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_2"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 89,
+            "NORMAL": 90,
+            "TEXCOORD_0": 91
+          },
+          "indices": 88,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 22,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_3"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 93,
+            "NORMAL": 94,
+            "TEXCOORD_0": 95
+          },
+          "indices": 92,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 23,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_4"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 97,
+            "NORMAL": 98,
+            "TEXCOORD_0": 99
+          },
+          "indices": 96,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 24,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_5"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 101,
+            "NORMAL": 102,
+            "TEXCOORD_0": 103
+          },
+          "indices": 100,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 25,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_1"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 105,
+            "NORMAL": 106,
+            "TEXCOORD_0": 107
+          },
+          "indices": 104,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 26,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_2"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 109,
+            "NORMAL": 110,
+            "TEXCOORD_0": 111
+          },
+          "indices": 108,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 27,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_3"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 113,
+            "NORMAL": 114,
+            "TEXCOORD_0": 115
+          },
+          "indices": 112,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 28,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_4"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 117,
+            "NORMAL": 118,
+            "TEXCOORD_0": 119
+          },
+          "indices": 116,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 29,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_5"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 121,
+            "NORMAL": 122,
+            "TEXCOORD_0": 123
+          },
+          "indices": 120,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 30,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_感烟探测器_6"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 125,
+            "NORMAL": 126,
+            "TEXCOORD_0": 127
+          },
+          "indices": 124,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 31,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_灭火器箱_17-18"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 129,
+            "NORMAL": 130,
+            "TEXCOORD_0": 131
+          },
+          "indices": 128,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 32,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_7"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 133,
+            "NORMAL": 134,
+            "TEXCOORD_0": 135
+          },
+          "indices": 132,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 33,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_8"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 137,
+            "NORMAL": 138,
+            "TEXCOORD_0": 139
+          },
+          "indices": 136,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 34,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_9"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 141,
+            "NORMAL": 142,
+            "TEXCOORD_0": 143
+          },
+          "indices": 140,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 35,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_灭火器箱_13-16"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 145,
+            "NORMAL": 146,
+            "TEXCOORD_0": 147
+          },
+          "indices": 144,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 36,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_疏散指示灯_6"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 149,
+            "NORMAL": 150,
+            "TEXCOORD_0": 151
+          },
+          "indices": 148,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 37,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_声光报警器_15"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 153,
+            "NORMAL": 154,
+            "TEXCOORD_0": 155
+          },
+          "indices": 152,
+          "mode": 4,
+          "material": 0,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 38,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": "NC_RM_Dev_手动报警器_13"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 157,
+            "NORMAL": 158,
+            "TEXCOORD_0": 159
+          },
+          "indices": 156,
+          "mode": 4,
+          "material": 1,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 39,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ],
+      "name": ""
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.31543,
+        0.5,
+        75.31543
+      ],
+      "min": [
+        -75.31543,
+        -0.5,
+        -75.31543
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.31543,
+        0.5,
+        75.31543
+      ],
+      "min": [
+        -75.31543,
+        -0.5,
+        -75.31543
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.3156738,
+        0.5,
+        75.31543
+      ],
+      "min": [
+        -75.3156738,
+        -0.5,
+        -75.31543
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.3156738,
+        0.5,
+        75.31592
+      ],
+      "min": [
+        -75.3156738,
+        -0.5,
+        -75.31592
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "max": [
+        175,
+        0,
+        100.000122
+      ],
+      "min": [
+        -175,
+        0,
+        -100
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.3156738,
+        0.5,
+        75.31592
+      ],
+      "min": [
+        -75.3156738,
+        -0.5,
+        -75.31592
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "max": [
+        175,
+        0,
+        100
+      ],
+      "min": [
+        -175,
+        0,
+        -100
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.31543,
+        0.5,
+        75.31592
+      ],
+      "min": [
+        -75.31543,
+        -0.5,
+        -75.31592
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 774,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        301.259766,
+        0,
+        301.261719
+      ],
+      "min": [
+        -301.261719,
+        0,
+        -301.260742
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.31543,
+        0.5,
+        75.31543
+      ],
+      "min": [
+        -75.31543,
+        -0.5,
+        -75.31543
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 2478,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 830,
+      "max": [
+        301.2627,
+        0,
+        544.0137
+      ],
+      "min": [
+        -301.2627,
+        -0.712402344,
+        -301.261719
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 830,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 830,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.3156738,
+        0.5,
+        75.3156738
+      ],
+      "min": [
+        -75.3156738,
+        -0.5,
+        -75.3156738
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.3156738,
+        0.5,
+        75.3156738
+      ],
+      "min": [
+        -75.3156738,
+        -0.5,
+        -75.3156738
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.31543,
+        0.5,
+        75.3156738
+      ],
+      "min": [
+        -75.31543,
+        -0.5,
+        -75.3156738
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.31543,
+        0.5,
+        75.3156738
+      ],
+      "min": [
+        -75.31543,
+        -0.5,
+        -75.3156738
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.31543,
+        0.5,
+        75.3156738
+      ],
+      "min": [
+        -75.31543,
+        -0.5,
+        -75.3156738
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.31543,
+        0.5,
+        75.3156738
+      ],
+      "min": [
+        -75.31543,
+        -0.5,
+        -75.3156738
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "max": [
+        175,
+        0,
+        100.000244
+      ],
+      "min": [
+        -175,
+        0,
+        -100
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 822,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 280,
+      "max": [
+        75.31543,
+        0.499938965,
+        75.3156738
+      ],
+      "min": [
+        -75.31543,
+        -0.500061035,
+        -75.3156738
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 280,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 280,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "max": [
+        175,
+        0,
+        100
+      ],
+      "min": [
+        -175,
+        0,
+        -100
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 774,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        301.261719,
+        0,
+        301.261475
+      ],
+      "min": [
+        -301.261719,
+        0,
+        -301.261719
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 774,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        301.261719,
+        0,
+        301.26123
+      ],
+      "min": [
+        -301.261719,
+        0,
+        -301.26123
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 774,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        301.263672,
+        0,
+        301.261719
+      ],
+      "min": [
+        -301.261719,
+        0,
+        -301.26123
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 774,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        301.2627,
+        0,
+        301.26123
+      ],
+      "min": [
+        -301.2622,
+        0,
+        -301.261719
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 774,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        301.2627,
+        0,
+        301.26123
+      ],
+      "min": [
+        -301.261719,
+        0,
+        -301.261719
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.31543,
+        0.5,
+        75.31543
+      ],
+      "min": [
+        -75.31543,
+        -0.5,
+        -75.31543
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.31543,
+        0.5,
+        75.31543
+      ],
+      "min": [
+        -75.31543,
+        -0.5,
+        -75.31543
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.3156738,
+        0.5,
+        75.31543
+      ],
+      "min": [
+        -75.3156738,
+        -0.5,
+        -75.31543
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.3156738,
+        0.5,
+        75.31543
+      ],
+      "min": [
+        -75.3156738,
+        -0.5,
+        -75.31543
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.31543,
+        0.5,
+        75.31543
+      ],
+      "min": [
+        -75.31543,
+        -0.5,
+        -75.31543
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "max": [
+        75.31543,
+        0.5,
+        75.31543
+      ],
+      "min": [
+        -75.31543,
+        -0.5,
+        -75.31543
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 36,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "max": [
+        175,
+        0,
+        100
+      ],
+      "min": [
+        -175,
+        0,
+        -100
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 774,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        301.261719,
+        0,
+        301.261719
+      ],
+      "min": [
+        -301.259766,
+        0,
+        -301.261719
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 774,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        301.2622,
+        0,
+        301.261719
+      ],
+      "min": [
+        -301.2622,
+        0,
+        -301.261719
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 774,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        301.261719,
+        0,
+        301.261719
+      ],
+      "min": [
+        -301.263672,
+        0,
+        -301.261719
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 66,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "max": [
+        175,
+        0,
+        100
+      ],
+      "min": [
+        -175,
+        0,
+        -100
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 26,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 774,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "max": [
+        301.261719,
+        0,
+        301.261719
+      ],
+      "min": [
+        -301.261719,
+        0,
+        -301.261475
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 260,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 360,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 128,
+      "max": [
+        153.77417,
+        0.5001221,
+        87.87109
+      ],
+      "min": [
+        -153.774658,
+        -0.5,
+        -87.87109
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 128,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 128,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 207,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 73,
+      "max": [
+        75.31555,
+        0.5,
+        75.31592
+      ],
+      "min": [
+        -75.3157959,
+        -0.5,
+        -75.31543
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 73,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 73,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    },
+    {
+      "componentType": 5123,
+      "count": 6,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 4,
+      "max": [
+        20111.2832,
+        0,
+        11092.1914
+      ],
+      "min": [
+        -4197.82227,
+        0,
+        -7861.3623
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC2",
+      "name": "accessorUVs"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 384,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 768,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1152,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1536,
+      "byteLength": 361
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1900,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2284,
+      "byteLength": 361
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2648,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3032,
+      "byteLength": 1212
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4244,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4628,
+      "byteLength": 4660
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9288,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9672,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10056,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10440,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10824,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 11208,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 11592,
+      "byteLength": 361
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 11956,
+      "byteLength": 1649
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 13608,
+      "byteLength": 361
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 13972,
+      "byteLength": 1203
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 15176,
+      "byteLength": 1211
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 16388,
+      "byteLength": 1197
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 17588,
+      "byteLength": 1196
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 18784,
+      "byteLength": 1196
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 19980,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 20364,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 20748,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 21132,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 21516,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 21900,
+      "byteLength": 382
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 22284,
+      "byteLength": 361
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 22648,
+      "byteLength": 1214
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 23864,
+      "byteLength": 1198
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 25064,
+      "byteLength": 1189
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 26256,
+      "byteLength": 361
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 26620,
+      "byteLength": 1190
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 27812,
+      "byteLength": 955
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 28768,
+      "byteLength": 579
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 29348,
+      "byteLength": 188
+    }
+  ],
+  "buffers": [
+    {
+      "name": "ZKL",
+      "byteLength": 29536,
+      "uri": "ZKL.bin"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.9
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "BLEND",
+      "name": "Material #424",
+      "doubleSided": false
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.9
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "BLEND",
+      "name": "Material #450",
+      "doubleSided": false
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "yansezonghe.jpg"
+    },
+    {
+      "sampler": 0,
+      "source": 1,
+      "name": "主控室.tga"
+    }
+  ],
+  "images": [
+    {
+      "name": "yansezonghe",
+      "uri": "yansezonghe.jpg"
+    },
+    {
+      "name": "主控室",
+      "uri": "主控室.tga"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}

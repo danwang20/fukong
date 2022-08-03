@@ -1,0 +1,153 @@
+.warning-msg{
+    background-color: var(--warn-color-alpha);
+}
+
+.error-msg{
+    background-color: var(--error-color-alpha1);
+}
+
+@keyframes blink {
+    0% {
+        background-color: rgba(255, 16, 0, 0);
+    }
+
+    50% {
+        background-color: var(--error-color-alpha);
+    }
+
+    100% {
+        background-color: rgba(255, 16, 0, 0.1);
+    }
+}
+
+
+/*****************模板定义样式属性*******************/
+:root{
+    --mini-space: 2px;
+    --small-space: 4px;
+    --middle-space: 6px;
+    --large-space: 8px;
+    --extra-space: 10px;
+
+    /*主题色*/
+    --theam-color-default: #40beff;
+    /*默认纯色*/
+    --clear-color-default: #fff;
+    /*边框颜色*/
+    --border-color-default: #40beff;
+    /*透明色*/
+    --alpha-color-default: rgba(0, 0, 0, 0);
+    /*背景色*/
+    --main-bg-default: rgba(0, 18, 48, .8);
+    /*背景色透明*/
+    --main-bg-alpha: rgba(0, 18, 48, .5);
+    /*默认悬浮颜色*/
+    --hover-color-default: rgba(32, 123, 205, 0.9);
+    /*默认提示颜色*/
+    --success-color-default: #32b50a;
+    --success-color-alpha: rgba(0, 214, 7, 0.4);
+    --warn-color-default: orange;
+    --warn-color-alpha: rgba(255, 210, 42, 0.66);
+    --error-color-default: #f00;
+    --error-color-alpha: rgba(255, 16, 0, 0.71);
+    --error-color-alpha1: rgba(255, 0, 0, 1);
+    /*默认按钮通用背景色*/
+    --btn-bg-default: #046393;
+    --btn-bg-success: var(--success-color-alpha);
+    --btn-bg-success-alpha: var(--success-color-alpha);
+    --btn-bg-disabled: rgba(140, 147, 157, 0.5);
+    --btn-border-disabled: rgba(54, 54, 54, 0.7);
+    --btn-color-disabled: rgba(38, 38, 38, 0.85);
+    /*********************通用组件覆盖************************/
+    /*默认按钮样式*/
+    --btn-default-color: var(--clear-color-default);
+    --btn-default-border: var(--border-color-default);
+    --btn-default-background-color: var(--btn-bg-default);
+    --btn-success-color: var(--clear-color-default);
+    --btn-success-border: var(--btn-bg-success);
+    --btn-success-background-color: var(--btn-bg-success-alpha);
+    --btn-warn-color: var(--clear-color-default);
+    --btn-warn-border: var(--warn-color-default);
+    --btn-warn-background-color: var(--warn-color-alpha);
+    --btn-error-color: var(--clear-color-default);
+    --btn-error-border: var(--btn-bg-error-alpha);
+    --btn-error-background-color: var(--btn-bg-error-alpha);
+    --btn-disabled-color: var(--btn-color-disabled);
+    --btn-disabled-border: var(--btn-border-disabled);
+    --btn-disabled-background-color: var(--btn-bg-disabled);
+    /*默认滚动条样式*/
+    --scrollbar-track-background-color: var(--main-bg-default);
+    --scrollbar-thumb-background-color: var(--border-color-default);
+    --scrollbar-hover-background-color: var(--hover-color-default);
+    --scrollbar-corner-background-color: var(--alpha-color-default);
+    /*默认对话框样式*/
+    --dialog-default-border: var(--border-color-default);
+    --dialog-default-color: var(--clear-color-default);
+    --dialog-default-background-start: #256bb9;
+    --dialog-default-background-end: rgba(13, 36, 90, 0.91);
+    --dialog-item-background-color: rgba(4, 29, 84, 0.9);
+    --dialog-item-border: #409EFF;
+    --dialog-item-color: #efefef;
+    --dialog-item-hover: var(--hover-color-default);
+    /*默认提示框样式*/
+    --notification-default-background-color:rgba(13, 36, 90, 0.91);
+    --notification-default-border: #409EFF;
+    --notification-default-color: var(--clear-color-default);
+    /*默认树形组件样式*/
+    --tree-default-background-color: var(--alpha-color-default);
+    --tree-default-color: var(--clear-color-default);
+    --tree-default-hover: var(--hover-color-default);
+    /*默认表格组件样式*/
+    --table-default-color: var(--clear-color-default);
+    --table-default-border: var(--border-color-default);
+    --table-default-hover: var(--hover-color-default);
+    --table-default-background-color: rgba(0, 44, 124, 0.9);
+    /*默认表单组件样式*/
+    --form-default-color: var(--clear-color-default);
+    --form-item-default-border: var(--border-color-default);
+    --form-item-default-background-color: rgba(0, 44, 124, 0.9);
+    --form-item-darker-background-color: var(--main-bg-default);
+    --form-item-default-hover: var(--hover-color-default);
+    /*默认卡片组件样式*/
+    --card-default-color: var(--clear-color-default);
+    --card-default-background-color: rgba(0, 44, 124, 0.9);
+    --card-default-border: var(--border-color-default);
+    /*********************具体组件************************/
+    /*指纹框背景色*/
+    --finger-background-color: var(--main-bg-alpha);
+    /*指纹框边框色*/
+    --finger-border-color: var(--border-color-default);
+    /*页面头部字体颜色*/
+    --top-title-color: var(--clear-color-default);
+    /*头部返回按钮悬浮字体颜色*/
+    --top-title-hover-color: var(--theam-color-default);
+    /*登录框label字体颜色*/
+    --login-box-label-color: var(--clear-color-default);
+    /*信息框样式*/
+    --message-box-color: var(--clear-color-default);
+    --message-box-border: var(--border-color-default);
+    --message-box-background-color: var(--main-bg-alpha);
+    --message-box-background-color2: rgba(8, 39, 107, .8);
+    --message-box-title-background-color: var(--theam-color-default);
+    --message-box-title-background-color2: rgba(17, 40, 67, .9);
+    --message-box-status-default-color: gray;
+    --message-box-status-success-color: var(--success-color-default);
+    --message-box-status-error-color: var(--error-color-default);
+    /*侧栏导航样式*/
+    --side-nav-color: var(--clear-color-default);
+    --side-nav-border: var(--border-color-default);
+    --side-nav-background-color: var(--main-bg-default);
+    /*模型样式*/
+    --model-default-border: var(--border-color-default);
+    --model-default-background-color: var(--theam-color-default);
+    /*光字牌样式*/
+    --gzp-default-color: var(--clear-color-default);
+    --gzp-default-border: var(--border-color-default);
+    --gzp-default-background-color: rgba(0, 44, 124, 0.9);
+    /*侧栏信息框集合*/
+    --side-messages-border: var(--border-color-default);
+    /*echart样式*/
+    --echart-box-default-color: var(--clear-color-default);
+    --echart-box-default-border: var(--theam-color-default);
+    --echart-box-default-background-color: var(--main-bg-alpha);
+}
