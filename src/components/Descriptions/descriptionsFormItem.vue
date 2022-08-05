@@ -44,6 +44,9 @@ export default {
   data() {
     return {};
   },
+  mounted() {
+    // console.log(this.itemData);
+  },
   methods: {
     buttonLink() {
       console.log("点击了按钮");

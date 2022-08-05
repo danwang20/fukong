@@ -4,7 +4,7 @@
       <FormItem :formItems="formItems" />
     </section>
     <section class="c-table">
-      <TableCommon :columns="columns" :flexHeight="flexHeight" />
+      <TableCommon :columns="columns" :flexHeight="tableCommonHeight" />
     </section>
   </div>
 </template>
@@ -46,20 +46,23 @@ export default {
       ],
       columns: TableCommonConfig.tableConfig1,
       flexHeight: {
-        formHeight: '',
-        tableHeight: '',
-        tableWidth: '',
-      }
+        formHeight: "",
+        tableHeight: "",
+      },
+      tableCommonHeight: 0,
     };
   },
   watch: {},
   created() {},
   mounted() {
     this.getTableMaxHeight();
-    let _this = this;
-    window.onresize = function () {
-      _this.getTableMaxHeight();
-    };
+    // let _this = this;
+    // window.onresize = function () {
+    //   _this.getTableMaxHeight();
+    // };
+    setInterval(() => {
+        this.getTableMaxHeight();
+    }, 1000)
   },
   methods: {
     getTableMaxHeight() {
@@ -71,11 +74,10 @@ export default {
       this.$nextTick(function () {
         let box = document.querySelector(".cotent-box").attributes;
         let box_clientHeight = box[0].ownerElement.clientHeight;
-        let box_clientWidth = box[0].ownerElement.clientWidth;
-        console.log(box_clientWidth);
         this.flexHeight.tableHeight = box_clientHeight;
-        this.flexHeight.tableWidth = box_clientWidth;
       });
+      this.tableCommonHeight =
+        this.flexHeight.tableHeight - this.flexHeight.formHeight - 32;
     },
   },
 };
@@ -84,6 +86,7 @@ export default {
 .cotent-box {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .form-box {

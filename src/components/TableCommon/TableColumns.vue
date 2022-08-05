@@ -29,9 +29,16 @@
       fixed="right"
     >
       <template slot-scope="scope">
-        <el-button size="mini" @click="handleEdit(scope.$index, scope.row)">{{
-          curColumnItem.name
-        }}</el-button>
+        <el-button
+          size="mini"
+          @click="handleEdit(scope.$index, scope.row, scope.column)"
+          >{{ curColumnItem.name + 1 }}</el-button
+        >
+        <el-button
+          size="mini"
+          @click="handleEdit(scope.$index, scope.row, scope.column)"
+          >{{ curColumnItem.name + 2 }}</el-button
+        >
       </template>
     </el-table-column>
     <el-table-column
@@ -65,6 +72,7 @@ export default {
         width: undefined,
         inputValue: undefined,
         name: undefined,
+        // imageUrl: undefined,
       },
       isShow: false,
     };
@@ -75,6 +83,10 @@ export default {
       default: () => {
         return {};
       },
+    },
+    customId: {
+      type: String,
+      default: "",
     },
   },
   watch: {
@@ -94,8 +106,8 @@ export default {
     },
   },
   methods: {
-    handleEdit(index, row) {
-      console.log(index, row);
+    handleEdit(index, row, column) {
+      console.log(index, row, column);
     },
     inputChange(index, row, column) {
       console.log(index, row, column);
@@ -106,4 +118,5 @@ export default {
 </script>
 
 <style scoped>
+
 </style>

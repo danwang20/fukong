@@ -3,6 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import ElementUI from 'element-ui'
+import axios from 'axios'
 
 import "./assets/css/normalize.css";
 import 'element-ui/lib/theme-chalk/index.css'
@@ -14,6 +15,7 @@ import "./assets/css/animate.min.css";
 import VueApiExpand from './uitls/expand'
 
 VueApiExpand(Vue)
+Vue.prototype.$axios = axios
 Vue.use(ElementUI)
 Vue.config.productionTip = false;
 

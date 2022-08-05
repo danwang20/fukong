@@ -28,23 +28,23 @@ return {
 }
 },
 created() {
-let stompClient = Webstomp.over(
-  // new SocketJS('https://172.19.3.25:8084/endpointSang', { transports: 'websocket' }),
-   new SocketJS('http://172.18.2.98:12003/socket', { transports: 'websocket' }),
-  { debug: process.env.NODE_ENV !== 'production' }
-)
+// let stompClient = Webstomp.over(
+//   // new SocketJS('https://172.19.3.25:8084/endpointSang', { transports: 'websocket' }),
+//    new SocketJS('http://172.18.2.98:12003/socket', { transports: 'websocket' }),
+//   { debug: process.env.NODE_ENV !== 'production' }
+// )
 
-stompClient.connect({}, () => {
+// stompClient.connect({}, () => {
  
-  stompClient.subscribe('/topic/greetings', function (item) {
+//   stompClient.subscribe('/topic/greetings', function (item) {
       
-      console.log(item);
-})
-})
+//       console.log(item);
+// })
+// })
 
-if (process.env.NODE_ENV !== 'production') {
-  console.log('%cstompClient=%O', 'background-color: yellow;color:#333', stompClient)
-}
+// if (process.env.NODE_ENV !== 'production') {
+//   console.log('%cstompClient=%O', 'background-color: yellow;color:#333', stompClient)
+// }
 },
 mounted() {
 

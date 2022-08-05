@@ -1,5 +1,6 @@
 <template>
   <section id="gzp-box" class="gzp-box">
+    <span class="gzp-title">光子牌</span>
     <div class="gzp-content">
       <div
         v-for="(list, index) in lists"
@@ -116,8 +117,7 @@ export default {
         document.getElementById("gzp3").style.animation =
           "blink 1s infinite linear";
       } else if (sid == 2) {
-        document.getElementById("gzp3").style.animation =
-          "";
+        document.getElementById("gzp3").style.animation = "";
       }
     },
   },
@@ -143,6 +143,10 @@ export default {
   font-size: 1.3em;
   margin: 0;
   padding: var(--extra-space) 0;
+}
+.gzp-title {
+  background-color: blue;
+  text-align: center;
 }
 .gzp-content {
   position: relative;

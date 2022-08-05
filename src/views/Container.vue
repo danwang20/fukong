@@ -26,39 +26,20 @@ export default {
   data() {
     return {
       isStatic: true,
-      viewHeight: 883,
     };
   },
   watch: {
-    getViewHeight: {
-      deep: true,
-      handler(val) {
-        console.log(val);
-      },
-    },
+
   },
   computed: {
-    getViewHeight() {
-      return this.getTableMaxHeight();
-    },
+   
   },
   created() {},
   mounted() {
-    // this.getTableMaxHeight();
-    // let _this = this;
-    // window.onresize = function () {
-    //   _this.getTableMaxHeight();
-    // };
+  
   },
   methods: {
-    getTableMaxHeight() {
-      this.$nextTick(function () {
-        let box = document.querySelector(".c-content").attributes;
-        let box_clientWidth = box[0].ownerElement.clientWidth;
-        console.log(box_clientWidth);
-        return box_clientWidth;
-      });
-    },
+
   },
 };
 </script>
@@ -78,7 +59,6 @@ export default {
 .c-content {
   position: relative;
   flex: 1;
-  /* height: 100% - 153px; */
   padding: 0 calc(var(--extra-space) * 2);
 }
 </style>

@@ -34,15 +34,9 @@ export default {
         },
         {
             type: "button",
-            label: "按钮",
-            width: "100",
+            label: "操作",
+            width: "200",
             name: "按钮",
-        },
-        {
-            type: "button",
-            label: "按钮1",
-            width: "100",
-            name: "按钮1",
         },
     ],
 }
