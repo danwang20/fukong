@@ -16,8 +16,6 @@ export default {
     // button配置
     button: {
         buttonConfig1: FormButtonConfig.config1,
-        buttonConfig2: FormButtonConfig.config2,
-        buttonMethods1: FormButtonConfig.buttonMethods1,
     },
 
     // checkbox配置

@@ -7,7 +7,7 @@
       :clearable="curConfig.clearable"
       popper-class="itemSelect"
       :popper-append-to-body="true"
-      @change="selectChange"
+      @change="curMethods.selectChange"
     >
       <el-option
         v-for="(list, idx) in filterLists"
@@ -39,6 +39,11 @@ export default {
           valueKey: "value3",
         },
       ],
+      defaultMethods: {
+        selectChange(data) {
+          console.log(data);
+        },
+      },
     };
   },
   props: {
@@ -48,11 +53,20 @@ export default {
         return {};
       },
     },
+    methods: {
+      type: Object,
+      default: () => {
+        return {};
+      },
+    },
+  },
+  computed: {
+    curMethods() {
+      return Object.assign({}, this.defaultMethods, this.methods);
+    },
   },
   methods: {
-    selectChange(data) {
-      console.log(data);
-    },
+   
   },
 };
 </script>

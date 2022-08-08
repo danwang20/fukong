@@ -31,12 +31,12 @@
       <template slot-scope="scope">
         <el-button
           size="mini"
-          @click="handleEdit(scope.$index, scope.row, scope.column)"
+          @click="curMethods.handleEdit(scope.$index, scope.row, scope.column)"
           >{{ curColumnItem.name + 1 }}</el-button
         >
         <el-button
           size="mini"
-          @click="handleEdit(scope.$index, scope.row, scope.column)"
+          @click="curMethods.handleEdit(scope.$index, scope.row, scope.column)"
           >{{ curColumnItem.name + 2 }}</el-button
         >
       </template>
@@ -52,7 +52,7 @@
         <el-input
           v-model="scope.row.inputValue"
           placeholder="请输入内容"
-          @change="inputChange(scope.$index, scope.row, scope.column)"
+          @change="curMethods.inputChange(scope.$index, scope.row, scope.column)"
           size="mini"
           v-if="isShow"
         ></el-input>
@@ -75,6 +75,16 @@ export default {
         // imageUrl: undefined,
       },
       isShow: false,
+      defaultMethods: {
+        handleEdit(index, row, column) {
+          console.log("点击了按钮");
+          // console.log(index, row, column);
+        },
+        inputChange(index, row, column) {
+          console.log(index, row, column);
+          // this.$store.commit("changeTableIsClick", false);
+        },
+      },
     };
   },
   props: {
@@ -87,6 +97,12 @@ export default {
     customId: {
       type: String,
       default: "",
+    },
+    methods: {
+      type: Object,
+      default: () => {
+        return {};
+      },
     },
   },
   watch: {
@@ -104,6 +120,9 @@ export default {
     getTableIsClick() {
       return this.$store.state.tableIsClick;
     },
+    curMethods() {
+      return Object.assign({}, this.defaultMethods, this.methods);
+    },
   },
   methods: {
     handleEdit(index, row, column) {
@@ -118,5 +137,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

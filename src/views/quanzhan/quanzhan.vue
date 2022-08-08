@@ -1,10 +1,14 @@
  <template>
   <div class="cotent-box" style="height: 100%; display: flex">
     <section class="form-box">
-      <FormItem :formItems="formItems" />
+      <FormItem :formItems="formItems" :methods="formFunction" />
     </section>
     <section class="c-table">
-      <TableCommon :columns="columns" :flexHeight="tableCommonHeight" />
+      <TableCommon
+        :columns="columns"
+        :flexHeight="tableCommonHeight"
+        :methods="tableFunction"
+      />
     </section>
   </div>
 </template>
@@ -40,11 +44,87 @@ export default {
         },
         {
           type: "button",
-          configData: FormItemsConfig.button.buttonConfig2,
-          configMethods: FormItemsConfig.button.buttonMethods1,
+          configData: FormItemsConfig.button.buttonConfig1,
         },
       ],
       columns: TableCommonConfig.tableConfig1,
+      tableFunction: {
+        objectSpanMethod({ row, column, rowIndex, columnIndex }) {
+          if (columnIndex === 2) {
+            if (rowIndex === 0) {
+              return {
+                rowspan: 5,
+                colspan: 1,
+              };
+            } else if (rowIndex === 5) {
+              return {
+                rowspan: 3,
+                colspan: 1,
+              };
+            } else if (rowIndex === 8) {
+              return {
+                rowspan: 4,
+                colspan: 1,
+              };
+            } else if (rowIndex === 12) {
+              return {
+                rowspan: 4,
+                colspan: 1,
+              };
+            } else if (rowIndex === 16) {
+              return {
+                rowspan: 8,
+                colspan: 1,
+              };
+            } else if (rowIndex === 24) {
+              return {
+                rowspan: 4,
+                colspan: 1,
+              };
+            } else {
+              return {
+                rowspan: 0,
+                colspan: 0,
+              };
+            }
+          }
+        },
+        cellStyle({ row, column, rowIndex, columnIndex }) {
+          // console.log(row, column, rowIndex, columnIndex);
+          if (row.date == "2016-05-01" && column.label == "名字") {
+            return "background-color: red !important;";
+          }
+          if (row.date == "2016-05-02" && column.label == "名字") {
+            return "background-color: green !important;";
+          }
+          if (row.date == "2016-05-03" && column.label == "名字") {
+            return "background-color: pink !important;";
+          }
+          if (row.date == "2016-05-04" && column.label == "名字") {
+            return "background-color: orange !important;";
+          }
+        },
+        handleEdit(index, row, column) {
+          console.log(index, row, column);
+        },
+      },
+      formFunction: {
+        selectChange(data) {
+          console.log("父: " + data);
+        },
+        inputChange(data) {
+          console.log("父: " + data);
+        },
+        changeDatePicker(data) {
+          console.log("父: " + data);
+        },
+        handleCheckedChange(data) {
+          console.log("父: " + data);
+        },
+        buttonClick() {
+          console.log("父: 点击了按钮");
+        },
+      },
       flexHeight: {
         formHeight: "",
         tableHeight: "",
@@ -56,13 +136,11 @@ export default {
   created() {},
   mounted() {
     this.getTableMaxHeight();
-    // let _this = this;
-    // window.onresize = function () {
-    //   _this.getTableMaxHeight();
-    // };
-    setInterval(() => {
+    for (let i = 0; i < 3; i++) {
+      setTimeout(() => {
         this.getTableMaxHeight();
-    }, 1000)
+      }, 1000);
+    }
   },
   methods: {
     getTableMaxHeight() {

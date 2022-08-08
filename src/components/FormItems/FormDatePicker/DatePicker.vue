@@ -8,7 +8,7 @@
       start-placeholder="开始日期"
       end-placeholder="结束日期"
       align="right"
-      @change="changeDatePicker"
+      @change="curMethods.changeDatePicker"
     >
     </el-date-picker>
   </el-form-item>
@@ -17,7 +17,13 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      defaultMethods: {
+        changeDatePicker(data) {
+          console.log(data);
+        },
+      },
+    };
   },
   props: {
     curConfig: {
@@ -26,12 +32,19 @@ export default {
         return {};
       },
     },
-  },
-  methods: {
-    changeDatePicker(data) {
-      console.log(data);
+    methods: {
+      type: Object,
+      default: () => {
+        return {};
+      },
     },
   },
+  computed: {
+    curMethods() {
+      return Object.assign({}, this.defaultMethods, this.methods);
+    },
+  },
+  methods: {},
 };
 </script>
 

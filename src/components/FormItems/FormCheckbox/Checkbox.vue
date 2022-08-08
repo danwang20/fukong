@@ -2,7 +2,7 @@
   <el-form-item :label="curConfig.title" class="c--form-input">
     <el-checkbox-group
       v-model="curConfig.checkedCities"
-      @change="handleCheckedChange"
+      @change="curMethods.handleCheckedChange"
     >
       <el-checkbox
         v-for="checked in curConfig.chaeckData"
@@ -18,7 +18,11 @@
 export default {
   data() {
     return {
-    
+      defaultMethods: {
+        handleCheckedChange(data) {
+          console.log(data);
+        },
+      },
     };
   },
   props: {
@@ -28,11 +32,18 @@ export default {
         return {};
       },
     },
-  },
-  methods: {
-    handleCheckedChange(data) {
-      console.log(data);
+    methods: {
+      type: Object,
+      default: () => {
+        return {};
+      },
     },
   },
+  computed: {
+    curMethods() {
+      return Object.assign({}, this.defaultMethods, this.methods);
+    },
+  },
+  methods: {},
 };
 </script>

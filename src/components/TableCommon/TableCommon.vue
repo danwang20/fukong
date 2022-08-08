@@ -6,8 +6,8 @@
       :style="{ maxWidth: outWidth + 'px' }"
       :height="tableHeight"
       @cell-dblclick="cellClick"
-      :cell-style="cellStyle"
-      :span-method="objectSpanMethod"
+      :cell-style="curMethods.cellStyle"
+      :span-method="curMethods.objectSpanMethod"
       class="c-table"
     >
       <template v-for="(column, index) in columns">
@@ -15,6 +15,7 @@
           :key="index"
           :curColumn="column"
           :customId="'table' + index"
+          :methods="curMethods"
         />
       </template>
     </el-table>
@@ -51,6 +52,12 @@ export default {
       type: Boolean,
       default: true,
     },
+    methods: {
+      type: Object,
+      default: () => {
+        return {};
+      },
+    },
   },
   computed: {
     getTableIsClick() {
@@ -61,6 +68,9 @@ export default {
     },
     getTableHeight() {
       return this.flexHeight;
+    },
+    curMethods() {
+      return Object.assign({}, this.defaultMethods, this.methods);
     },
   },
   watch: {
@@ -261,9 +271,20 @@ export default {
         pageSize: 20,
         total: 100,
       },
-      tableHeight: 300,
+      tableHeight: 800,
       tableIsClick: false,
       outWidth: document.body.clientWidth - 345,
+      defaultMethods: {
+        cellStyle({ row, column, rowIndex, columnIndex }) {
+          console.log({ row, column, rowIndex, columnIndex });
+        },
+        objectSpanMethod({ row, column, rowIndex, columnIndex }) {
+          console.log({ row, column, rowIndex, columnIndex });
+        },
+        handleEdit(index, row, column) {
+          console.log("点击了按钮");
+        },
+      },
     };
   },
   created() {},
@@ -275,64 +296,27 @@ export default {
     handleCurrentChange(val) {
       console.log(`当前页: ${val}`);
     },
-    cellClick(row, column, event) {
-      this.tableIsClick = !this.tableIsClick;
-      this.$store.commit("changeTableIsClick", this.tableIsClick);
-      console.log(row, column);
-    },
-    objectSpanMethod({ row, column, rowIndex, columnIndex }) {
-      if (columnIndex === 2) {
-        if (rowIndex === 0) {
-          return {
-            rowspan: 5,
-            colspan: 1,
-          };
-        } else if (rowIndex === 5) {
-          return {
-            rowspan: 3,
-            colspan: 1,
-          };
-        } else if (rowIndex === 8) {
-          return {
-            rowspan: 4,
-            colspan: 1,
-          };
-        } else if (rowIndex === 12) {
-          return {
-            rowspan: 4,
-            colspan: 1,
-          };
-        } else if (rowIndex === 16) {
-          return {
-            rowspan: 8,
-            colspan: 1,
-          };
-        } else if (rowIndex === 24) {
-          return {
-            rowspan: 4,
-            colspan: 1,
-          };
-        } else {
-          return {
-            rowspan: 0,
-            colspan: 0,
-          };
-        }
-      }
-    },
-    cellStyle({ row, column, rowIndex, columnIndex }) {
-      // console.log(row, column, rowIndex, columnIndex);
-      if (row.date == "2016-05-01" && column.label == "名字") {
-        return "background-color: red !important;";
-      }
-      if (row.date == "2016-05-02" && column.label == "名字") {
-        return "background-color: green !important;";
-      }
-      if (row.date == "2016-05-03" && column.label == "名字") {
-        return "background-color: pink !important;";
-      }
-      if (row.date == "2016-05-04" && column.label == "名字") {
-        return "background-color: orange !important;";
+    cellClick(row, column, cell, event) {
+      if (column.label == "输入框") {
+        event.target.innerHTML = "";
+        let cellInput = document.createElement("input");
+        cellInput.value = "";
+        cellInput.setAttribute("type", "text");
+        cellInput.style.width = "80%";
+        cellInput.style.height = "25px";
+        cellInput.style.outlineColor = "white";
+        cell.appendChild(cellInput);
+        //   聚焦
+        cellInput.focus();
+        //失焦事件
+        cellInput.onblur = function () {
+          cell.removeChild(cellInput);
+          if (cellInput.value == "undefined") {
+            cellInput.value = "";
+          }
+          event.target.innerHTML = cellInput.value;
+          row[column.property] = cellInput.value;
+        };
       }
     },
   },

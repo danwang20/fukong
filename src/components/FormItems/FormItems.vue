@@ -15,27 +15,31 @@
           v-if="item.type == 'input'"
           :key="index"
           :curConfig="item.configData"
+          :methods="curMethods"
         />
         <FormSelect
           v-if="item.type == 'select'"
           :key="index"
           :curConfig="item.configData"
+          :methods="curMethods"
         />
         <DatePicker
           v-if="item.type == 'datePicker'"
           :key="index"
           :curConfig="item.configData"
+          :methods="curMethods"
         />
         <Checkbox
           v-if="item.type == 'checkbox'"
           :key="index"
           :curConfig="item.configData"
+          :methods="curMethods"
         />
         <FormButton
           v-if="item.type == 'button'"
           :key="index"
           :curConfig="item.configData"
-          :buttonMethods="item.configMethods"
+          :methods="curMethods"
         />
       </template>
     </el-form>
@@ -55,12 +59,37 @@ export default {
     return {
       formValidate: {},
       curOption: FormItemsConfig.curOption,
+      defaultMethods: {
+        selectChange(data) {
+          console.log(data);
+        },
+        inputChange(data) {
+          console.log(data);
+        },
+        changeDatePicker(data) {
+          console.log(data);
+        },
+        handleCheckedChange(data) {
+          console.log(data);
+        },
+      },
     };
+  },
+  computed: {
+    curMethods() {
+      return Object.assign({}, this.defaultMethods, this.methods);
+    },
   },
   props: {
     formItems: {
       type: Array,
       default: () => [],
+    },
+    methods: {
+      type: Object,
+      default: () => {
+        return {};
+      },
     },
   },
 };

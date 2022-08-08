@@ -49,21 +49,49 @@
               </div>
             </section>
           </div>
-          <div v-for="(item, index) in menuListArr" :key="index">
-            <div class="menuList" @click="menuListClick(index)">
-              <section class="menuListleft" :id="'menu' + index">
-                <i class="el-icon-monitor"></i>
-              </section>
-              <section class="menuListleft1" :id="'menu1' + index">
-                <span>设备控制</span>
-              </section>
-              <section class="menuListRight">
-                <span>16</span>
-              </section>
-              <section class="menuListRight1">
-                <span style="color: red"><i class="el-icon-bottom"></i>12</span>
-                <span style="color: orange"><i class="el-icon-top"></i>4</span>
-              </section>
+          <div class="menuListAll">
+            <div v-for="(item, index) in menuListArr" :key="index">
+              <div class="menuList" @click="menuListClick(index)">
+                <section class="menuListleft" :id="'menu' + index">
+                  <i class="el-icon-monitor"></i>
+                </section>
+                <section class="menuListleft1" :id="'menu1' + index">
+                  <span>设备控制</span>
+                </section>
+                <section class="menuListRight">
+                  <span>16</span>
+                </section>
+                <section class="menuListRight1">
+                  <span style="color: red"
+                    ><i class="el-icon-bottom"></i>12</span
+                  >
+                  <span style="color: orange"
+                    ><i class="el-icon-top"></i>4</span
+                  >
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="yspListAll">
+            <div v-for="(item, index) in yspListArr" :key="index">
+              <div class="yspList">
+                <section class="yspListleft">
+                  <span class="yspListleftSpan">CO</span>
+                </section>
+                <section class="yspListRight">
+                  <div class="yspListRightTop">
+                    <span>一氧化碳一氧化碳</span>
+                  </div>
+                  <div class="yspListRightBottom">
+                    <section class="yspListRightBottomLeft">
+                      <span>515</span>
+                    </section>
+                    <section class="yspListRightBottomRight">
+                      <span>PPM</span>
+                    </section>
+                  </div>
+                </section>
+              </div>
             </div>
           </div>
         </div>
@@ -139,6 +167,7 @@ export default {
       columns: TableCommonConfig.tableConfig1,
       tableHeight: 200,
       menuListArr: [{}, {}, {}],
+      yspListArr: [{}, {}, {}],
     };
   },
   created() {
@@ -204,24 +233,20 @@ export default {
       document.querySelector(".showListBottomLeft").style.backgroundImage =
         'url("' + urlPath + '")';
     },
-    inputchange() {
-      this.menuListClick(this.inpuvalue);
-    },
     menuListClick(index) {
       for (let i = 0; i < this.menuListArr.length; i++) {
-        console.log(index);
         if (index == i) {
-          console.log("改变" + index);
+          console.log("修改" + i);
           let menuId = "menu" + index;
           let menuId1 = "menu1" + index;
           document.querySelector("#" + menuId).style.color = "yellow";
           document.querySelector("#" + menuId1).style.color = "yellow";
         } else {
-          console.log("恢复" + index);
-          let menuId = "menu" + index;
-          let menuId1 = "menu1" + index;
-          document.querySelector("#" + menuId).style.color = "red";
-          document.querySelector("#" + menuId1).style.color = "red";
+          console.log(i);
+          let menuId = "menu" + i;
+          let menuId1 = "menu1" + i;
+          document.querySelector("#" + menuId).style.color = "";
+          document.querySelector("#" + menuId1).style.color = "";
         }
       }
     },
@@ -340,7 +365,9 @@ export default {
 }
 
 /* *********************************** */
-
+.menuListAll {
+  display: flex;
+}
 .menuList {
   display: flex;
   width: 200px;
@@ -373,5 +400,60 @@ export default {
   /* text-align: center; */
   display: flex;
   flex-direction: column;
+}
+
+/* ******************** */
+.yspListAll {
+  display: flex;
+}
+.yspList {
+  display: flex;
+  width: 180px;
+  height: 50px;
+  padding: var(--middle-space) var(--extra-space);
+  margin-left: var(--middle-space);
+  margin-bottom: var(--extra-space);
+  margin-top: 5px;
+  border: 1px solid var(--gzp-default-border);
+  border-radius: 12px 12px;
+}
+.yspListleft {
+  background-color: rgb(49, 101, 199);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-left: 5px;
+  /* margin-top: 5px; */
+  margin-right: 5px;
+  text-align: center;
+  box-shadow: 0 0 15px rgb(25, 15, 87);
+}
+.yspListleftSpan {
+  position: relative;
+  top: 10px;
+}
+.yspListRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.yspListRightTop {
+  /* background: green; */
+  font-size: 12px;
+}
+.yspListRightBottom {
+  /* background: orange; */
+  display: flex;
+  margin-top: 5px;
+}
+.yspListRightBottomLeft {
+  flex: 1;
+  color: green;
+  font-size: 12px;
+}
+.yspListRightBottomRight {
+  flex: 1;
+  font-size: 12px;
 }
 </style>

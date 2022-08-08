@@ -3,7 +3,7 @@
     <el-input
       placeholder="请输入内容"
       v-model="curConfig.value"
-      @change="inputChange"
+      @change="curMethods.inputChange"
       clearable
     >
     </el-input>
@@ -14,7 +14,11 @@
 export default {
   data() {
     return {
-    
+      defaultMethods: {
+        inputChange(data) {
+          console.log(data);
+        },
+      },
     };
   },
   props: {
@@ -24,11 +28,20 @@ export default {
         return {};
       },
     },
+    methods: {
+      type: Object,
+      default: () => {
+        return {};
+      },
+    },
+  },
+  computed: {
+    curMethods() {
+      return Object.assign({}, this.defaultMethods, this.methods);
+    },
   },
   methods: {
-    inputChange(data) {
-      console.log(data);
-    },
+   
   },
 };
 </script>

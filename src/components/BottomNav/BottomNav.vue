@@ -4,7 +4,8 @@
       <li
         v-for="(list, index) in menuLists"
         :key="index"
-        @click="linkHandler(list)"
+        :id="'path' + index"
+        @click="linkHandler(list, index)"
       >
         {{ list.pageName }}
       </li>
@@ -33,8 +34,21 @@ export default {
     };
   },
   methods: {
-    linkHandler(data) {
-      console.log(data);
+    linkHandler(data, id) {
+      console.log(data, id);
+      for (let i = 0; i < this.menuLists.length; i++) {
+        if (id == i) {
+          let pathId = "path" + i;
+          const urlPath = require("../../assets/images/Nav/BottomNav/yes_choose.png");
+          document.querySelector("#" + pathId).style.backgroundImage =
+            'url("' + urlPath + '")';
+        } else {
+          let pathId = "path" + i;
+          const urlPath = require("../../assets/images/Nav/BottomNav/no_choose.png");
+          document.querySelector("#" + pathId).style.backgroundImage =
+            'url("' + urlPath + '")';
+        }
+      }
       let nowPath = this.$route.path;
       console.log(nowPath);
       if (nowPath != data.path) {
