@@ -80,7 +80,7 @@
                 </section>
                 <section class="yspListRight">
                   <div class="yspListRightTop">
-                    <span>一氧化碳一氧化碳</span>
+                    <span>一氧化碳</span>
                   </div>
                   <div class="yspListRightBottom">
                     <section class="yspListRightBottomLeft">
@@ -440,6 +440,8 @@ export default {
 }
 .yspListRightTop {
   /* background: green; */
+  display: flex;
+  justify-content: center;
   font-size: 12px;
 }
 .yspListRightBottom {
@@ -451,9 +453,15 @@ export default {
   flex: 1;
   color: green;
   font-size: 12px;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
 }
 .yspListRightBottomRight {
   flex: 1;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
   font-size: 12px;
 }
 </style>
