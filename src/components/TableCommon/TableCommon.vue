@@ -15,7 +15,7 @@
           :key="index"
           :curColumn="column"
           :customId="'table' + index"
-          :methods="curMethods"
+          :methods="column.methods"
         />
       </template>
     </el-table>

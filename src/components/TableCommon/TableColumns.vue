@@ -32,12 +32,12 @@
         <el-button
           size="mini"
           @click="curMethods.handleEdit(scope.$index, scope.row, scope.column)"
-          >{{ curColumnItem.name + 1 }}</el-button
+          >{{ curColumnItem.name }}</el-button
         >
         <el-button
           size="mini"
-          @click="curMethods.handleEdit(scope.$index, scope.row, scope.column)"
-          >{{ curColumnItem.name + 2 }}</el-button
+          @click="curMethods.handleEdit1(scope.$index, scope.row, scope.column)"
+          >{{ curColumnItem.name1 }}</el-button
         >
       </template>
     </el-table-column>

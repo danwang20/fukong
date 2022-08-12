@@ -37,6 +37,17 @@ export default {
             label: "操作",
             width: "200",
             name: "按钮",
+            name1: "按钮1",
+            methods: {
+                handleEdit(index, row, column) {
+                    console.log(index, row, column);
+                    console.log('按钮1');
+                },
+                handleEdit1(index, row, column) {
+                    console.log(index, row, column);
+                    console.log('按钮2');
+                },
+            },
         },
     ],
     tableConfig2: [{
