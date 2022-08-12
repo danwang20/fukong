@@ -5,6 +5,13 @@ import Container from '../views/Container.vue'
 import QuanZhan from '../views/quanzhan/quanzhan.vue'
 import ZhongHeLou from '../views/zhaoming/zhonghelou.vue'
 import FireControlSystem from '../views/firecontrol/FireControlSystem.vue'
+import FireAlarmHost from '../views/firecontrol/fireAlarm/fireAlarmHost.vue'
+const originalPush = VueRouter.prototype.push
+
+VueRouter.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
+
 Vue.use(VueRouter);
 
 const routes = [{
@@ -29,8 +36,14 @@ const routes = [{
       {
         path: '/fireControlSystem',
         name: 'fireControlSystem',
-        component: FireControlSystem
+        component: FireControlSystem,
+        children: []
       },
+      {
+        path: '/fireAlarmHost',
+        name: 'fireAlarmHost',
+        component: FireAlarmHost
+      }
     ]
   },
 

@@ -2,7 +2,7 @@
   <section class="c-fireControl">
     <div class="c-fireControl-left">
       <div class="c-fireControl-left-top">
-        <Gzp />
+        <Gzp :option="GapData" />
       </div>
       <div class="c-fireControl-left-bottom">
         <div class="c-fireControl-left-bottom-left">
@@ -98,11 +98,11 @@
       </div>
     </div>
     <section class="c-fireControl-right">
-      <Descriptions :descriptionCigfer="descriptionData.config1" />
-      <Descriptions :descriptionCigfer="descriptionData.config2" />
-      <Descriptions :descriptionCigfer="descriptionData.config3" />
-      <Descriptions :descriptionCigfer="descriptionData.config1" />
-      <Descriptions :descriptionCigfer="descriptionData.config1" />
+      <Descriptions :descriptionCigfer="descriptionData.config1" :formHeight="formHeight"/>
+      <Descriptions :descriptionCigfer="descriptionData.config2" :formHeight="formHeight"/>
+      <Descriptions :descriptionCigfer="descriptionData.config3" :formHeight="formHeight"/>
+      <Descriptions :descriptionCigfer="descriptionData.config1" :formHeight="formHeight"/>
+      <Descriptions :descriptionCigfer="descriptionData.config1" :formHeight="formHeight"/>
     </section>
   </section>
 </template>
@@ -126,6 +126,68 @@ export default {
         config2: descriptionsFormData.descriptionsConfig2,
         config3: descriptionsFormData.descriptionsConfig3,
       },
+      GapData: [
+        { labelKey: "1" },
+        { labelKey: "2" },
+        { labelKey: "3" },
+        { labelKey: "4" },
+        { labelKey: "5" },
+        { labelKey: "6" },
+        { labelKey: "7" },
+        { labelKey: "8" },
+        { labelKey: "9" },
+        { labelKey: "10" },
+        { labelKey: "11" },
+        { labelKey: "12" },
+        { labelKey: "13" },
+        { labelKey: "14" },
+        { labelKey: "15" },
+        { labelKey: "16" },
+        { labelKey: "17" },
+        { labelKey: "18" },
+        { labelKey: "19" },
+        { labelKey: "20" },
+        { labelKey: "21" },
+        { labelKey: "22" },
+        { labelKey: "23" },
+        { labelKey: "24" },
+        { labelKey: "25" },
+        { labelKey: "26" },
+        { labelKey: "27" },
+        { labelKey: "28" },
+        { labelKey: "29" },
+        { labelKey: "30" },
+        { labelKey: "31" },
+        { labelKey: "32" },
+        { labelKey: "33" },
+        { labelKey: "34" },
+        { labelKey: "35" },
+        { labelKey: "36" },
+        { labelKey: "37" },
+        { labelKey: "38" },
+        { labelKey: "39" },
+        { labelKey: "40" },
+        { labelKey: "41" },
+        { labelKey: "42" },
+        { labelKey: "43" },
+        { labelKey: "44" },
+        { labelKey: "45" },
+        { labelKey: "46" },
+        { labelKey: "47" },
+        { labelKey: "48" },
+        { labelKey: "49" },
+        { labelKey: "50" },
+        { labelKey: "51" },
+        { labelKey: "52" },
+        { labelKey: "53" },
+        { labelKey: "54" },
+        { labelKey: "55" },
+        { labelKey: "56" },
+        { labelKey: "57" },
+        { labelKey: "58" },
+        { labelKey: "59" },
+        { labelKey: "60" },
+      ],
       options: [
         {
           value: "change",
@@ -168,6 +230,7 @@ export default {
       tableHeight: 200,
       menuListArr: [{}, {}, {}],
       yspListArr: [{}, {}, {}],
+      formHeight: 176.6,
     };
   },
   created() {

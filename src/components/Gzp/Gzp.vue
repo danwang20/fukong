@@ -1,9 +1,9 @@
 <template>
-  <section id="gzp-box" class="gzp-box">
-    <span class="gzp-title">光子牌</span>
+  <section id="gzp-box" class="gzp-box" style="height: 100%">
+    <span class="gzp-title">光字牌</span>
     <div class="gzp-content">
       <div
-        v-for="(list, index) in lists"
+        v-for="(list, index) in option"
         :key="index"
         :id="'gzp' + index"
         @click="asd(list)"
@@ -20,9 +20,9 @@ export default {
   name: "GzpBox",
   props: {
     option: {
-      type: Object,
+      type: Array,
       default: () => {
-        return {};
+        return [];
       },
     },
     methods: {
@@ -40,68 +40,7 @@ export default {
   },
   data() {
     return {
-      lists: [
-        { labelKey: "1" },
-        { labelKey: "2" },
-        { labelKey: "3" },
-        { labelKey: "4" },
-        { labelKey: "5" },
-        { labelKey: "6" },
-        { labelKey: "7" },
-        { labelKey: "8" },
-        { labelKey: "9" },
-        { labelKey: "10" },
-        { labelKey: "11" },
-        { labelKey: "12" },
-        { labelKey: "13" },
-        { labelKey: "14" },
-        { labelKey: "15" },
-        { labelKey: "16" },
-        { labelKey: "17" },
-        { labelKey: "18" },
-        { labelKey: "19" },
-        { labelKey: "20" },
-        { labelKey: "21" },
-        { labelKey: "22" },
-        { labelKey: "23" },
-        { labelKey: "24" },
-        { labelKey: "25" },
-        { labelKey: "26" },
-        { labelKey: "27" },
-        { labelKey: "28" },
-        { labelKey: "29" },
-        { labelKey: "30" },
-        { labelKey: "31" },
-        { labelKey: "32" },
-        { labelKey: "33" },
-        { labelKey: "34" },
-        { labelKey: "35" },
-        { labelKey: "36" },
-        { labelKey: "37" },
-        { labelKey: "38" },
-        { labelKey: "39" },
-        { labelKey: "40" },
-        { labelKey: "41" },
-        { labelKey: "42" },
-        { labelKey: "43" },
-        { labelKey: "44" },
-        { labelKey: "45" },
-        { labelKey: "46" },
-        { labelKey: "47" },
-        { labelKey: "48" },
-        { labelKey: "49" },
-        { labelKey: "50" },
-        { labelKey: "51" },
-        { labelKey: "52" },
-        { labelKey: "53" },
-        { labelKey: "54" },
-        { labelKey: "55" },
-        { labelKey: "56" },
-        { labelKey: "57" },
-        { labelKey: "58" },
-        { labelKey: "59" },
-        { labelKey: "60" },
-      ],
+      lists: [],
       defaultOption: {
         labelKey: "gzpname",
       },
@@ -116,8 +55,20 @@ export default {
       if (sid == 1) {
         document.getElementById("gzp3").style.animation =
           "blink 1s infinite linear";
+        document.getElementById("gzp4").style.animation =
+          "blink 1s infinite linear";
+        document.getElementById("gzp5").style.animation =
+          "blink 1s infinite linear";
+        document.getElementById("gzp3").style.order = "-1";
+        document.getElementById("gzp4").style.order = "-1";
+        document.getElementById("gzp5").style.order = "-1";
       } else if (sid == 2) {
         document.getElementById("gzp3").style.animation = "";
+        document.getElementById("gzp4").style.animation = "";
+        document.getElementById("gzp5").style.animation = "";
+        document.getElementById("gzp3").style.order = "";
+        document.getElementById("gzp4").style.order = "";
+        document.getElementById("gzp5").style.order = "";
       }
     },
   },
@@ -128,7 +79,7 @@ export default {
 .gzp-box {
   position: relative;
   width: 100%;
-  height: 500px;
+  /* height: 500px; */
   /* top: 50px; */
   /* left: 100px; */
   display: flex;
@@ -147,6 +98,8 @@ export default {
 .gzp-title {
   background-color: blue;
   text-align: center;
+  height: 20px;
+  padding: 1px 0px;
 }
 .gzp-content {
   position: relative;
@@ -156,19 +109,25 @@ export default {
   overflow: auto;
   padding-top: var(--extra-space);
   text-align: center;
-  /* display: flex; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
 }
 .gzp-list {
   position: relative;
   display: inline-block;
   width: 180px;
+  height: 30px;
   text-align: center;
   padding: var(--middle-space) var(--extra-space);
   background-color: var(--gzp-default-background-color);
   border: 1px solid var(--gzp-default-border);
   border-radius: 2px;
-  margin-left: var(--middle-space);
-  margin-bottom: var(--extra-space);
+  /* margin-left: var(--middle-space); */
+  /* margin-left: 3px; */
+  /* margin-right: 3px; */
+  /* margin-bottom: var(--extra-space); */
   font-size: 12px;
   color: white;
   /* min-height: 50px; */

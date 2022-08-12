@@ -6,7 +6,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     tableIsClick: false,
-    isHidden: false
+    isHidden: false,
+    test: '123',
   },
   mutations: {
     changeTableIsClick(state,params) {
@@ -14,6 +15,9 @@ export default new Vuex.Store({
     },
     changeIsHidden(state,params) {
       state.isHidden = params
+    },
+    testMethods(state,params) {
+      state.test = params
     }
   },
   actions: {},

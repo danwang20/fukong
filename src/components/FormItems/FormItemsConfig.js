@@ -16,6 +16,7 @@ export default {
     // button配置
     button: {
         buttonConfig1: FormButtonConfig.config1,
+        buttonConfig2: FormButtonConfig.config2,
     },
 
     // checkbox配置
@@ -31,6 +32,7 @@ export default {
     //input配置
     input: {
         inputConfig1: FormInputConfig.config1,
+        inputConfig2: FormInputConfig.config2,
     },
 
     //select配置

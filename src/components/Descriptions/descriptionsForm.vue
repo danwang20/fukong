@@ -6,6 +6,7 @@
       :inline="true"
       size="mini"
       class="c-desForm"
+      :style="{ height: formHeight + 'px' }"
     >
       <div class="c-formTitle">{{ descriptionCigfer[0].title }}</div>
       <section
@@ -38,6 +39,10 @@ export default {
       type: Array,
       default: () => [],
     },
+    formHeight: {
+      type: Number,
+      default: 0,
+    },
   },
 };
 </script>
@@ -56,5 +61,6 @@ export default {
   height: 20px;
   background-color: blue;
   text-align: center;
+  padding: 1px 0px;
 }
 </style>

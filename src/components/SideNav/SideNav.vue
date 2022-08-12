@@ -108,6 +108,7 @@ export default {
                   selected: false,
                   disabled: false,
                   loading: false,
+                  path: '/fireAlarmHost'
                 },
                 {
                   id: 1001,
@@ -386,14 +387,14 @@ export default {
     changeIsHidden() {
       if (this.isHidden === false) {
         this.isHidden = true;
-        this.$store.commit("changeIsHidden", this.isHidden);
+        this.$store.commit("changeIsHidden", true);
         // console.log(this.$store.state.isHidden);
       }
     },
     mouseEvent() {
       if (this.isHidden === true) {
         this.isHidden = false;
-        this.$store.commit("changeIsHidden", this.isHidden);
+        this.$store.commit("changeIsHidden", false);
         // console.log(this.$store.state.isHidden);
       } else return false;
     },

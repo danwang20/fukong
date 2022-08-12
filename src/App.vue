@@ -496,6 +496,7 @@ export default {
     // 打开设置事件
     openSetting() {
       this.settingWindowShow = true;
+      this.$router.push('/');
     },
     // 软件更新事件监听
     // checkUpdate () {

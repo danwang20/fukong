@@ -10,7 +10,7 @@
       @change="curMethods.selectChange"
     >
       <el-option
-        v-for="(list, idx) in filterLists"
+        v-for="(list, idx) in curConfig.filterLists"
         :key="idx"
         :label="list[curConfig.labelKey]"
         :value="list[curConfig.valueKey]"
@@ -25,20 +25,6 @@
 export default {
   data() {
     return {
-      filterLists: [
-        {
-          labelKey: "选项1",
-          valueKey: "value1",
-        },
-        {
-          labelKey: "选项2",
-          valueKey: "value2",
-        },
-        {
-          labelKey: "选项3",
-          valueKey: "value3",
-        },
-      ],
       defaultMethods: {
         selectChange(data) {
           console.log(data);

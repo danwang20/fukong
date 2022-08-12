@@ -29,18 +29,17 @@ export default {
     };
   },
   watch: {
-
+    "$route.fullPath": {
+      deep: true,
+      handler(val) {
+        console.log("path:", val);
+      },
+    },
   },
-  computed: {
-   
-  },
+  computed: {},
   created() {},
-  mounted() {
-  
-  },
-  methods: {
-
-  },
+  mounted() {},
+  methods: {},
 };
 </script>
 <style scoped='less'>

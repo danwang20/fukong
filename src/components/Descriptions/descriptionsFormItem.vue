@@ -8,12 +8,28 @@
       ></el-input>
     </el-form-item>
     <el-form-item v-if="itemData.type === 'text'" :label="itemData.label">
-      <div class="messBox" :style="{ maxWidth: itemData.textWidth + 'px' }">
+      <div
+        class="messBox"
+        :style="{
+          maxWidth: itemData.textWidth + 'px',
+          width: itemData.textWidth + 'px',
+        }"
+      >
         {{ itemData.mess }}
       </div>
     </el-form-item>
     <el-form-item v-if="itemData.type === 'button'" :label="itemData.label">
-      <el-button @click="buttonLink">按钮</el-button>
+      <section
+        class="buttonGroup"
+        :style="{
+          maxWidth: itemData.buttonWidth + 'px',
+          width: itemData.buttonWidth + 'px',
+        }"
+      >
+        <div v-for="(item, index) in itemData.buttonArr" :key="index">
+          <el-button @click="item.linkMethods">{{ item.buttonName }}</el-button>
+        </div>
+      </section>
     </el-form-item>
     <el-form-item v-if="itemData.type === 'state'" :label="itemData.label">
       <span
@@ -82,5 +98,10 @@ export default {
   transform: translate(0, -50%);
   background-color: rgb(10, 214, 71);
   cursor: pointer;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
 }
 </style>

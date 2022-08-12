@@ -307,7 +307,7 @@ is-closable message {
 
 .el-table--mini td,
 .el-table--mini th {
-  padding: var(--mini-space) 0;
+  padding: var(--mini-space) 0 !important;
 }
 
 .el-table thead.is-group th,
@@ -359,7 +359,7 @@ body .el-table th.gutter {
 
 .el-table--enable-row-transition .el-table__body td.el-table__cell {
   transition: background-color .25s ease;
-  padding: 6px 0;
+  padding: 2px 0;
   text-align: center;
 }
 

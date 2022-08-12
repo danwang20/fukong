@@ -15,31 +15,31 @@
           v-if="item.type == 'input'"
           :key="index"
           :curConfig="item.configData"
-          :methods="curMethods"
+          :methods="item.methods"
         />
         <FormSelect
           v-if="item.type == 'select'"
           :key="index"
           :curConfig="item.configData"
-          :methods="curMethods"
+          :methods="item.methods"
         />
         <DatePicker
           v-if="item.type == 'datePicker'"
           :key="index"
           :curConfig="item.configData"
-          :methods="curMethods"
+          :methods="item.methods"
         />
         <Checkbox
           v-if="item.type == 'checkbox'"
           :key="index"
           :curConfig="item.configData"
-          :methods="curMethods"
+          :methods="item.methods"
         />
         <FormButton
           v-if="item.type == 'button'"
           :key="index"
           :curConfig="item.configData"
-          :methods="curMethods"
+          :methods="item.methods"
         />
       </template>
     </el-form>
@@ -59,37 +59,31 @@ export default {
     return {
       formValidate: {},
       curOption: FormItemsConfig.curOption,
-      defaultMethods: {
-        selectChange(data) {
-          console.log(data);
-        },
-        inputChange(data) {
-          console.log(data);
-        },
-        changeDatePicker(data) {
-          console.log(data);
-        },
-        handleCheckedChange(data) {
-          console.log(data);
-        },
-      },
+      // defaultMethods: {
+      //   selectChange(data) {
+      //     console.log(data);
+      //   },
+      //   inputChange(data) {
+      //     console.log(data);
+      //   },
+      //   changeDatePicker(data) {
+      //     console.log(data);
+      //   },
+      //   handleCheckedChange(data) {
+      //     console.log(data);
+      //   },
+      // },
     };
   },
   computed: {
-    curMethods() {
-      return Object.assign({}, this.defaultMethods, this.methods);
-    },
+    // curMethods() {
+    //   return Object.assign({}, this.defaultMethods, this.methods);
+    // },
   },
   props: {
     formItems: {
       type: Array,
       default: () => [],
-    },
-    methods: {
-      type: Object,
-      default: () => {
-        return {};
-      },
     },
   },
 };

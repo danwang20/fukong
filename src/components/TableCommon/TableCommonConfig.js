@@ -39,4 +39,26 @@ export default {
             name: "按钮",
         },
     ],
+    tableConfig2: [{
+            type: "index",
+            label: "排序"
+        },
+        {
+            type: "prop",
+            prop: "zsd",
+            label: "指示灯",
+            width: "100"
+        },
+        {
+            type: "prop",
+            prop: "zcszt",
+            label: "正常时状态",
+            width: "100"
+        },
+        {
+            type: "prop",
+            prop: "sm",
+            label: "说明",
+        },
+    ],
 }
