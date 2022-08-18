@@ -99,6 +99,7 @@ export default {
               selected: true,
               disabled: false,
               loading: false,
+              path: '/fireAlarm',
               children: [
                 {
                   id: 1000,
@@ -118,6 +119,7 @@ export default {
                   selected: false,
                   disabled: false,
                   loading: false,
+                  path: '/productionComplexBuilding',
                 },
               ],
             },

@@ -29,13 +29,16 @@
       fixed="right"
     >
       <template slot-scope="scope">
+        <div v-for="(item,index) in curMethods" :key="index"></div>
         <el-button
           size="mini"
+          v-if="curMethods.isShow"
           @click="curMethods.handleEdit(scope.$index, scope.row, scope.column)"
           >{{ curColumnItem.name }}</el-button
         >
         <el-button
           size="mini"
+          v-if="curMethods.isShow1"
           @click="curMethods.handleEdit1(scope.$index, scope.row, scope.column)"
           >{{ curColumnItem.name1 }}</el-button
         >

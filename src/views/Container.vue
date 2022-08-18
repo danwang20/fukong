@@ -25,7 +25,7 @@ export default {
   },
   data() {
     return {
-      isStatic: true,
+      isStatic: false,
     };
   },
   watch: {

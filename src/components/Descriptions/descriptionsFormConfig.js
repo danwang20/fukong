@@ -240,4 +240,10 @@ export default {
             ]
         },
     ],
+    descriptionsConfig6: [{
+        title: "火警信息"
+    }, ],
+    descriptionsConfig7: [{
+        title: "异常设备"
+    }, ],
 }

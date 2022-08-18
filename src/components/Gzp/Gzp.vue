@@ -1,6 +1,6 @@
 <template>
   <section id="gzp-box" class="gzp-box" style="height: 100%">
-    <span class="gzp-title">光字牌</span>
+    <span v-if="isShow" class="gzp-title">光字牌</span>
     <div class="gzp-content">
       <div
         v-for="(list, index) in option"
@@ -36,6 +36,10 @@ export default {
       default: () => {
         return {};
       },
+    },
+    isShow: {
+      type: Boolean,
+      default: true,
     },
   },
   data() {
@@ -105,14 +109,15 @@ export default {
   position: relative;
   flex: 1;
   width: 100%;
-  height: calc(100vh - 40px);
+  height: calc(100% - 40px);
   overflow: auto;
-  padding-top: var(--extra-space);
+  /* padding-top: var(--extra-space); */
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
+  /* background-color: blue; */
 }
 .gzp-list {
   position: relative;

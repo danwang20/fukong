@@ -5,7 +5,9 @@ import Container from '../views/Container.vue'
 import QuanZhan from '../views/quanzhan/quanzhan.vue'
 import ZhongHeLou from '../views/zhaoming/zhonghelou.vue'
 import FireControlSystem from '../views/firecontrol/FireControlSystem.vue'
+import FireAlarm from '../views/firecontrol/fireAlarm/fireAlarm.vue'
 import FireAlarmHost from '../views/firecontrol/fireAlarm/fireAlarmHost.vue'
+import ProductionComplexBuilding from '../views/firecontrol/fireAlarm/productionComplexBuilding.vue'
 const originalPush = VueRouter.prototype.push
 
 VueRouter.prototype.push = function push(location) {
@@ -40,9 +42,19 @@ const routes = [{
         children: []
       },
       {
+        path: '/fireAlarm',
+        name: 'fireAlarm',
+        component: FireAlarm
+      },
+      {
         path: '/fireAlarmHost',
         name: 'fireAlarmHost',
         component: FireAlarmHost
+      },
+      {
+        path: '/productionComplexBuilding',
+        name: 'productionComplexBuilding',
+        component: ProductionComplexBuilding
       }
     ]
   },
