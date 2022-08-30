@@ -101,8 +101,8 @@
       <Descriptions :descriptionCigfer="descriptionData.config1" :formHeight="formHeight"/>
       <Descriptions :descriptionCigfer="descriptionData.config2" :formHeight="formHeight"/>
       <Descriptions :descriptionCigfer="descriptionData.config3" :formHeight="formHeight"/>
-      <Descriptions :descriptionCigfer="descriptionData.config1" :formHeight="formHeight"/>
-      <Descriptions :descriptionCigfer="descriptionData.config1" :formHeight="formHeight"/>
+      <!-- <Descriptions :descriptionCigfer="descriptionData.config1" :formHeight="formHeight"/>
+      <Descriptions :descriptionCigfer="descriptionData.config1" :formHeight="formHeight"/> -->
     </section>
   </section>
 </template>
@@ -230,7 +230,8 @@ export default {
       tableHeight: 200,
       menuListArr: [{}, {}, {}],
       yspListArr: [{}, {}, {}],
-      formHeight: 176.6,
+      // formHeight: 176.6,
+      formHeight: 294.3
     };
   },
   created() {

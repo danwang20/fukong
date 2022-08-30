@@ -8,6 +8,19 @@ import FireControlSystem from '../views/firecontrol/FireControlSystem.vue'
 import FireAlarm from '../views/firecontrol/fireAlarm/fireAlarm.vue'
 import FireAlarmHost from '../views/firecontrol/fireAlarm/fireAlarmHost.vue'
 import ProductionComplexBuilding from '../views/firecontrol/fireAlarm/productionComplexBuilding.vue'
+import Byqpyzdmh from '../views/firecontrol/byq_pyzdmh/byqpyzdmh.vue'
+import Pyzdmhzj from '../views/firecontrol/byq_pyzdmh/host.vue'
+import Zbpyzdmh from '../views/firecontrol/byq_pyzdmh/2hzbpyzdmh.vue'
+import Byqpmmh from '../views/firecontrol/byq_pmmh/byqpmmh.vue'
+import ByqpmmhZj from '../views/firecontrol/byq_pmmh/host.vue'
+import Zbpmmh from '../views/firecontrol/byq_pmmh/2hzbpmmh.vue'
+import Byqspwmh from '../views/firecontrol/byq_spwmh/byqspwmh.vue'
+import ByqspwZj from '../views/firecontrol/byq_spwmh/host.vue'
+import Zbspwmh from '../views/firecontrol/byq_spwmh/2hzbspwmh.vue'
+import Qtmhxt from '../views/firecontrol/qtmhxt/qtmhxt.vue'
+import Xhsxt from '../views/firecontrol/qtmhxt/xhsxt.vue'
+import Mhqpz from '../views/firecontrol/qtmhxt/mhqpz.vue'
+import Xfyjzmjsszsxt from '../views/firecontrol/qtmhxt/xfyjzmjsszsxt.vue'
 const originalPush = VueRouter.prototype.push
 
 VueRouter.prototype.push = function push(location) {
@@ -39,7 +52,6 @@ const routes = [{
         path: '/fireControlSystem',
         name: 'fireControlSystem',
         component: FireControlSystem,
-        children: []
       },
       {
         path: '/fireAlarm',
@@ -55,7 +67,72 @@ const routes = [{
         path: '/productionComplexBuilding',
         name: 'productionComplexBuilding',
         component: ProductionComplexBuilding
-      }
+      },
+      {
+        path: '/byqpyzdmh',
+        name: 'byqpyzdmh',
+        component: Byqpyzdmh
+      },
+      {
+        path: '/pyzdmhzj',
+        name: 'pyzdmhzj',
+        component: Pyzdmhzj
+      },
+      {
+        path: '/2hzbpyzdmh',
+        name: '2hzbpyzdmh',
+        component: Zbpyzdmh
+      },
+      {
+        path: '/byqpmmh',
+        name: 'byqpmmh',
+        component: Byqpmmh
+      },
+      {
+        path: '/byqpmmhZj',
+        name: 'byqpmmhZj',
+        component: ByqpmmhZj
+      },
+      {
+        path: '/zbpmmh',
+        name: 'zbpmmh',
+        component: Zbpmmh
+      },
+      {
+        path: '/byqspwmh',
+        name: 'byqspwmh',
+        component: Byqspwmh
+      },
+      {
+        path: '/byqspwZj',
+        name: 'byqspwZj',
+        component: ByqspwZj
+      },
+      {
+        path: '/zbspwmh',
+        name: 'zbspwmh',
+        component: Zbspwmh
+      },
+      {
+        path: '/qtmhxt',
+        name: 'qtmhxt',
+        component: Qtmhxt
+      },
+      {
+        path: '/xhsxt',
+        name: 'xhsxt',
+        component: Xhsxt
+      },
+      {
+        path: '/mhqpz',
+        name: 'mhqpz',
+        component: Mhqpz
+      },
+      {
+        path: '/xfyjzmjsszsxt',
+        name: 'xfyjzmjsszsxt',
+        component: Xfyjzmjsszsxt
+      },
     ]
   },
 

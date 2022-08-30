@@ -8,7 +8,7 @@
       class="c-desForm"
       :style="{ height: formHeight + 'px' }"
     >
-      <div class="c-formTitle">{{ descriptionCigfer[0].title }}</div>
+      <div class="c-formTitle">{{ desTitle }}</div>
       <section
         v-for="(item, index) in descriptionCigfer"
         :key="index"
@@ -43,6 +43,10 @@ export default {
       type: Number,
       default: 0,
     },
+    desTitle: {
+      type: String,
+      default: "xxxx",
+    }
   },
 };
 </script>
@@ -51,7 +55,8 @@ export default {
 .c-desForm {
   border: 1px solid var(--message-box-border);
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
 }
 .c-desForm-item {
   height: 30px;

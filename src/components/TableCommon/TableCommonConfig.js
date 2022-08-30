@@ -8,29 +8,38 @@ export default {
         },
         {
             type: "prop",
-            prop: "time",
-            label: "时间",
+            prop: "zdmc",
+            label: "站点名称",
         },
         {
             type: "prop",
-            prop: "date",
+            prop: "time",
             label: "日期",
         },
         {
             type: "prop",
-            prop: "name",
-            label: "名字",
+            prop: "sbmc",
+            label: "设备名称",
         },
         {
             type: "prop",
-            prop: "address",
-            label: "地址",
+            prop: "sjnr",
+            label: "事件内容",
         },
         {
-            type: "input",
-            label: "输入框",
-            width: "180",
-            inputValue: "value1",
+            type: "prop",
+            prop: "gjjb",
+            label: "告警级别",
+        },
+        {
+            type: "prop",
+            prop: "sszxt",
+            label: "所属子系统",
+        },
+        {
+            type: "prop",
+            prop: "cljg",
+            label: "处理结果",
         },
         {
             type: "button",
@@ -101,6 +110,38 @@ export default {
         type: "button",
         label: "操作区",
         // width: "200",
+        name: "确定",
+        methods: {
+            isShow: true,
+            handleEdit(index, row, column) {
+                console.log(index, row, column);
+                console.log('按钮1');
+            },
+            isShow1: false,
+        },
+    }, ],
+    tableConfig4: [{
+        type: "index",
+        label: "排序"
+    }, {
+        type: "prop",
+        prop: "sbmc",
+        label: "设备名称",
+        // width: "100"
+    }, {
+        type: "prop",
+        prop: "sbzt",
+        label: "设备状态",
+        // width: "100"
+    }, {
+        type: "prop",
+        prop: "dqzt",
+        label: "当前状态",
+        // width: "100"
+    }, {
+        type: "button",
+        label: "操作区",
+        // width: "100",
         name: "确定",
         methods: {
             isShow: true,

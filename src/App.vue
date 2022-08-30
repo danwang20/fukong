@@ -1,9 +1,7 @@
 <template>
   <main
     id="app"
-   
     ondragend="dragEvent"
-    
     element-loading-text="拼命加载中"
     element-loading-spinner="el-icon-loading"
     element-loading-background="rgba(0, 0, 0, 0.8)"
@@ -38,7 +36,8 @@
         </svg>
       </div>
     </div>
-    <router-view  />
+    <!-- <router-view /> -->
+    <router-view v-if="isRouterAlive"></router-view>
     <!-- <div v-else id="socket-info">
       <h2>提示信息：</h2>
       <div class="splitter" />
@@ -199,6 +198,11 @@ export default {
     // JourPop,
     // ResetPass
   },
+  provide() { // 注册一个方法
+    return {
+      reload: this.reload
+    }
+  },
   data() {
     return {
       uncontrolTime: false,
@@ -231,6 +235,7 @@ export default {
       jourStr: [],
       jourId: "",
       jourTile: "",
+      isRouterAlive: true
     };
   },
   // computed: {
@@ -291,6 +296,11 @@ export default {
   // destroyed() {
   //
   // },
+  provide () {
+    return {
+      reload: this.reload
+    }
+  },
   mounted() {
     // 轮询调用声控
     // this.watchData()
@@ -341,6 +351,13 @@ export default {
     // console.error('当前客户端版本：' + utils.getVersion())
   },
   methods: {
+    reload() {
+      this.isRouterAlive = false
+      this.$nextTick(function() {
+        this.isRouterAlive = true
+        console.log('reload')
+      })
+    },
     // jourFalse () {
     //   this.isJour = false
     // },
@@ -1072,24 +1089,24 @@ body {
   font-size: 14px;
 }
 .content-box {
-  height: 100%; 
+  height: 100%;
   display: flex;
 }
 .side-left-cloum {
-  height: 100%; 
-  position: relative; 
-  display: flex; 
+  height: 100%;
+  position: relative;
+  display: flex;
   flex-direction: column;
 }
 .side-right {
-   height: 100%; 
-  position: relative; 
-  display: flex; 
+  height: 100%;
+  position: relative;
+  display: flex;
 }
 .side-right-cloum {
-  height: 100%; 
-  position: relative; 
-  display: flex; 
+  height: 100%;
+  position: relative;
+  display: flex;
   flex-direction: column;
 }
 </style>

@@ -1,13 +1,13 @@
 <template>
   <div>
     <el-table
-      :data="tableData"
+      :data="tableDatas"
       :border="true"
       :style="{ maxWidth: outWidth + 'px' }"
       :height="flexHeight"
       @cell-dblclick="cellClick"
       :cell-style="curMethods.cellStyle"
-      :span-method="curMethods.objectSpanMethod"
+      :span-method="objectSpanMethod"
       class="c-table"
     >
       <template v-for="(column, index) in columns">
@@ -44,10 +44,10 @@ export default {
       type: Array,
       default: () => [],
     },
-    tableData: {
-      type: Array,
-      default: () => [],
-    },
+    // tableData: {
+    //   type: Array,
+    //   default: () => [],
+    // },
     flexHeight: {
       type: Number,
       default: 800,
@@ -66,6 +66,14 @@ export default {
         return {};
       },
     },
+    recSpan: {
+      type: Array,
+      default: () => [],
+    },
+    api: {
+      type: String,
+      default: "",
+    }
   },
   computed: {
     getTableIsClick() {
@@ -79,6 +87,9 @@ export default {
     },
     getMaxWidth() {
       return this.tableMaxWidth;
+    },
+    getRowSpan() {
+      return Object.assign([], this.defaultRecSpan, this.recSpan);
     },
   },
   watch: {
@@ -117,9 +128,16 @@ export default {
           console.log("点击了按钮");
         },
       },
+      defaultRecSpan: [],
+      tableDatas: [],
+      allSpan: [],
     };
   },
-  created() {},
+  created() {
+    console.log(this.getRowSpan);
+    this.getData();
+    console.log('111111',this.api);
+  },
   mounted() {
     setTimeout(() => {
       if (this.getIsHidden == false) {
@@ -127,7 +145,7 @@ export default {
         this.outWidth = this.getMaxWidth;
       } else {
         this.outWidth = this.getMaxWidth + 345;
-        console.log(this.getMaxWidth);
+        // console.log(this.getMaxWidth);
       }
     }, 1000);
   },
@@ -160,6 +178,57 @@ export default {
           row[column.property] = cellInput.value;
         };
       }
+    },
+    getData() {
+      let _this = this;
+      let api = "http://localhost:3000/" + this.api;
+      this.$axios.get(api).then((res) => {
+        console.log(res);
+        _this.tableDatas = res.data.data.list;
+        for (let i = 0; i < _this.getRowSpan.length; i++) {
+          let arr = [];
+          let columnSpan = _this.getSpanData(arr, _this.getRowSpan[i].spanName);
+          let hebing = {
+            label: _this.getRowSpan[i].spanLabel,
+            column: columnSpan,
+          };
+          _this.allSpan.push(hebing);
+        }
+        console.log(_this.allSpan);
+      });
+    },
+    objectSpanMethod({ row, column, rowIndex, columnIndex }) {
+      for (let i = 0; i < this.allSpan.length; i++) {
+        if (column.label === this.allSpan[i].label) {
+          const _row = this.allSpan[i].column[rowIndex];
+          const _col = _row > 0 ? 1 : 0;
+          return {
+            rowspan: _row,
+            colspan: _col,
+          };
+        }
+      }
+    },
+    getSpanData(spanArr, spanName) {
+      let position = 0;
+      this.tableDatas.forEach((item, index) => {
+        if (index === 0) {
+          spanArr.push(1);
+        } else {
+          if (
+            this.tableDatas[index][spanName] ===
+            this.tableDatas[index - 1][spanName]
+          ) {
+            spanArr[position] += 1;
+            spanArr.push(0);
+          } else {
+            spanArr.push(1);
+            position = index;
+          }
+        }
+      });
+      return spanArr;
+      console.log(spanArr);
     },
   },
 };

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <button id="but001" onclick="changeColor()">改变</button>
+    <svg viewBox="0 0 400 400" height='500'>
+        <title>123</title>
+        <defs>
+            <!-- symbol definition  NEVER draw -->
+            <symbol id="sym01" viewBox="0 0 150 110">
+                <circle cx="50" cy="50" r="40" stroke-width="8" stroke="red" fill="red" />
+                <circle cx="90" cy="60" r="40" stroke-width="8" stroke="green" fill="white" />
+            </symbol>
+            <symbol id="sym02" viewBox="0 0 150 110">
+                <circle cx="50" cy="50" r="40" stroke-width="8" stroke="blue" fill="blue" />
+                <circle cx="90" cy="60" r="40" stroke-width="8" stroke="orange" fill="white" />
+            </symbol>
+            <symbol id="sym03" viewBox="0 0 150 150">
+                <path d="m 0,75 l 50,-20 0,70 -20,-50 -30,0 100,0 -50,20 0,-70 20,50" stroke="red" fill="none" />
+            </symbol>
+            <symbol id="sym04" viewBox="0 0 150 150">
+                <g id="g001">
+                    <path id="p001" d="m 0,75 l 50,0 0,-20 -50,20" stroke="red" fill="red" />
+                    <path id="p002" d="m 50,75 l 0,-50 20,50 -20,0 " stroke="blue" fill="blue"></path>
+                    <path id="p003" d="m 50,75 l 50,0 -50,20 0,20 " stroke="orange" fill="orange"></path>
+                    <path id="p004" d="m 50,75 l -20,0 20,50 0,-50 " stroke="black" fill="black"></path>
+                </g>
+                <g id="g002">
+                    <path id="p001" d="m 0,75 l 50,0 0,-20 -50,20" stroke="red" fill="none" />
+                    <path id="p002" d="m 50,75 l 0,-50 20,50 -20,0 " stroke="blue" fill="none"></path>
+                    <path id="p003" d="m 50,75 l 50,0 -50,20 0,20 " stroke="orange" fill="none"></path>
+                    <path id="p004" d="m 50,75 l -20,0 20,50 0,-50 " stroke="black" fill="none"></path>
+                </g>
+            </symbol>
+        </defs>
+
+        <!-- actual drawing by "use" element -->
+        <use id="use0001" xlink:href="#sym01" x="0" y="0" width="100" height="50" />
+        <use id="use0002" xlink:href="#sym01" x="0" y="50" width="75" height="38" />
+        <use id="use0003" xlink:href="#sym01" x="0" y="100" width="50" height="25" />
+        <use id="use0004" xlink:href="#sym03" x="0" y="150" width="100" height="100" />
+        <use id="use0005" xlink:href="#g001" x="0" y="200" width="100" height="100" />
+        <!-- <use id="use0005" xlink:href="#p001" x="0" y="200" width="100" height="100" />
+        <use id="use0006" xlink:href="#p002" x="0" y="200" width="100" height="100" />
+        <use id="use0007" xlink:href="#p003" x="0" y="200" width="100" height="100" />
+        <use id="use0008" xlink:href="#p004" x="0" y="200" width="100" height="100" /> -->
+        
+    </svg>
+    <script>
+        clickMethods()
+        // focesMethods()
+
+        function changeColor() {
+            var SVG_XLINK = "http://www.w3.org/1999/xlink";
+            var cir1 = document.getElementById('use0001')
+            var cir2 = document.getElementById('use0002')
+            var cir3 = document.getElementById('use0003')
+            console.log(cir1);
+            console.log(cir2);
+            console.log(cir3);
+            cir1.setAttributeNS(SVG_XLINK, "xlink:href", '#sym02')
+            cir2.setAttributeNS(SVG_XLINK, "xlink:href", '#sym02')
+            cir3.setAttributeNS(SVG_XLINK, "xlink:href", '#sym02')
+        }
+
+        function clickMethods() {
+            document.onmousedown = (e) => {
+                console.log(e.target.id);
+                let use0005 = document.getElementById('use0005');
+                let SVG_XLINK = "http://www.w3.org/1999/xlink";
+                let eid = e.target.id;
+                if (eid == 'use0005') {
+                    use0005.setAttributeNS(SVG_XLINK, "xlink:href", "#g002")
+                } else {
+                    use0005.setAttributeNS(SVG_XLINK, "xlink:href", "#g001")
+                }
+                // alert('面板')
+                //else if (eid == 'use0006') {
+                //     console.log('blue');
+                // } else if (eid == 'use0007') {
+                //     console.log('orange');
+                // } else if (eid == 'use0008') {
+                //     console.log('black');
+                // }
+            }
+        }
+
+        function focesMethods() {
+            document.onmousemove = (e) => {
+                let eid = e.target.id;
+                if (eid == 'use0005') {
+                    console.log(e);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

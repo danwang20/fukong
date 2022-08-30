@@ -99,7 +99,7 @@ export default {
               selected: true,
               disabled: false,
               loading: false,
-              path: '/fireAlarm',
+              path: "/fireAlarm",
               children: [
                 {
                   id: 1000,
@@ -109,7 +109,7 @@ export default {
                   selected: false,
                   disabled: false,
                   loading: false,
-                  path: '/fireAlarmHost'
+                  path: "/fireAlarmHost",
                 },
                 {
                   id: 1001,
@@ -119,7 +119,7 @@ export default {
                   selected: false,
                   disabled: false,
                   loading: false,
-                  path: '/productionComplexBuilding',
+                  path: "/productionComplexBuilding",
                 },
               ],
             },
@@ -132,6 +132,7 @@ export default {
               selected: false,
               disabled: false,
               loading: false,
+              path: "/byqpyzdmh",
               children: [
                 {
                   id: 1010,
@@ -141,6 +142,7 @@ export default {
                   selected: false,
                   disabled: false,
                   loading: false,
+                  path: "/pyzdmhzj",
                 },
                 {
                   id: 1011,
@@ -150,6 +152,7 @@ export default {
                   selected: false,
                   disabled: false,
                   loading: false,
+                  path: "/2hzbpyzdmh",
                 },
               ],
             },
@@ -172,6 +175,7 @@ export default {
               selected: false,
               disabled: false,
               loading: false,
+              path: "/byqpmmh",
               children: [
                 {
                   id: 1030,
@@ -181,6 +185,7 @@ export default {
                   selected: false,
                   disabled: false,
                   loading: false,
+                  path: "/byqpmmhZj",
                 },
                 {
                   id: 1031,
@@ -190,6 +195,7 @@ export default {
                   selected: false,
                   disabled: false,
                   loading: false,
+                  path: "/zbpmmh",
                 },
               ],
             },
@@ -202,6 +208,7 @@ export default {
               selected: false,
               disabled: false,
               loading: false,
+              path: "/byqspwmh",
               children: [
                 {
                   id: 1040,
@@ -211,6 +218,7 @@ export default {
                   selected: false,
                   disabled: false,
                   loading: false,
+                  path: "/byqspwZj",
                 },
                 {
                   id: 1041,
@@ -220,6 +228,7 @@ export default {
                   selected: false,
                   disabled: false,
                   loading: false,
+                  path: "/zbspwmh",
                 },
               ],
             },
@@ -232,6 +241,7 @@ export default {
               selected: false,
               disabled: false,
               loading: false,
+              path: "/qtmhxt",
               children: [
                 {
                   id: 1050,
@@ -241,6 +251,7 @@ export default {
                   selected: false,
                   disabled: false,
                   loading: false,
+                  path: "/xhsxt",
                 },
                 {
                   id: 1051,
@@ -250,6 +261,7 @@ export default {
                   selected: false,
                   disabled: false,
                   loading: false,
+                  path: "/mhqpz",
                 },
                 {
                   id: 1052,
@@ -259,6 +271,7 @@ export default {
                   selected: false,
                   disabled: false,
                   loading: false,
+                  path: "/xfyjzmjsszsxt",
                 },
               ],
             },
@@ -390,6 +403,8 @@ export default {
       if (this.isHidden === false) {
         this.isHidden = true;
         this.$store.commit("changeIsHidden", true);
+        sessionStorage.setItem("isHiddle", true);
+        // this.$emit('changeHidden', true)
         // console.log(this.$store.state.isHidden);
       }
     },
@@ -397,6 +412,8 @@ export default {
       if (this.isHidden === true) {
         this.isHidden = false;
         this.$store.commit("changeIsHidden", false);
+        sessionStorage.setItem("isHiddle", false);
+        // this.$emit('changeHidden', false)
         // console.log(this.$store.state.isHidden);
       } else return false;
     },

@@ -3,12 +3,7 @@
     <div class="fireAlarmHostLeft">
       <div class="fireAlarmHostLeft_top">
         <section class="fireAlarmHostLeft_top_left">
-          <!-- <img class="svg" src="../../../svg/流程图.svg" alt="" srcset=""> -->
-          <Jsplumb />
         </section>
-        <!-- <section class="fireAlarmHostLeft_top_right">
-          <Gzp :option="Gzpdata"/>
-        </section> -->
       </div>
       <div class="fireAlarmHostLeft_bottom">
         <section class="c-table">
@@ -48,13 +43,11 @@ import TableCommon from "../../../components/TableCommon/TableCommon.vue";
 import TableCommonConfig from "../../../components/TableCommon/TableCommonConfig";
 import Descriptions from "../../../components/Descriptions/descriptionsForm.vue";
 import descriptionsFormData from "../../../components/Descriptions/descriptionsFormConfig";
-import Jsplumb from "../../../components/Jsplumb/jsplumb.vue";
 export default {
   components: {
     Gzp,
     TableCommon,
     Descriptions,
-    Jsplumb,
   },
   data() {
     return {

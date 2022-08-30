@@ -9,7 +9,8 @@
         :tableData="tableData"
         :flexHeight="tableCommonHeight"
         :tableMaxWidth="tableMaxWidth"
-        :methods="tableFunction"
+        :recSpan="recSpan"
+        :api="tableApi"
       />
     </section>
   </div>
@@ -123,217 +124,48 @@ export default {
         },
       ],
       columns: TableCommonConfig.tableConfig1,
-      tableData: [
-        {
-          date: "2016-05-02",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄",
-          time: "0000",
-        },
-        {
-          date: "2016-05-04",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1517 弄",
-          time: "0001",
-        },
-        {
-          date: "2016-05-01",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1519 弄",
-          time: "0002",
-        },
-        {
-          date: "2016-05-03",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1516 弄",
-          time: "0003",
-        },
-        {
-          date: "2016-05-02",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄",
-          time: "0000",
-        },
-        {
-          date: "2016-05-04",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1517 弄",
-          time: "0001",
-        },
-        {
-          date: "2016-05-01",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1519 弄",
-          time: "0002",
-        },
-        {
-          date: "2016-05-03",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1516 弄",
-          time: "0003",
-        },
-        {
-          date: "2016-05-02",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄",
-          time: "0000",
-        },
-        {
-          date: "2016-05-04",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1517 弄",
-          time: "0001",
-        },
-        {
-          date: "2016-05-01",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1519 弄",
-          time: "0002",
-        },
-        {
-          date: "2016-05-03",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1516 弄",
-          time: "0003",
-        },
-        {
-          date: "2016-05-02",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄",
-          time: "0000",
-        },
-        {
-          date: "2016-05-04",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1517 弄",
-          time: "0001",
-        },
-        {
-          date: "2016-05-01",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1519 弄",
-          time: "0002",
-        },
-        {
-          date: "2016-05-03",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1516 弄",
-          time: "0003",
-        },
-        {
-          date: "2016-05-02",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄",
-          time: "0000",
-        },
-        {
-          date: "2016-05-04",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1517 弄",
-          time: "0001",
-        },
-        {
-          date: "2016-05-01",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1519 弄",
-          time: "0002",
-        },
-        {
-          date: "2016-05-03",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1516 弄",
-          time: "0003",
-        },
-        {
-          date: "2016-05-02",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄",
-          time: "0000",
-        },
-        {
-          date: "2016-05-04",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1517 弄",
-          time: "0001",
-        },
-        {
-          date: "2016-05-01",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1519 弄",
-          time: "0002",
-        },
-        {
-          date: "2016-05-03",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1516 弄",
-          time: "0003",
-        },
-        {
-          date: "2016-05-02",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄",
-          time: "0000",
-        },
-        {
-          date: "2016-05-04",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1517 弄",
-          time: "0001",
-        },
-        {
-          date: "2016-05-01",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1519 弄",
-          time: "0002",
-        },
-        {
-          date: "2022-08-05",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1516 弄",
-          time: "0003456",
-        },
-      ],
+      tableData: [],
       tableFunction: {
-        objectSpanMethod({ row, column, rowIndex, columnIndex }) {
-          if (columnIndex === 2) {
-            if (rowIndex === 0) {
-              return {
-                rowspan: 5,
-                colspan: 1,
-              };
-            } else if (rowIndex === 5) {
-              return {
-                rowspan: 3,
-                colspan: 1,
-              };
-            } else if (rowIndex === 8) {
-              return {
-                rowspan: 4,
-                colspan: 1,
-              };
-            } else if (rowIndex === 12) {
-              return {
-                rowspan: 4,
-                colspan: 1,
-              };
-            } else if (rowIndex === 16) {
-              return {
-                rowspan: 8,
-                colspan: 1,
-              };
-            } else if (rowIndex === 24) {
-              return {
-                rowspan: 4,
-                colspan: 1,
-              };
-            } else {
-              return {
-                rowspan: 0,
-                colspan: 0,
-              };
-            }
-          }
-        },
+        // objectSpanMethod({ row, column, rowIndex, columnIndex }) {
+        //   if (columnIndex === 2) {
+        //     if (rowIndex === 0) {
+        //       return {
+        //         rowspan: 5,
+        //         colspan: 1,
+        //       };
+        //     } else if (rowIndex === 5) {
+        //       return {
+        //         rowspan: 3,
+        //         colspan: 1,
+        //       };
+        //     } else if (rowIndex === 8) {
+        //       return {
+        //         rowspan: 4,
+        //         colspan: 1,
+        //       };
+        //     } else if (rowIndex === 12) {
+        //       return {
+        //         rowspan: 4,
+        //         colspan: 1,
+        //       };
+        //     } else if (rowIndex === 16) {
+        //       return {
+        //         rowspan: 8,
+        //         colspan: 1,
+        //       };
+        //     } else if (rowIndex === 24) {
+        //       return {
+        //         rowspan: 4,
+        //         colspan: 1,
+        //       };
+        //     } else {
+        //       return {
+        //         rowspan: 0,
+        //         colspan: 0,
+        //       };
+        //     }
+        //   }
+        // },
         cellStyle({ row, column, rowIndex, columnIndex }) {
           // console.log(row, column, rowIndex, columnIndex);
           if (row.date == "2016-05-01" && column.label == "名字") {
@@ -359,10 +191,27 @@ export default {
       },
       tableMaxWidth: 0,
       tableCommonHeight: 0,
+      recSpan: [
+        {
+          spanName: "zdmc",
+          spanLabel: "站点名称",
+        },
+        {
+          spanName: "sszxt",
+          spanLabel: "所属子系统",
+        },
+        {
+          spanName: "gjjb",
+          spanLabel: "告警级别",
+        },
+      ],
+      tableApi: "api/qzbwlist"
     };
   },
   watch: {},
-  created() {},
+  created() {
+    this.getData();
+  },
   mounted() {
     this.getTableMaxHeight();
     for (let i = 0; i < 3; i++) {
@@ -390,6 +239,15 @@ export default {
         let box_clientWidth = box[0].ownerElement.clientWidth;
         console.log(box_clientWidth);
         this.tableMaxWidth = box_clientWidth;
+      });
+    },
+    getData() {
+      let _this = this;
+      this.$axios.get("http://localhost:3000/api/qzbwlist").then((res) => {
+        console.log(res);
+        _this.tableData = res.data.data.list;
+        // _this.getSpanData(this.spanTestArr, this.spanTestPosition, "dz");
+        console.log(_this.tableData);
       });
     },
   },

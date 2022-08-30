@@ -11,12 +11,12 @@ export default {
             mess: "123",
             textWidth: 150,
         },
-        {
-            type: "empty",
-            label: "",
-            mess: "",
-            emptyWidth: 150,
-        },
+        // {
+        //     type: "empty",
+        //     label: "",
+        //     mess: "",
+        //     emptyWidth: 150,
+        // },
         {
             type: "button",
             buttonWidth: 200,
@@ -47,12 +47,12 @@ export default {
             mess: "456",
             textWidth: 150,
         },
-        {
-            type: "empty",
-            label: "",
-            mess: "",
-            emptyWidth: 150,
-        },
+        // {
+        //     type: "empty",
+        //     label: "",
+        //     mess: "",
+        //     emptyWidth: 150,
+        // },
         {
             type: "button",
             label: "按钮2:",
@@ -123,9 +123,126 @@ export default {
         },
 
     ],
-    descriptionsConfig4: [{
-        title: "基本信息"
-    }, {
+    descriptionsConfig4: [
+        {
+            type: "text",
+            key: 'date',
+            label: "名称:",
+            mess: "火灾报警系统主机",
+            textWidth: 200,
+        }, {
+            type: "text",
+            key: 'fengli',
+            label: "产品型号:",
+            mess: "JB-QW-QW-12121",
+            textWidth: 200,
+        }, {
+            type: "text",
+            key: 'fengxiang',
+            label: "厂家:",
+            mess: "xxxxxx公司",
+            textWidth: 200,
+        }, {
+            type: "text",
+            key: 'high',
+            label: "投运日期:",
+            mess: "2022-0812",
+            textWidth: 200,
+        }, {
+            type: "text",
+            key: 'low',
+            label: "电源电压:",
+            mess: "220V AC",
+            textWidth: 200,
+        }, {
+            type: "text",
+            key: 'tip',
+            label: "频率:",
+            mess: "50hz",
+            textWidth: 200,
+        }, {
+            type: "text",
+            key: 'type',
+            label: "输出电压:",
+            mess: "24V DC",
+            textWidth: 200,
+        }, {
+            type: "text",
+            key: 'week',
+            label: "输出电流:",
+            mess: "5A",
+            textWidth: 200,
+        }, {
+            type: "text",
+            key: 'week',
+            label: "环境温度:",
+            mess: "5℃ ~ 30℃",
+            textWidth: 200,
+        }, {
+            type: "text",
+            key: 'week',
+            label: "相对湿度:",
+            mess: "5% ~ 95%",
+            textWidth: 200,
+        }, {
+            type: "text",
+            key: 'week',
+            label: "维保单位:",
+            mess: "xxxxxxxxxx公司",
+            textWidth: 200,
+        }, {
+            type: "text",
+            key: 'week',
+            label: "联系电话:",
+            mess: "155xxxxxxxx",
+            textWidth: 200,
+        },
+    ],
+    descriptionsConfig5: [
+        // {
+        //     title: "运行信息"
+        // },
+        {
+            type: "text",
+            key: "bjzt",
+            label: "设备状态:",
+            mess: "xxxxxxxx",
+            textWidth: 200,
+        },
+        {
+            type: "text",
+            key: "txzt",
+            label: "通讯状态:",
+            mess: "xxxxxxxx",
+            textWidth: 200,
+        },
+        {
+            type: "text",
+            key: "dyzt",
+            label: "电源状态:",
+            mess: "xxxxxxxx",
+            textWidth: 200,
+        },
+        {
+            type: "button",
+            label: "报警主机:",
+            buttonWidth: 200,
+            buttonArr: [{
+                    buttonName: "报警复位",
+                    linkMethods() {
+                        console.log("点击了: 报警复位");
+                    },
+                },
+                {
+                    buttonName: "报警恢复",
+                    linkMethods() {
+                        console.log("点击了: 报警恢复");
+                    },
+                },
+            ]
+        },
+    ],
+    descriptionsConfig6: [{
         type: "text",
         key: 'date',
         label: "名称:",
@@ -197,53 +314,78 @@ export default {
         label: "联系电话:",
         mess: "155xxxxxxxx",
         textWidth: 200,
-    }, ],
-    descriptionsConfig5: [{
-            title: "运行信息"
-        }, {
-            type: "text",
-            key: "bjzt",
-            label: "设备状态:",
-            mess: "xxxxxxxx",
-            textWidth: 200,
-        },
-        {
-            type: "text",
-            key: "txzt",
-            label: "通讯状态:",
-            mess: "xxxxxxxx",
-            textWidth: 200,
-        },
-        {
-            type: "text",
-            key: "dyzt",
-            label: "电源状态:",
-            mess: "xxxxxxxx",
-            textWidth: 200,
-        },
-        {
-            type: "button",
-            label: "报警主机:",
-            buttonWidth: 200,
-            buttonArr: [{
-                    buttonName: "报警复位",
-                    linkMethods() {
-                        console.log("点击了: 报警复位");
-                    },
-                },
-                {
-                    buttonName: "报警恢复",
-                    linkMethods() {
-                        console.log("点击了: 报警恢复");
-                    },
-                },
-            ]
-        },
-    ],
-    descriptionsConfig6: [{
-        title: "火警信息"
-    }, ],
+    },],
     descriptionsConfig7: [{
-        title: "异常设备"
-    }, ],
+        type: "text",
+        key: 'date',
+        label: "名称:",
+        mess: "火灾报警系统主机",
+        textWidth: 200,
+    }, {
+        type: "text",
+        key: 'fengli',
+        label: "产品型号:",
+        mess: "JB-QW-QW-12121",
+        textWidth: 200,
+    }, {
+        type: "text",
+        key: 'fengxiang',
+        label: "厂家:",
+        mess: "xxxxxx公司",
+        textWidth: 200,
+    }, {
+        type: "text",
+        key: 'high',
+        label: "投运日期:",
+        mess: "2022-0812",
+        textWidth: 200,
+    }, {
+        type: "text",
+        key: 'low',
+        label: "电源电压:",
+        mess: "220V AC",
+        textWidth: 200,
+    }, {
+        type: "text",
+        key: 'tip',
+        label: "频率:",
+        mess: "50hz",
+        textWidth: 200,
+    }, {
+        type: "text",
+        key: 'type',
+        label: "输出电压:",
+        mess: "24V DC",
+        textWidth: 200,
+    }, {
+        type: "text",
+        key: 'week',
+        label: "输出电流:",
+        mess: "5A",
+        textWidth: 200,
+    }, {
+        type: "text",
+        key: 'week',
+        label: "环境温度:",
+        mess: "5℃ ~ 30℃",
+        textWidth: 200,
+    }, {
+        type: "text",
+        key: 'week',
+        label: "相对湿度:",
+        mess: "5% ~ 95%",
+        textWidth: 200,
+    }, {
+        type: "text",
+        key: 'week',
+        label: "维保单位:",
+        mess: "xxxxxxxxxx公司",
+        textWidth: 200,
+    }, {
+        type: "text",
+        key: 'week',
+        label: "联系电话:",
+        mess: "155xxxxxxxx",
+        textWidth: 200,
+    },],
 }

@@ -25,8 +25,14 @@ export default {
   },
   data() {
     return {
-      isStatic: false,
+      // isStatic: sessionStorage.getItem("isHiddle") == 'true',
+      isStatic: true
     };
+  },
+  computed: {
+    getIsHidden() {
+      return sessionStorage.getItem("isHiddle")
+    }
   },
   watch: {
     "$route.fullPath": {
@@ -37,9 +43,14 @@ export default {
     },
   },
   computed: {},
-  created() {},
+  created() {
+    // this.isStatic = this.getIsHidden
+    // console.log(11111);
+  },
   mounted() {},
-  methods: {},
+  methods: {
+   
+  },
 };
 </script>
 <style scoped='less'>

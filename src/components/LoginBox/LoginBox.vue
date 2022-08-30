@@ -211,7 +211,8 @@ export default {
       code: '',
       conactPerson: '',
       loginText: this.auth ? '验证' : '登录',
-      version: ''
+      version: '',
+      userLists: [],
     }
   },
   computed: {
@@ -541,7 +542,7 @@ export default {
     //   })
     // },
     // 刷新验证码
-    // freshCode () {
+    freshCode () {
     //   // 获取验证码
     //   if (this.user.captchaValue) {
     //     this.user.captchaValue = ''
@@ -556,7 +557,7 @@ export default {
     //     .on('error', (err) => {
     //       console.log(err)
     //     })
-    // },
+    },
   //  findIP(callback) {
   //       var myPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection; //compatibility for firefox and chrome
   //       var pc = new myPeerConnection({iceServers: []}),
