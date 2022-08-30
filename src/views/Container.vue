@@ -14,7 +14,7 @@
 
 <script>
 import SideNav from "../components/SideNav/SideNav.vue";
-import TopTitle from "../components/TopTitle/TopTitle";
+import TopTitle from "../components/TopTitle/TopTitle.vue";
 import BottomNav from "../components/BottomNav/BottomNav.vue";
 
 export default {
@@ -26,7 +26,7 @@ export default {
   data() {
     return {
       // isStatic: sessionStorage.getItem("isHiddle") == 'true',
-      isStatic: true
+      isStatic: false
     };
   },
   computed: {

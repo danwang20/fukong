@@ -1,5 +1,120 @@
 <template>
-    <div>
-        消防应急照明及疏散指示系统
+  <div class="xfyjzmjsszsxt">
+    <div class="xfyjzmjsszsxt_left">
+      <div class="xfyjzmjsszsxt_left_top">
+        <section class="xfyjzmjsszsxt_left_top_button">
+          <el-button size="mini">三维切换</el-button>
+        </section>
+        <section class="xfyjzmjsszsxt_left_top_model"></section>
+      </div>
+      <div class="xfyjzmjsszsxt_left_bottom">
+        <section class="xfyjzmjsszsxt_left_bottom_title">
+          单个装置基本信息
+        </section>
+        <div class="xfyjzmjsszsxt_left_bottom_message">
+          <section class="xfyjzmjsszsxt_left_bottom_message_left"></section>
+          <section class="xfyjzmjsszsxt_left_bottom_message_right"></section>
+        </div>
+      </div>
     </div>
+    <div class="xfyjzmjsszsxt_center">
+      <Gzp :option="GzpData" :isShow="true" />
+    </div>
+    <div class="xfyjzmjsszsxt_right"></div>
+  </div>
 </template>
+
+<script>
+import Gzp from "../../../components/Gzp/Gzp.vue";
+export default {
+  components: {
+    Gzp,
+  },
+  data() {
+    return {
+      GzpData: [
+        {
+          labelKey: "主供电源故障",
+        },
+        {
+          labelKey: "备供电源故障",
+        },
+        {
+          labelKey: "生产综合科一楼备电工作",
+        },
+        {
+          labelKey: "生产综合科二楼备电工作",
+        },
+        {
+          labelKey: "220kv配电装置楼1楼",
+        },
+      ],
+    };
+  },
+};
+</script>
+
+<style lang="less" scoped>
+.xfyjzmjsszsxt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  .xfyjzmjsszsxt_left {
+    flex: 4;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    .xfyjzmjsszsxt_left_top {
+      flex: 1;
+      background-color: orange;
+      display: flex;
+      flex-direction: column;
+      .xfyjzmjsszsxt_left_top_button {
+        width: 100%;
+        height: 30px;
+        text-align: center;
+      }
+      .xfyjzmjsszsxt_left_top_model {
+        flex: 1;
+        background-color: rgb(148, 102, 16);
+      }
+    }
+    .xfyjzmjsszsxt_left_bottom {
+      flex: 1;
+      background-color: aqua;
+      display: flex;
+      flex-direction: column;
+      .xfyjzmjsszsxt_left_bottom_title {
+        border: 1px solid var(--gzp-default-border);
+        background-color: blue;
+        text-align: center;
+        width: 100%;
+        height: 18px;
+        margin-top: 1px;
+        margin-left: 2px;
+        margin-right: 2px;
+      }
+      .xfyjzmjsszsxt_left_bottom_message {
+        flex: 1;
+        display: flex;
+        .xfyjzmjsszsxt_left_bottom_message_left {
+          flex: 2;
+          background-color: rgb(199, 118, 118);
+        }
+        .xfyjzmjsszsxt_left_bottom_message_right {
+          flex: 1;
+          background-color: rgb(163, 155, 80);
+        }
+      }
+    }
+  }
+  .xfyjzmjsszsxt_center {
+    flex: 1;
+    background-color: yellow;
+  }
+  .xfyjzmjsszsxt_right {
+    flex: 4;
+    background-color: blue;
+  }
+}
+</style>

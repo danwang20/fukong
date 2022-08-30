@@ -35,11 +35,17 @@
           <Jsplumb v-if="refresh" />
         </div>
         <div class="c_right_bottom_bottle">
-          <section class="c_right_bottom_title">操作流程图</section>
+          <section class="c_right_bottom_title">操作区域</section>
           <div class="c_right_bottom_button">
-            <el-button size="mini" style="width: 100px">手动启动</el-button>
-            <el-button size="mini" style="width: 100px">手动停止</el-button>
-            <el-button size="mini" style="width: 100px">紧急停止</el-button>
+            <el-button size="mini" @click="sdqdMethods" style="width: 100px"
+              >手动启动</el-button
+            >
+            <el-button size="mini" @click="sdtzMethods" style="width: 100px"
+              >手动停止</el-button
+            >
+            <el-button size="mini" @click="jjtzMethods" style="width: 100px"
+              >紧急停止</el-button
+            >
           </div>
         </div>
       </div>
@@ -205,6 +211,15 @@ export default {
         this.tableCommonHeight = box_clientHeight - 17;
       });
     },
+    sdqdMethods() {
+      alert("手动启动");
+    },
+    sdtzMethods() {
+      alert("手动停止");
+    },
+    jjtzMethods() {
+      alert("紧急停止");
+    },
   },
 };
 </script>
@@ -241,11 +256,11 @@ export default {
         flex: 1;
         display: flex;
         .c_left_bottom_bottom_left {
-            flex: 1;
+          flex: 1;
           background-color: yellow;
         }
         .c_left_bottom_bottom_right {
-            flex: 1;
+          flex: 1;
           background-color: rgb(11, 202, 27);
         }
       }

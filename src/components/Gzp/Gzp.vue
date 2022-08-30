@@ -102,7 +102,7 @@ export default {
 .gzp-title {
   background-color: blue;
   text-align: center;
-  height: 20px;
+  height: 18px;
   padding: 1px 0px;
 }
 .gzp-content {

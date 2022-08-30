@@ -152,4 +152,67 @@ export default {
             isShow1: false,
         },
     }, ],
+    tableConfig5: [{
+        type: "index",
+        label: "排序"
+    }, {
+        type: "prop",
+        prop: "sbmc",
+        label: "设备名称",
+        // width: "100"
+    }, {
+        type: "prop",
+        prop: "sbzt",
+        label: "设备状态",
+        // width: "100"
+    }, {
+        type: "prop",
+        prop: "dqzt",
+        label: "当前状态",
+        // width: "100"
+    }, {
+        type: "button",
+        label: "操作区",
+        // width: "100",
+        name: "开启",
+        name1: "关闭",
+        methods: {
+            isShow: true,
+            handleEdit(index, row, column) {
+                console.log(index, row, column);
+                // console.log('按钮1');
+                alert('开启')
+            },
+            isShow1: true,
+            handleEdit1(index, row, column) {
+                console.log(index, row, column);
+                // console.log('按钮2');
+                alert('关闭')
+            },
+        },
+    }, ],
+    tableConfig6: [{
+        type: "index",
+        label: "排序"
+    }, {
+        type: "prop",
+        prop: "sbmc",
+        label: "设备名称",
+        // width: "100"
+    }, {
+        type: "prop",
+        prop: "sbzt",
+        label: "规格型号",
+        // width: "100"
+    }, {
+        type: "prop",
+        prop: "dqzt",
+        label: "配置地点",
+        // width: "100"
+    }, {
+        type: "prop",
+        prop: "dqzt",
+        label: "生产厂家",
+        // width: "100"
+    }, ],
 }
