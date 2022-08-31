@@ -4,6 +4,9 @@
       <div class="fireAlarmHostLeft_top">
         <section class="fireAlarmHostLeft_top_left">
         </section>
+        <section class="fireAlarmHostLeft_top_right">
+          <Gzp :option="Gzpdata" :isShow="true" />
+        </section>
       </div>
       <div class="fireAlarmHostLeft_bottom">
         <section class="c-table">
@@ -134,7 +137,7 @@ export default {
       // background-color: blue;
       .fireAlarmHostLeft_top_left {
         flex: 4;
-        // background-color: pink;
+        background-color: pink;
         // .svg {
         //   position: relative;
         //   left: 10%;

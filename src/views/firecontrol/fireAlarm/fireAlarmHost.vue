@@ -2,13 +2,10 @@
   <div class="fireAlarmHost">
     <div class="fireAlarmHostLeft">
       <div class="fireAlarmHostLeft_top">
-        <section class="fireAlarmHostLeft_top_left">
-          <!-- <img class="svg" src="../../../svg/流程图.svg" alt="" srcset=""> -->
-          <Jsplumb />
+        <section class="fireAlarmHostLeft_top_left"></section>
+        <section class="fireAlarmHostLeft_top_right">
+          <Gzp :option="Gzpdata" :isShow="true"/>
         </section>
-        <!-- <section class="fireAlarmHostLeft_top_right">
-          <Gzp :option="Gzpdata"/>
-        </section> -->
       </div>
       <div class="fireAlarmHostLeft_bottom">
         <section class="c-table">
@@ -141,12 +138,7 @@ export default {
       // background-color: blue;
       .fireAlarmHostLeft_top_left {
         flex: 4;
-        // background-color: pink;
-        // .svg {
-        //   position: relative;
-        //   left: 10%;
-        //   top: 100px;
-        // }
+        background-color: pink;
       }
       .fireAlarmHostLeft_top_right {
         // width: 220px;

@@ -20,15 +20,30 @@
     <div class="xfyjzmjsszsxt_center">
       <Gzp :option="GzpData" :isShow="true" />
     </div>
-    <div class="xfyjzmjsszsxt_right"></div>
+    <div class="xfyjzmjsszsxt_right">
+      <section class="xfyjzmjsszsxt_right_title">运行信息</section>
+      <section class="xfyjzmjsszsxt_right_table">
+        <TableCommon
+          :columns="columns"
+          :flexHeight="tableCommonHeight"
+          :tableMaxWidth="tableMaxWidth"
+          :showPagination="false"
+          :api="tableApi"
+          :recSpan="recSpan"
+        />
+      </section>
+    </div>
   </div>
 </template>
 
 <script>
 import Gzp from "../../../components/Gzp/Gzp.vue";
+import TableCommon from "../../../components/TableCommon/TableCommon.vue";
+import TableCommonConfig from "../../../components/TableCommon/TableCommonConfig";
 export default {
   components: {
     Gzp,
+    TableCommon,
   },
   data() {
     return {
@@ -46,10 +61,39 @@ export default {
           labelKey: "生产综合科二楼备电工作",
         },
         {
-          labelKey: "220kv配电装置楼1楼",
+          labelKey: "220kv配电装置楼一楼系统应急工作状态(备电工作)",
+        },
+      ],
+      columns: TableCommonConfig.tableConfig7,
+      tableCommonHeight: 400,
+      tableMaxWidth: 1000,
+      tableApi: "api/sczhl",
+      recSpan: [
+        {
+          spanName: "dz",
+          spanLabel: "地址",
         },
       ],
     };
+  },
+  mounted() {
+    this.getTableMaxHeight();
+    for (let i = 0; i < 2; i++) {
+      setTimeout(() => {
+        this.getTableMaxHeight();
+      }, 1000);
+    }
+  },
+  methods: {
+    getTableMaxHeight() {
+      this.$nextTick(function () {
+        let box = document.querySelector(".xfyjzmjsszsxt_center").attributes;
+        // console.log(box);
+        let box_clientHeight = box[0].ownerElement.clientHeight;
+        console.log(box_clientHeight - 18);
+        this.tableCommonHeight = box_clientHeight - 18;
+      });
+    },
   },
 };
 </script>
@@ -114,7 +158,20 @@ export default {
   }
   .xfyjzmjsszsxt_right {
     flex: 4;
-    background-color: blue;
+    background-color: rgb(0, 255, 42);
+    display: flex;
+    flex-direction: column;
+    .xfyjzmjsszsxt_right_title {
+      border: 1px solid var(--gzp-default-border);
+      border-bottom: 0px;
+      background-color: blue;
+      text-align: center;
+      width: 100%;
+      height: 18px;
+    }
+    .xfyjzmjsszsxt_right_table {
+      flex: 1;
+    }
   }
 }
 </style>

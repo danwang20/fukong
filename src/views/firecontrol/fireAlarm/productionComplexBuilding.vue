@@ -2,7 +2,13 @@
   <div class="ProductionComplexBuilding">
     <div class="c_left">
       <div class="c_left_top"></div>
-      <div class="c_left_bottom"></div>
+      <div class="c_left_bottom">
+        <section class="c_left_bottom_title">单个装置基本信息</section>
+        <div class="c_left_bottom_message">
+          <section class="c_left_bottom_message_left"></section>
+          <section class="c_left_bottom_message_right"></section>
+        </div>
+      </div>
     </div>
     <div class="c_right">
       <section class="c_title">运行信息</section>
@@ -31,7 +37,7 @@ export default {
     return {
       columns: TableCommonConfig.tableConfig3,
       tableCommonHeight: 400,
-      tableMaxWidth: 800,
+      tableMaxWidth: 1000,
       tableApi: "api/sczhl",
       recSpan: [
         {
@@ -76,8 +82,31 @@ export default {
       flex: 1;
     }
     .c_left_bottom {
-      background-color: blue;
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      .c_left_bottom_title {
+        border: 1px solid var(--gzp-default-border);
+        background-color: blue;
+        text-align: center;
+        width: 100%;
+        height: 18px;
+        margin-top: 1px;
+        margin-left: 2px;
+        margin-right: 2px;
+      }
+      .c_left_bottom_message {
+        flex: 1;
+        display: flex;
+        .c_left_bottom_message_left {
+          flex: 2;
+          background-color: pink;
+        }
+        .c_left_bottom_message_right {
+          flex: 1;
+          background-color: green;
+        }
+      }
     }
   }
   .c_right {
@@ -88,7 +117,7 @@ export default {
       text-align: center;
       border: 1px solid var(--gzp-default-border);
       border-bottom: 0px;
-      background-color: #002b7c;
+      background-color: blue;
     }
     .c-table {
       width: 100%;

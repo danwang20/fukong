@@ -1,9 +1,18 @@
 <template>
   <div>
-    <el-table
+    <!-- <el-table
       :data="tableDatas"
       :border="true"
       :style="{ maxWidth: outWidth + 'px' }"
+      :height="flexHeight"
+      @cell-dblclick="cellClick"
+      :cell-style="curMethods.cellStyle"
+      :span-method="objectSpanMethod"
+      class="c-table"
+    > -->
+     <el-table
+      :data="tableDatas"
+      :border="true"
       :height="flexHeight"
       @cell-dblclick="cellClick"
       :cell-style="curMethods.cellStyle"
@@ -99,7 +108,8 @@ export default {
         console.log(val);
         console.log(this.getMaxWidth);
         if (val == true) {
-          this.outWidth = this.getMaxWidth + 345;
+          // this.outWidth = this.getMaxWidth + 345;
+          this.outWidth = this.getMaxWidth;
         } else {
           this.outWidth = this.getMaxWidth;
         }

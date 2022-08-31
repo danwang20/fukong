@@ -1,11 +1,13 @@
 <template>
-  <div class="fireAlarmHost">
-    <div class="fireAlarmHostLeft">
-      <div class="fireAlarmHostLeft_top">
-        <section class="fireAlarmHostLeft_top_left">
+  <div class="byqspwmh">
+    <div class="byqspwmh_Left">
+      <div class="byqspwmh_Left_top">
+        <section class="byqspwmh_Left_top_left"></section>
+        <section class="byqspwmh_Left_top_right">
+          <Gzp :option="Gzpdata" :isShow="true" />
         </section>
       </div>
-      <div class="fireAlarmHostLeft_bottom">
+      <div class="byqspwmh_Left_bottom">
         <section class="c-table">
           <TableCommon
             :columns="columns"
@@ -18,15 +20,15 @@
         </section>
       </div>
     </div>
-    <div class="fireAlarmHostRight">
-      <section class="fireAlarmHostRight_top">
+    <div class="byqspwmh_Right">
+      <section class="byqspwmh_Right_top">
         <Descriptions
           :descriptionCigfer="descriptionData.config4"
           :formHeight="formHeight"
           :desTitle="desTitle.title1"
         />
       </section>
-      <section class="fireAlarmHostRight_bottom">
+      <section class="byqspwmh_Right_bottom">
         <Descriptions
           :descriptionCigfer="descriptionData.config5"
           :formHeight="formHeight"
@@ -99,7 +101,7 @@ export default {
   methods: {
     getTableMaxHeight() {
       this.$nextTick(function () {
-        let box = document.querySelector(".fireAlarmHostLeft").attributes;
+        let box = document.querySelector(".byqspwmh_Left").attributes;
         let box_clientWidth = box[0].ownerElement.clientWidth;
         // console.log(box_clientWidth);
         this.tableMaxWidth = box_clientWidth;
@@ -119,36 +121,36 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.fireAlarmHost {
+.byqspwmh {
   width: 100%;
   height: 100%;
   display: flex;
-  .fireAlarmHostLeft {
+  .byqspwmh_Left {
     flex: 4;
     // background-color: red;
     display: flex;
     flex-direction: column;
-    .fireAlarmHostLeft_top {
+    .byqspwmh_Left_top {
       flex: 1;
       display: flex;
       // background-color: blue;
-      .fireAlarmHostLeft_top_left {
+      .byqspwmh_Left_top_left {
         flex: 4;
-        // background-color: pink;
+        background-color: pink;
         // .svg {
         //   position: relative;
         //   left: 10%;
         //   top: 100px;
         // }
       }
-      .fireAlarmHostLeft_top_right {
+      .byqspwmh_Left_top_right {
         // width: 220px;
         flex: 1;
         background-color: yellow;
         display: flex;
       }
     }
-    .fireAlarmHostLeft_bottom {
+    .byqspwmh_Left_bottom {
       flex: 1;
       display: flex;
       // background-color: orange;
@@ -157,17 +159,17 @@ export default {
       }
     }
   }
-  .fireAlarmHostRight {
+  .byqspwmh_Right {
     display: flex;
     flex-direction: column;
     flex: 1;
     // width: 300px;
     // background-color: green;
-    .fireAlarmHostRight_top {
+    .byqspwmh_Right_top {
       flex: 1;
       background-color: green;
     }
-    .fireAlarmHostRight_bottom {
+    .byqspwmh_Right_bottom {
       flex: 1;
       background-color: orange;
     }

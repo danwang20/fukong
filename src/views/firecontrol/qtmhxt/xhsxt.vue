@@ -35,14 +35,14 @@
         </section>
       </div>
       <div class="xhsxt_right_bottom">
-        <section class="xhsxt_right_bottom_title">消火栓系统</section>
+        <section class="xhsxt_right_bottom_title">消火栓信息</section>
         <section class="xhsxt_right_bottom_table">
           <TableCommon
             :columns="columns1"
             :flexHeight="tableCommonHeight1"
             :tableMaxWidth="tableMaxWidth1"
             :showPagination="false"
-            :api="tableApi"
+            :api="tableApi1"
             :recSpan="recSpan"
           />
         </section>
@@ -75,12 +75,13 @@ export default {
       tableCommonHeight: 400,
       tableCommonHeight1: 400,
       tableMaxWidth: 800,
-      tableMaxWidth1: 800,
-      tableApi: "api/sczhl",
+      tableMaxWidth1: 1000,
+      tableApi: "api/xfsxt_yxxx",
+      tableApi1: "api/xhsxt_xhsxx",
       recSpan: [
         {
-          spanName: "dz",
-          spanLabel: "地址",
+          spanName: "sbmc",
+          spanLabel: "设备名称",
         },
       ],
     };

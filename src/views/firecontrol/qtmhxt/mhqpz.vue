@@ -42,7 +42,7 @@ export default {
     return {
       columns: TableCommonConfig.tableConfig5,
       tableCommonHeight: 400,
-      tableMaxWidth: 800,
+      tableMaxWidth: 1000,
       tableApi: "api/sczhl",
       recSpan: [
         {

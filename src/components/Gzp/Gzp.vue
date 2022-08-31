@@ -123,7 +123,7 @@ export default {
   position: relative;
   display: inline-block;
   width: 180px;
-  height: 30px;
+  max-height: 60px;
   text-align: center;
   padding: var(--middle-space) var(--extra-space);
   background-color: var(--gzp-default-background-color);

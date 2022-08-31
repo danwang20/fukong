@@ -201,18 +201,62 @@ export default {
         // width: "100"
     }, {
         type: "prop",
-        prop: "sbzt",
+        prop: "xhgg",
         label: "规格型号",
         // width: "100"
     }, {
         type: "prop",
-        prop: "dqzt",
+        prop: "pzdd",
+        label: "配置地点",
+        // width: "100"
+    }, {
+        type: "prop",
+        prop: "sccj",
+        label: "生产厂家",
+        // width: "100"
+    }, ],
+    tableConfig7: [{
+        type: "index",
+        label: "排序"
+    }, {
+        type: "prop",
+        prop: "sbmc",
+        label: "所在区域",
+        // width: "100"
+    }, {
+        type: "prop",
+        prop: "sbzt",
         label: "配置地点",
         // width: "100"
     }, {
         type: "prop",
         prop: "dqzt",
-        label: "生产厂家",
+        label: "防火门",
         // width: "100"
-    }, ],
+    }, {
+        type: "prop",
+        prop: "dqzt",
+        label: "疏散指示",
+        // width: "100"
+    }, {
+        type: "prop",
+        prop: "dqzt",
+        label: "应急照明",
+        // width: "100"
+    },{
+        type: "button",
+        label: "操作区",
+        // width: "100",
+        name: "开启",
+        // name1: "关闭",
+        methods: {
+            isShow: true,
+            handleEdit(index, row, column) {
+                console.log(index, row, column);
+                // console.log('按钮1');
+                alert('开启')
+            },
+            isShow1: false,
+        },
+    },],
 }
