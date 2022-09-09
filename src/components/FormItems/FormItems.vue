@@ -40,6 +40,7 @@
           :key="index"
           :curConfig="item.configData"
           :methods="item.methods"
+          :postData="item.postData"
         />
       </template>
     </el-form>

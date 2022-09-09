@@ -1,14 +1,14 @@
 <template>
   <el-form-item :label="curConfig.title" class="c--form-datePicker">
     <el-date-picker
-      v-model="curConfig.datePickerData"
+      v-model="datePickerData"
       type="datetimerange"
       :picker-options="curConfig.pickerOptions"
       range-separator="至"
       start-placeholder="开始日期"
       end-placeholder="结束日期"
       align="right"
-      @change="curMethods.changeDatePicker"
+      @change="changeDatePicker"
     >
     </el-date-picker>
   </el-form-item>
@@ -23,6 +23,7 @@ export default {
           console.log(data);
         },
       },
+      datePickerData: "",
     };
   },
   props: {
@@ -44,7 +45,13 @@ export default {
       return Object.assign({}, this.defaultMethods, this.methods);
     },
   },
-  methods: {},
+  methods: {
+    changeDatePicker(data) {
+      let date = JSON.stringify(data)
+      this.$store.commit("getFormData", ['datepicker',date]);
+      console.log(JSON.parse(this.$store.state.formData.datepicker));
+    },
+  },
 };
 </script>
 

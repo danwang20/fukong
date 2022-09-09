@@ -1,22 +1,14 @@
 <template>
   <div>
-    <!-- <el-table
+    <el-table
       :data="tableDatas"
       :border="true"
-      :style="{ maxWidth: outWidth + 'px' }"
+      :max-height="flexHeight"
       :height="flexHeight"
       @cell-dblclick="cellClick"
       :cell-style="curMethods.cellStyle"
       :span-method="objectSpanMethod"
-      class="c-table"
-    > -->
-     <el-table
-      :data="tableDatas"
-      :border="true"
-      :height="flexHeight"
-      @cell-dblclick="cellClick"
-      :cell-style="curMethods.cellStyle"
-      :span-method="objectSpanMethod"
+      :header-cell-style="headerStyle"
       class="c-table"
     >
       <template v-for="(column, index) in columns">
@@ -53,10 +45,6 @@ export default {
       type: Array,
       default: () => [],
     },
-    // tableData: {
-    //   type: Array,
-    //   default: () => [],
-    // },
     flexHeight: {
       type: Number,
       default: 800,
@@ -77,12 +65,12 @@ export default {
     },
     recSpan: {
       type: Array,
-      default: () => [],
+      default: () => [{ spanName: "", spanLabel: "" }],
     },
     api: {
       type: String,
       default: "",
-    }
+    },
   },
   computed: {
     getTableIsClick() {
@@ -141,12 +129,23 @@ export default {
       defaultRecSpan: [],
       tableDatas: [],
       allSpan: [],
+      labelSpanArr: [
+        {
+          labelName: "操作区",
+        },
+        {
+          labelName: "操作区1",
+        },
+        {
+          labelName: "操作区",
+        },
+      ],
     };
   },
   created() {
     console.log(this.getRowSpan);
     this.getData();
-    console.log('111111',this.api);
+    console.log("111111", this.api);
   },
   mounted() {
     setTimeout(() => {
@@ -204,6 +203,10 @@ export default {
           };
           _this.allSpan.push(hebing);
         }
+        -_this.allSpan.push({
+          label: "操作区2",
+          column: _this.allSpan[0].column,
+        });
         console.log(_this.allSpan);
       });
     },
@@ -239,6 +242,21 @@ export default {
       });
       return spanArr;
       console.log(spanArr);
+    },
+    headerStyle({ row, colunm, rowIndex, columnIndex }) {
+      // console.log(row, colunm, rowIndex, columnIndex);
+      //  row[7].colspan = 3
+      //  row[8].colspan = 0
+      //  row[9].colspan = 0
+      // if (columnIndex == 7) {
+      //   row[7].colspan = 3
+      // }
+      // if (columnIndex == 8) {
+      //   return { display: "none" };
+      // }
+      // if (columnIndex == 9) {
+      //   return { display: "none" };
+      // }
     },
   },
 };

@@ -8,6 +8,7 @@ export default new Vuex.Store({
     tableIsClick: false,
     isHidden: false,
     test: '123',
+    formData: {},
   },
   mutations: {
     changeTableIsClick(state,params) {
@@ -18,6 +19,9 @@ export default new Vuex.Store({
     },
     testMethods(state,params) {
       state.test = params
+    },
+    getFormData(state,[key,value]) {
+      state.formData[key] = value
     }
   },
   actions: {},

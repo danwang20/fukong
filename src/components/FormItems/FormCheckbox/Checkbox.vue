@@ -5,9 +5,9 @@
       @change="curMethods.handleCheckedChange"
     >
       <el-checkbox
-        v-for="checked in curConfig.chaeckData"
+        v-for="(checked, index) in curConfig.chaeckData"
         :label="checked"
-        :key="checked"
+        :key="index"
         >{{ checked }}</el-checkbox
       >
     </el-checkbox-group>
@@ -23,6 +23,7 @@ export default {
           console.log(data);
         },
       },
+      checkedCities: "",
     };
   },
   props: {

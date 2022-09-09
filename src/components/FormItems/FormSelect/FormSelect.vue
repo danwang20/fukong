@@ -1,7 +1,7 @@
 <template>
   <el-form-item :label="curConfig.title" class="c--form-select">
     <el-select
-      v-model="curConfig.selected"
+      v-model="selected"
       :disabled="curConfig.disabled"
       :placeholder="curConfig.placeholder"
       :clearable="curConfig.clearable"
@@ -30,6 +30,7 @@ export default {
           console.log(data);
         },
       },
+      selected: "",
     };
   },
   props: {

@@ -83,9 +83,7 @@ export default {
 .gzp-box {
   position: relative;
   width: 100%;
-  /* height: 500px; */
-  /* top: 50px; */
-  /* left: 100px; */
+  /* max-height: 490.5px; */
   display: flex;
   flex-direction: column;
   /* background-color: var(--table-default-background-color); */
@@ -109,15 +107,9 @@ export default {
   position: relative;
   flex: 1;
   width: 100%;
-  height: calc(100% - 40px);
+  height: 100%;
   overflow: auto;
-  /* padding-top: var(--extra-space); */
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around;
-  /* background-color: blue; */
 }
 .gzp-list {
   position: relative;
@@ -130,9 +122,10 @@ export default {
   border: 1px solid var(--gzp-default-border);
   border-radius: 2px;
   /* margin-left: var(--middle-space); */
-  /* margin-left: 3px; */
-  /* margin-right: 3px; */
-  /* margin-bottom: var(--extra-space); */
+  margin-top: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 2px;
   font-size: 12px;
   color: white;
   /* min-height: 50px; */

@@ -4,7 +4,7 @@
       <div class="fireAlarmHostLeft_top">
         <section class="fireAlarmHostLeft_top_left"></section>
         <section class="fireAlarmHostLeft_top_right">
-          <Gzp :option="Gzpdata" :isShow="true"/>
+          <Gzp :option="Gzpdata" :isShow="true" />
         </section>
       </div>
       <div class="fireAlarmHostLeft_bottom">
@@ -16,6 +16,7 @@
             :tableMaxWidth="tableMaxWidth"
             :showPagination="false"
             :api="tableApi"
+            :recSpan="recSpan"
           />
         </section>
       </div>
@@ -89,6 +90,12 @@ export default {
         title2: "运行信息",
       },
       tableApi: "api/hzbjzj_zzsm",
+      recSpan: [
+        {
+          spanName: "zdmc",
+          spanLabel: "站点名称",
+        },
+      ],
     };
   },
   mounted() {

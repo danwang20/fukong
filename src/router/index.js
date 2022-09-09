@@ -21,6 +21,8 @@ import Qtmhxt from '../views/firecontrol/qtmhxt/qtmhxt.vue'
 import Xhsxt from '../views/firecontrol/qtmhxt/xhsxt.vue'
 import Mhqpz from '../views/firecontrol/qtmhxt/mhqpz.vue'
 import Xfyjzmjsszsxt from '../views/firecontrol/qtmhxt/xfyjzmjsszsxt.vue'
+import SafetyPrecautions from '../views/safetyPrecautions/safetyPrecautions.vue'
+import AroundTheSubstation from '../views/safetyPrecautions/aroundTheSubstation.vue'
 const originalPush = VueRouter.prototype.push
 
 VueRouter.prototype.push = function push(location) {
@@ -132,6 +134,16 @@ const routes = [{
         path: '/xfyjzmjsszsxt',
         name: 'xfyjzmjsszsxt',
         component: Xfyjzmjsszsxt
+      },
+      {
+        path: '/safetyPrecautions',
+        name: 'safetyPrecautions',
+        component: SafetyPrecautions
+      },
+      {
+        path: '/aroundTheSubstation',
+        name: 'aroundTheSubstation',
+        component: AroundTheSubstation
       },
     ]
   },

@@ -342,4 +342,72 @@ export default {
         mess: "155xxxxxxxx",
         textWidth: 200,
     }, ],
+    descriptionsConfig8: [{
+        type: "text",
+        label: "门禁控制器:",
+        mess: "3个",
+        textWidth: 200,
+    },{
+        type: "text",
+        label: "门禁:",
+        mess: "9个",
+        textWidth: 200,
+    },{
+        type: "text",
+        label: "电子围栏控制器:",
+        mess: "5个",
+        textWidth: 200,
+    },{
+        type: "text",
+        label: "红外对射设备:",
+        mess: "3个",
+        textWidth: 200,
+    },{
+        type: "text",
+        label: "红外双鉴设备:",
+        mess: "11个",
+        textWidth: 200,
+    },],
+    descriptionsConfig9: [{
+        type: "text",
+        label: "门禁控制器:",
+        mess: "正常3个 异常0个",
+        textWidth: 200,
+    },{
+        type: "text",
+        label: "门禁:",
+        mess: "正常3个 异常0个",
+        textWidth: 200,
+    },{
+        type: "text",
+        label: "电子围栏控制器:",
+        mess: "正常5个 异常0个",
+        textWidth: 200,
+    },{
+        type: "text",
+        label: "红外对射设备:",
+        mess: "正常3个 异常0个",
+        textWidth: 200,
+    },{
+        type: "text",
+        label: "红外双鉴设备:",
+        mess: "正常11个 异常0个",
+        textWidth: 200,
+    },],
+    descriptionsConfig10: [{
+        type: "text",
+        label: "变电站电子围栏控制器设备状态:",
+        mess: "正常",
+        textWidth: 200,
+    },{
+        type: "text",
+        label: "变电站电子围栏控制器通讯状态:",
+        mess: "正常",
+        textWidth: 200,
+    },{
+        type: "text",
+        label: "变电站大门红外对射设备状态:",
+        mess: "正常",
+        textWidth: 200,
+    },],
 }

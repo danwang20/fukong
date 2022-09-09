@@ -243,7 +243,7 @@ export default {
         prop: "dqzt",
         label: "应急照明",
         // width: "100"
-    },{
+    }, {
         type: "button",
         label: "操作区",
         // width: "100",
@@ -258,5 +258,140 @@ export default {
             },
             isShow1: false,
         },
-    },],
+    }, ],
+    tableConfig8: [{
+        type: "index",
+        label: "排序",
+        width: 0
+    }, {
+        type: "prop",
+        prop: "wz",
+        label: "位置",
+    }, {
+        type: "prop",
+        prop: "sbmc",
+        label: "设备名称",
+    }, {
+        type: "prop",
+        prop: "sbzt",
+        label: "设备状态",
+    }, {
+        type: "prop",
+        prop: "txzt",
+        label: "通讯状态",
+    }, {
+        type: "prop",
+        prop: "jtdz",
+        label: "具体地址",
+    }, {
+        type: "prop",
+        prop: "kgzt",
+        label: "开关状态",
+    }, {
+        type: "button",
+        label: "操作区1",
+        width: "80",
+        name: "开启",
+        // name1: "关闭",
+        methods: {
+            isShow: true,
+            handleEdit(index, row, column) {
+                console.log(index, row, column);
+                // console.log('按钮1');
+                alert('开启')
+            },
+            isShow1: false,
+        },
+    }, {
+        type: "button",
+        label: "操作区2",
+        width: "80",
+        name: "开",
+        name1: "关",
+        methods: {
+            isShow: true,
+            handleEdit(index, row, column) {
+                console.log(index, row, column);
+                // console.log('按钮1');
+                alert('开启')
+            },
+            isShow1: true,
+            handleEdit1(index, row, column) {
+                console.log(index, row, column);
+                // console.log('按钮1');
+                alert('开启')
+            },
+        },
+    }, {
+        type: "button",
+        label: "操作区3",
+        width: "80",
+        name: "重启",
+        // name1: "关闭",
+        methods: {
+            isShow: true,
+            handleEdit(index, row, column) {
+                console.log(index, row, column);
+                // console.log('按钮1');
+                alert('开启')
+            },
+            isShow1: false,
+        },
+    }, ],
+    tableConfig9: [{
+        type: "index",
+        label: "排序",
+        width: 0
+    }, {
+        type: "prop",
+        prop: "szqy",
+        label: "所在区域",
+    }, {
+        type: "prop",
+        prop: "sbmc",
+        label: "设备名称",
+    }, {
+        type: "prop",
+        prop: "yxzt",
+        label: "运行状态",
+    }, {
+        type: "button",
+        label: "操作区3",
+        width: "150",
+        name: "布防",
+        name1: "撤防",
+        methods: {
+            isShow: true,
+            handleEdit(index, row, column) {
+                console.log(index, row, column);
+                alert('布防')
+            },
+            isShow1: true,
+            handleEdit1(index, row, column) {
+                console.log(index, row, column);
+                alert('撤防')
+            },
+        },
+    }, ],
+    tableConfig10: [{
+        type: "index",
+        label: "排序",
+        width: 0
+    }, {
+        type: "prop",
+        prop: "mc",
+        label: "名称",
+    }, {
+        type: "prop",
+        prop: "czsj",
+        label: "操作时间",
+    }, {
+        type: "prop",
+        prop: "cz",
+        label: "操作",
+    },{
+        type: "prop",
+        prop: "czr",
+        label: "操作人",
+    }, ]
 }

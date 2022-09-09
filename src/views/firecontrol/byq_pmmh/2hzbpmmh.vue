@@ -144,30 +144,6 @@ export default {
         {
           labelKey: "火灾报警器1报警",
         },
-        {
-          labelKey: "火灾报警器1报警",
-        },
-        {
-          labelKey: "火灾报警器1报警",
-        },
-        {
-          labelKey: "火灾报警器1报警",
-        },
-        {
-          labelKey: "火灾报警器1报警",
-        },
-        {
-          labelKey: "火灾报警器1报警",
-        },
-        {
-          labelKey: "火灾报警器1报警",
-        },
-        {
-          labelKey: "火灾报警器1报警",
-        },
-        {
-          labelKey: "火灾报警器1报警",
-        },
       ],
     };
   },
@@ -298,6 +274,7 @@ export default {
       flex-direction: column;
       justify-content: space-between;
       border: 1px solid var(--gzp-default-border);
+      border-top: 0px;
       .c_right_bottom_title {
         border: 1px solid var(--gzp-default-border);
         background-color: blue;

@@ -1,6 +1,6 @@
 <template>
   <el-form-item :label="curConfig.title">
-    <el-button :type="curConfig.type" @click="curMethods.buttonClick" plain>{{
+    <el-button :type="curConfig.type" @click="buttonClick" plain>{{
       curConfig.buttonName
     }}</el-button>
   </el-form-item>
@@ -30,13 +30,31 @@ export default {
         return {};
       },
     },
+    postData: {
+      type: Object,
+      default: () => {
+        return {};
+      },
+    },
   },
   computed: {
     curMethods() {
       return Object.assign({}, this.defaultMethods, this.methods);
     },
   },
-  methods: {},
+  mounted() {
+    console.log(this.postData);
+  },
+  methods: {
+    buttonClick() {
+      // this.$store.commit("getFormData", ['input0','123']);
+      // this.$store.commit("getFormData", ['input1','123']);
+      // this.$store.commit("getFormData", ['input2','123']);
+      // this.$store.commit("getFormData", ['input3','123']);
+      // this.$store.commit("getFormData", ['input4','123']);
+      console.log(this.$store.state.formData);
+    },
+  },
 };
 </script>
 

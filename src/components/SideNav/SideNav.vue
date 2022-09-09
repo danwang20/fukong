@@ -15,14 +15,14 @@
     </div>
     <div class="side-nav-wrapper">
       <!-- <el-input
-      v-show="isHome"
-      placeholder="输入关键字进行过滤"
-      v-model="filterText"
-    >
-    </el-input> -->
+        v-show="isHome"
+        placeholder="输入关键字进行过滤"
+        v-model="filterText"
+      >
+      </el-input> -->
       <el-tree
         class="tree"
-        :default-expand-all="false"
+        :default-expand-all="true"
         ref="sTree"
         :data="menuLists"
         :props="defaultProps"
@@ -296,6 +296,7 @@ export default {
           selected: false,
           disabled: false,
           loading: false,
+          path: "/safetyPrecautions",
           children: [
             {
               id: 200,
@@ -306,6 +307,7 @@ export default {
               selected: true,
               disabled: false,
               loading: false,
+              path: "/aroundTheSubstation",
             },
             {
               id: 201,
@@ -452,7 +454,7 @@ export default {
               loading: false,
               children: [
                 {
-                  id: 3021,
+                  id: 3020,
                   text: "Same but with checkboxes",
                   value: "2号主变局放",
                   icon: "",
@@ -462,7 +464,7 @@ export default {
                   loading: false,
                 },
                 {
-                  id: 3022,
+                  id: 3021,
                   text: "Same but with checkboxes",
                   value: "主变阈值配置",
                   icon: "",
@@ -484,7 +486,7 @@ export default {
               loading: false,
               children: [
                 {
-                  id: 3031,
+                  id: 3030,
                   text: "Same but with checkboxes",
                   value: "220v避雷器在线监测",
                   icon: "",
@@ -494,7 +496,7 @@ export default {
                   loading: false,
                 },
                 {
-                  id: 3032,
+                  id: 3031,
                   text: "Same but with checkboxes",
                   value: "避雷器阈值配置",
                   icon: "",
@@ -516,7 +518,7 @@ export default {
               loading: false,
               children: [
                 {
-                  id: 3041,
+                  id: 3040,
                   text: "Same but with checkboxes",
                   value: "2245甲母联间隙",
                   icon: "",
@@ -526,7 +528,7 @@ export default {
                   loading: false,
                 },
                 {
-                  id: 3052,
+                  id: 3041,
                   text: "Same but with checkboxes",
                   value: "GISSF6阈值配置",
                   icon: "",
@@ -538,7 +540,7 @@ export default {
               ],
             },
             {
-              id: 304,
+              id: 305,
               text: "Same but with checkboxes",
               value: "室内SF6压力在线监测",
               icon: "",
@@ -548,7 +550,7 @@ export default {
               loading: false,
               children: [
                 {
-                  id: 3041,
+                  id: 3050,
                   text: "Same but with checkboxes",
                   value: "220kvGIS室",
                   icon: "",
@@ -558,7 +560,7 @@ export default {
                   loading: false,
                 },
                 {
-                  id: 3052,
+                  id: 3051,
                   text: "Same but with checkboxes",
                   value: "室内SF6阈值配置",
                   icon: "",
@@ -686,6 +688,7 @@ export default {
               selected: false,
               disabled: false,
               loading: false,
+              path: "/zhongkong",
             },
             {
               id: 601,
@@ -944,7 +947,7 @@ export default {
       if (data.path) {
         this.$router.push(data.path);
       } else {
-        alert('暂没有路由！')
+        alert("暂没有路由！");
       }
     },
     changeIsHidden() {

@@ -1,6 +1,12 @@
 <template>
   <div class="fireAlarm">
     <div class="c_left">
+      <section class="c_left_button">
+        <el-button size="mini">3维图切换</el-button>
+      </section>
+      <section class="c_left_svg">
+        <img src="../../../assets/svg/火灾报警网络架构图.svg" alt="111" />
+      </section>
     </div>
     <div class="c_center">
       <section class="c_center_1">
@@ -227,7 +233,18 @@ export default {
   display: flex;
   .c_left {
     flex: 5;
-    background-color: red;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    .c_left_button {
+      text-align: center;
+      height: 30px;
+    }
+    .c_left_svg {
+      flex: 1;
+      text-align: center;
+      background-color: rgb(0, 110, 255);
+    }
   }
   .c_center {
     // width: 440px;
@@ -270,7 +287,7 @@ export default {
   .c_right {
     // width: 300px;
     flex: 2;
-    // background-color: pink;  
+    // background-color: pink;
     display: flex;
     flex-direction: column;
     .c_right_1 {

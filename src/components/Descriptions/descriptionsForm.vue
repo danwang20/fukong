@@ -2,7 +2,7 @@
   <div>
     <el-form
       ref="form"
-      label-width="80px"
+      :label-width="labelWidth + 'px'"
       :inline="true"
       size="mini"
       class="c-desForm"
@@ -46,6 +46,10 @@ export default {
     desTitle: {
       type: String,
       default: "xxxx",
+    },
+    labelWidth: {
+      type: Number,
+      default: 120
     }
   },
 };

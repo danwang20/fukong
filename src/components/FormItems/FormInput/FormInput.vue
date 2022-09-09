@@ -2,8 +2,8 @@
   <el-form-item :label="curConfig.title" class="c--form-input">
     <el-input
       placeholder="请输入内容"
-      v-model="curConfig.value"
-      @change="curMethods.inputChange"
+      v-model="value"
+      @change="inputChange"
       clearable
     >
     </el-input>
@@ -19,6 +19,7 @@ export default {
           console.log(data);
         },
       },
+      value: "",
     };
   },
   props: {
@@ -41,7 +42,10 @@ export default {
     },
   },
   methods: {
-   
+    inputChange(data) {
+      this.$store.commit("getFormData", [this.curConfig.name, data]);
+      console.log(this.$store.state.formData);
+    },
   },
 };
 </script>

@@ -1,7 +1,7 @@
  <template>
   <div class="cotent-box" style="height: 100%; display: flex">
     <section class="form-box">
-      <FormItem :formItems="formItems" />
+      <FormItem v-if="isFormItem" :formItems="formItems" />
     </section>
     <section class="c-table">
       <TableCommon
@@ -65,8 +65,9 @@ export default {
           methods: {
             changeDatePicker(data) {
               console.log("父: " + JSON.stringify(data));
-              console.log(data);
               sessionStorage.setItem("FormDatePicker", JSON.stringify(data));
+              let date = JSON.parse(JSON.stringify(data));
+              console.log(date);
             },
           },
         },
@@ -84,6 +85,7 @@ export default {
         {
           type: "button",
           configData: FormItemsConfig.button.buttonConfig1,
+          postData: {111:111},
           methods: {
             buttonClick() {
               console.log("父: 点击了按钮");
@@ -205,19 +207,24 @@ export default {
           spanLabel: "告警级别",
         },
       ],
-      tableApi: "api/qzbwlist"
+      tableApi: "api/qzbwlist",
+      isFormItem: true,
+      postData: {
+        asd: 123,
+        zxc: 456,
+      },
     };
   },
   watch: {},
   created() {
-    this.getData();
+    // this.getData();
   },
   mounted() {
     this.getTableMaxHeight();
     for (let i = 0; i < 3; i++) {
       setTimeout(() => {
         this.getTableMaxHeight();
-      }, 1000);
+      }, 100);
     }
   },
   methods: {
