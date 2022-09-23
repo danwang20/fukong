@@ -2,14 +2,20 @@
 <template>
   <div class="zmzhl">
     <div class="zmzhl_left">
-      <div class="zmzhl_left_top"></div>
-      <div class="zmzhl_left_bottom">
+      <div class="zmzhl_left_top">
+        <img
+          style="position: relative; top: 60px; width: 60%"
+          src="../../assets/svg/照明生产综合楼.svg"
+          alt="111"
+        />
+      </div>
+      <!-- <div class="zmzhl_left_bottom">
         <section class="zmzhl_left_bottom_title">单个装置基本信息</section>
         <div class="zmzhl_left_bottom_message">
           <section class="zmzhl_left_bottom_message_left"></section>
           <section class="zmzhl_left_bottom_message_right"></section>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="zmzhl_right">
       <section class="zmzhl_right_title">运行信息</section>
@@ -120,7 +126,8 @@ export default {
     flex-direction: column;
     .zmzhl_left_top {
       flex: 2;
-      background-color: red;
+      // background-color: red;
+      text-align: center;
     }
     .zmzhl_left_bottom {
       flex: 1;

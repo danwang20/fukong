@@ -148,67 +148,258 @@
 
 <script>
 export default {
-  name: 'MessageBox',
+  name: "MessageBox",
   props: {
     option: {
       type: Object,
       default: () => {
-        return {}
-      }
+        return {};
+      },
     },
     methods: {
       type: Object,
       default: () => {
-        return {}
-      }
+        return {};
+      },
     },
     api: {
       type: Object,
       default: () => {
-        return {}
-      }
-    }
+        return {};
+      },
+    },
   },
-  data () {
+  data() {
     return {
       defaultOption: {
-        title: '标题',
-        type: 'msg',
+        title: "标题",
+        type: "msg",
         template: null,
-        labelKey: 'label',
-        valueKey: 'value'
-
+        labelKey: "id",
+        valueKey: "sjNr",
       },
-      lists: [{"id":1054628,"stationId":1,"stationMc":"瓶窑变","sbMc":"1号主变跳闸_14","sjNr":"1回路14地址-1号主变跳闸","gjLx":3,"gjJb":2,"pgMc":"1号主变","firstZxtMc":"火灾报警","clJg":1,"czJg":1,"updater":"hank","updateTime":"2022-06-01 16:38:29.0","glLxDescribe":"火灾告警","gjJbDescribe":"一般","colorDescribe":"无色"},{"id":1054627,"stationId":1,"stationMc":"瓶窑变","sbMc":"红外光束感烟探测器_15","sjNr":"1回路15地址1号主变A相-红外光束火警","gjLx":3,"gjJb":1,"pgMc":"1号主变A相","firstZxtMc":"火灾报警","clJg":1,"czJg":1,"updater":"hank","updateTime":"2022-06-01 16:38:27.0","glLxDescribe":"火灾告警","gjJbDescribe":"危急","colorDescribe":"红"},{"id":1054626,"stationId":1,"stationMc":"瓶窑变","sbMc":"传输单元_3","sjNr":"传输单元-火警","gjLx":3,"gjJb":1,"pgMc":"继电器室","firstZxtMc":"火灾报警","clJg":1,"czJg":1,"updater":"hank","updateTime":"2022-06-01 16:38:25.0","glLxDescribe":"火灾告警","gjJbDescribe":"危急","colorDescribe":"红"},{"id":1054625,"stationId":1,"stationMc":"瓶窑变","sbMc":"红外光束感烟探测器_16","sjNr":"1回路16地址1号主变A相-红外光束火警","gjLx":3,"gjJb":1,"pgMc":"1号主变A相","firstZxtMc":"火灾报警","clJg":1,"czJg":1,"updater":"hank","updateTime":"2022-06-01 16:38:25.0","glLxDescribe":"火灾告警","gjJbDescribe":"危急","colorDescribe":"红"},{"id":1054624,"stationId":1,"stationMc":"瓶窑变","sbMc":"火灾报警控制器_2","sjNr":"火灾报警主机-火警","gjLx":3,"gjJb":1,"pgMc":"继电器室","firstZxtMc":"火灾报警","clJg":1,"czJg":1,"updater":"hank","updateTime":"2022-06-01 16:38:25.0","glLxDescribe":"火灾告警","gjJbDescribe":"危急","colorDescribe":"红"},{"id":1054623,"stationId":1,"stationMc":"瓶窑变","sbMc":"传输单元_3","sjNr":"传输单元-远程控制关闭恢复","gjLx":3,"gjJb":2,"pgMc":"继电器室","firstZxtMc":"火灾报警","clJg":1,"czJg":1,"updater":"hank","updateTime":"2022-06-01 16:38:08.0","glLxDescribe":"火灾告警","gjJbDescribe":"一般","colorDescribe":"无色"},{"id":1054622,"stationId":1,"stationMc":"瓶窑变","sbMc":"传输单元_3","sjNr":"传输单元-远程控制关闭","gjLx":3,"gjJb":2,"pgMc":"继电器室","firstZxtMc":"火灾报警","clJg":1,"czJg":1,"updater":"hank","updateTime":"2022-06-01 16:38:00.0","glLxDescribe":"火灾告警","gjJbDescribe":"一般","colorDescribe":"无色"},{"id":1054621,"stationId":1,"stationMc":"瓶窑变","sbMc":"传输单元_3","sjNr":"传输单元-远程控制关闭恢复","gjLx":3,"gjJb":2,"pgMc":"继电器室","firstZxtMc":"火灾报警","clJg":1,"czJg":1,"updater":"hank","updateTime":"2022-06-01 16:37:57.0","glLxDescribe":"火灾告警","gjJbDescribe":"一般","colorDescribe":"无色"},{"id":1054620,"stationId":1,"stationMc":"瓶窑变","sbMc":"传输单元_3","sjNr":"传输单元-远程控制关闭","gjLx":3,"gjJb":2,"pgMc":"继电器室","firstZxtMc":"火灾报警","clJg":1,"czJg":1,"updater":"hank","updateTime":"2022-06-01 16:37:52.0","glLxDescribe":"火灾告警","gjJbDescribe":"一般","colorDescribe":"无色"},{"id":1054618,"stationId":1,"stationMc":"瓶窑变","sbMc":"火灾报警控制器_2","sjNr":"火灾报警主机-启动恢复","gjLx":3,"gjJb":1,"pgMc":"继电器室","firstZxtMc":"火灾报警","clJg":1,"czJg":1,"updater":"hank","updateTime":"2022-06-01 15:36:58.0","glLxDescribe":"火灾告警","gjJbDescribe":"危急","colorDescribe":"红"}],
-      isRoad:false
-    }
+      lists: [
+        {
+          id: 1054628,
+          stationId: 1,
+          stationMc: "瓶窑变",
+          sbMc: "1号主变跳闸_14",
+          sjNr: "1回路14地址-1号主变跳闸",
+          gjLx: 3,
+          gjJb: 2,
+          pgMc: "1号主变",
+          firstZxtMc: "火灾报警",
+          clJg: 1,
+          czJg: 1,
+          updater: "hank",
+          updateTime: "2022-06-01 16:38:29.0",
+          glLxDescribe: "火灾告警",
+          gjJbDescribe: "一般",
+          colorDescribe: "无色",
+          status: "11",
+        },
+        {
+          id: 1054627,
+          stationId: 1,
+          stationMc: "瓶窑变",
+          sbMc: "红外光束感烟探测器_15",
+          sjNr: "1回路15地址1号主变A相-红外光束火警",
+          gjLx: 3,
+          gjJb: 1,
+          pgMc: "1号主变A相",
+          firstZxtMc: "火灾报警",
+          clJg: 1,
+          czJg: 1,
+          updater: "hank",
+          updateTime: "2022-06-01 16:38:27.0",
+          glLxDescribe: "火灾告警",
+          gjJbDescribe: "危急",
+          colorDescribe: "红",
+          status: "11",
+        },
+        {
+          id: 1054626,
+          stationId: 1,
+          stationMc: "瓶窑变",
+          sbMc: "传输单元_3",
+          sjNr: "传输单元-火警",
+          gjLx: 3,
+          gjJb: 1,
+          pgMc: "继电器室",
+          firstZxtMc: "火灾报警",
+          clJg: 1,
+          czJg: 1,
+          updater: "hank",
+          updateTime: "2022-06-01 16:38:25.0",
+          glLxDescribe: "火灾告警",
+          gjJbDescribe: "危急",
+          colorDescribe: "红",
+          status: "11",
+        },
+        {
+          id: 1054625,
+          stationId: 1,
+          stationMc: "瓶窑变",
+          sbMc: "红外光束感烟探测器_16",
+          sjNr: "1回路16地址1号主变A相-红外光束火警",
+          gjLx: 3,
+          gjJb: 1,
+          pgMc: "1号主变A相",
+          firstZxtMc: "火灾报警",
+          clJg: 1,
+          czJg: 1,
+          updater: "hank",
+          updateTime: "2022-06-01 16:38:25.0",
+          glLxDescribe: "火灾告警",
+          gjJbDescribe: "危急",
+          colorDescribe: "红",
+          status: "11",
+        },
+        {
+          id: 1054624,
+          stationId: 1,
+          stationMc: "瓶窑变",
+          sbMc: "火灾报警控制器_2",
+          sjNr: "火灾报警主机-火警",
+          gjLx: 3,
+          gjJb: 1,
+          pgMc: "继电器室",
+          firstZxtMc: "火灾报警",
+          clJg: 1,
+          czJg: 1,
+          updater: "hank",
+          updateTime: "2022-06-01 16:38:25.0",
+          glLxDescribe: "火灾告警",
+          gjJbDescribe: "危急",
+          colorDescribe: "红",
+          status: "11",
+        },
+        {
+          id: 1054623,
+          stationId: 1,
+          stationMc: "瓶窑变",
+          sbMc: "传输单元_3",
+          sjNr: "传输单元-远程控制关闭恢复",
+          gjLx: 3,
+          gjJb: 2,
+          pgMc: "继电器室",
+          firstZxtMc: "火灾报警",
+          clJg: 1,
+          czJg: 1,
+          updater: "hank",
+          updateTime: "2022-06-01 16:38:08.0",
+          glLxDescribe: "火灾告警",
+          gjJbDescribe: "一般",
+          colorDescribe: "无色",
+          status: "11",
+        },
+        {
+          id: 1054622,
+          stationId: 1,
+          stationMc: "瓶窑变",
+          sbMc: "传输单元_3",
+          sjNr: "传输单元-远程控制关闭",
+          gjLx: 3,
+          gjJb: 2,
+          pgMc: "继电器室",
+          firstZxtMc: "火灾报警",
+          clJg: 1,
+          czJg: 1,
+          updater: "hank",
+          updateTime: "2022-06-01 16:38:00.0",
+          glLxDescribe: "火灾告警",
+          gjJbDescribe: "一般",
+          colorDescribe: "无色",
+          status: "11",
+        },
+        {
+          id: 1054621,
+          stationId: 1,
+          stationMc: "瓶窑变",
+          sbMc: "传输单元_3",
+          sjNr: "传输单元-远程控制关闭恢复",
+          gjLx: 3,
+          gjJb: 2,
+          pgMc: "继电器室",
+          firstZxtMc: "火灾报警",
+          clJg: 1,
+          czJg: 1,
+          updater: "hank",
+          updateTime: "2022-06-01 16:37:57.0",
+          glLxDescribe: "火灾告警",
+          gjJbDescribe: "一般",
+          colorDescribe: "无色",
+          status: "11",
+        },
+        {
+          id: 1054620,
+          stationId: 1,
+          stationMc: "瓶窑变",
+          sbMc: "传输单元_3",
+          sjNr: "传输单元-远程控制关闭",
+          gjLx: 3,
+          gjJb: 2,
+          pgMc: "继电器室",
+          firstZxtMc: "火灾报警",
+          clJg: 1,
+          czJg: 1,
+          updater: "hank",
+          updateTime: "2022-06-01 16:37:52.0",
+          glLxDescribe: "火灾告警",
+          gjJbDescribe: "一般",
+          colorDescribe: "无色",
+          status: "11",
+        },
+        {
+          id: 1054618,
+          stationId: 1,
+          stationMc: "瓶窑变",
+          sbMc: "火灾报警控制器_2",
+          sjNr: "火灾报警主机-启动恢复",
+          gjLx: 3,
+          gjJb: 1,
+          pgMc: "继电器室",
+          firstZxtMc: "火灾报警",
+          clJg: 1,
+          czJg: 1,
+          updater: "hank",
+          updateTime: "2022-06-01 15:36:58.0",
+          glLxDescribe: "火灾告警",
+          gjJbDescribe: "危急",
+          colorDescribe: "红",
+          status: "11",
+        },
+      ],
+      isRoad: false,
+    };
   },
   computed: {
-    curOption () {
-      return Object.assign({}, this.defaultOption, this.option)
+    curOption() {
+      return Object.assign({}, this.defaultOption, this.option);
     },
-    curLists () {
+    curLists() {
       return this.lists.filter((list) => {
-        return list[this.curOption.labelKey]
-      })
-    }
+        return list[this.curOption.labelKey];
+      });
+    },
   },
   watch: {
     api: {
       deep: true,
-      handler (val) {
-        this.doRequest()
-      }
-    }
-
+      handler(val) {
+        this.doRequest();
+      },
+    },
   },
-  created () {
-    this.getLists()
+  created() {
+    this.getLists();
   },
   methods: {
     getLists() {
-      this.lists = this.methods.dataHandler ? this.methods.dataHandler(this.lists) : (this.lists || [])
-    }
+      this.lists = this.methods.dataHandler
+        ? this.methods.dataHandler(this.lists)
+        : this.lists || [];
+    },
     // doRequest () {
     //    if (sessionStorage.getItem('userName')=== 'sys' || sessionStorage.getItem('roleIds').includes("auditor")) {
     //      return false
@@ -270,8 +461,8 @@ export default {
     // actionHandler (action) {
     //   action.handler && action.handler(action, this)
     // }
-  }
-}
+  },
+};
 </script>
 
 <style lang="less" scoped>

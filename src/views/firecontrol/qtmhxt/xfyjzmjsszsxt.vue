@@ -1,7 +1,12 @@
 <template>
   <div class="xfyjzmjsszsxt">
     <div class="xfyjzmjsszsxt_left">
-      <div class="xfyjzmjsszsxt_left_top">
+       <img
+        style="position: relative; top: 60px; width: 80%"
+        src="../../../assets/svg/消防应急照明.svg"
+        alt="111"
+      />
+      <!-- <div class="xfyjzmjsszsxt_left_top">
         <section class="xfyjzmjsszsxt_left_top_button">
           <el-button size="mini">三维切换</el-button>
         </section>
@@ -15,7 +20,7 @@
           <section class="xfyjzmjsszsxt_left_bottom_message_left"></section>
           <section class="xfyjzmjsszsxt_left_bottom_message_right"></section>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="xfyjzmjsszsxt_center">
       <Gzp :option="GzpData" :isShow="true" />
@@ -105,9 +110,10 @@ export default {
   display: flex;
   .xfyjzmjsszsxt_left {
     flex: 4;
-    background-color: red;
-    display: flex;
-    flex-direction: column;
+    text-align: center;
+    // background-color: red;
+    // display: flex;
+    // flex-direction: column;
     .xfyjzmjsszsxt_left_top {
       flex: 1;
       background-color: orange;

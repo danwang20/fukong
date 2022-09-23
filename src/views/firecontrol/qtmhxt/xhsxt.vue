@@ -1,7 +1,12 @@
 <template>
   <div class="xhsxt">
     <div class="xhsxt_left">
-      <div class="xhsxt_left_top">
+      <img
+        style="position: relative; top: 60px; width: 80%"
+        src="../../../assets/svg/消火栓系统.svg"
+        alt="111"
+      />
+      <!-- <div class="xhsxt_left_top">
         <section class="xhsxt_left_top_button">
           <el-button size="mini">三维切换</el-button>
         </section>
@@ -13,7 +18,7 @@
           <section class="c_right_bottom_message_left"></section>
           <section class="c_right_bottom_message_right"></section>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="xhsxt_right">
       <div class="xhsxt_right_top">
@@ -119,8 +124,9 @@ export default {
   display: flex;
   .xhsxt_left {
     flex: 1;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+    text-align: center;
     .xhsxt_left_top {
       flex: 1;
       background-color: red;

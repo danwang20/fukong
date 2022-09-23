@@ -1,7 +1,12 @@
 <template>
   <div class="mhqpz">
     <div class="mhqpz_left">
-      <div class="mhqpz_left_top">
+      <img
+        style="position: relative; top: 60px; width: 80%"
+        src="../../../assets/svg/灭火器配置.svg"
+        alt="111"
+      />
+      <!-- <div class="mhqpz_left_top">
         <section class="mhqpz_left_top_button">
           <el-button size="mini">三维切换</el-button>
         </section>
@@ -13,7 +18,7 @@
           <section class="mhqpz_left_bottom_message_left"></section>
           <section class="mhqpz_left_bottom_message_right"></section>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="mhqpz_right">
       <section class="mhqpz_right_title">灭火器信息</section>
@@ -81,9 +86,10 @@ export default {
   display: flex;
   .mhqpz_left {
     flex: 1;
-    background-color: red;
-    display: flex;
-    flex-direction: column;
+    // background-color: red;
+    // display: flex;
+    // flex-direction: column;
+    text-align: center;
     .mhqpz_left_top {
       flex: 1;
       display: flex;

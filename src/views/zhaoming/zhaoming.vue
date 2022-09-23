@@ -1,19 +1,22 @@
 <template>
-  <div class="FireControlSystem">
-    <div class="FireControlSystem_svg"></div>
-    <div class="FireControlSystem_message">
-      <section class="FireControlSystem_message_mess1">
+  <div class="zhaoming">
+    <div class="zhaoming_svg">
+      <img
+        style="position: relative; top: 60px; width: 45%"
+        src="../../assets/svg/照明控制.svg"
+        alt="111"
+      />
+    </div>
+    <div class="zhaoming_message">
+      <section class="zhaoming_message_mess1">
         <MessageBox :option="options.option1" />
       </section>
-      <section class="FireControlSystem_message_mess2">
+      <section class="zhaoming_message_mess2">
         <MessageBox :option="options.option2" />
       </section>
-      <section class="FireControlSystem_message_mess3">
+      <section class="zhaoming_message_mess3">
         <MessageBox :option="options.option3" />
       </section>
-      <!-- <section class="FireControlSystem_message_mess4">
-        <MessageBox :option="options.option4" />
-      </section> -->
     </div>
   </div>
 </template>
@@ -23,7 +26,7 @@ import Descriptions from "../../components/Descriptions/descriptionsForm.vue";
 import descriptionsFormData from "../../components/Descriptions/descriptionsFormConfig";
 import MessageBox from "../../components/MessageBox/MessageBox.vue";
 export default {
-  name: "FireControlSystem",
+  name: "zhaoming",
   components: {
     Descriptions,
     MessageBox,
@@ -34,21 +37,20 @@ export default {
         config11: descriptionsFormData.descriptionsConfig8,
       },
       desTitle: {
-        title1: "运行信息",
-        title2: "火警信息",
+        title1: "设备配置",
+        title2: "越限信息",
         title3: "异常设备",
-        title3: "消防管理信息",
       },
       options: {
         option1: {
-          title: "运行信息",
+          title: "设备配置",
           type: "log",
           template: null,
           labelKey: "id",
           valueKey: "sjNr",
         },
         option2: {
-          title: "火警信息",
+          title: "越限信息",
           type: "log",
           template: null,
           labelKey: "id",
@@ -62,14 +64,6 @@ export default {
           labelKey: "id",
           valueKey: "sjNr",
         },
-        option4: {
-          title: "消防管理信息",
-          type: "log",
-          state: "11",
-          template: null,
-          labelKey: "id",
-          valueKey: "sjNr",
-        },
       },
     };
   },
@@ -77,29 +71,27 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.FireControlSystem {
+.zhaoming {
   width: 100%;
   height: 100%;
   display: flex;
-  .FireControlSystem_svg {
+  .zhaoming_svg {
     flex: 4;
-    background-color: red;
+    // background-color: red;
+    text-align: center;
   }
-  .FireControlSystem_message {
+  .zhaoming_message {
     flex: 1;
     // background-color: green;
     display: flex;
     flex-direction: column;
-    .FireControlSystem_message_mess1 {
+    .zhaoming_message_mess1 {
       flex: 1;
     }
-    .FireControlSystem_message_mess2 {
+    .zhaoming_message_mess2 {
       flex: 1;
     }
-    .FireControlSystem_message_mess3 {
-      flex: 1;
-    }
-    .FireControlSystem_message_mess4 {
+    .zhaoming_message_mess3 {
       flex: 1;
     }
   }

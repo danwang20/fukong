@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Login from '../views/Login.vue'
 import Container from '../views/Container.vue'
 import QuanZhan from '../views/quanzhan/quanzhan.vue'
+import Zhaoming from '../views/zhaoming/zhaoming.vue'
 import ZhongHeLou from '../views/zhaoming/zhonghelou.vue'
 import FireControlSystem from '../views/firecontrol/FireControlSystem.vue'
 import FireAlarm from '../views/firecontrol/fireAlarm/fireAlarm.vue'
@@ -23,6 +24,10 @@ import Mhqpz from '../views/firecontrol/qtmhxt/mhqpz.vue'
 import Xfyjzmjsszsxt from '../views/firecontrol/qtmhxt/xfyjzmjsszsxt.vue'
 import SafetyPrecautions from '../views/safetyPrecautions/safetyPrecautions.vue'
 import AroundTheSubstation from '../views/safetyPrecautions/aroundTheSubstation.vue'
+import WaterSupplyAndDrainage from '../views/waterSupplyAndDrainage/waterSupplyAndDrainage.vue'
+import WaterSupplySystem from '../views/waterSupplyAndDrainage/waterSupplySystem.vue'
+import DrainageSystem from '../views/waterSupplyAndDrainage/drainageSystem.vue'
+import EnvironmentalMonitoring from '../views/environmentalMonitoring/environmentalMonitoring.vue'
 const originalPush = VueRouter.prototype.push
 
 VueRouter.prototype.push = function push(location) {
@@ -44,6 +49,11 @@ const routes = [{
         path: '/quanzhan',
         name: 'quanzhan',
         component: QuanZhan
+      },
+      {
+        path: '/zhaoming',
+        name: 'zhaoming',
+        component: Zhaoming
       },
       {
         path: '/zhongkong',
@@ -144,6 +154,26 @@ const routes = [{
         path: '/aroundTheSubstation',
         name: 'aroundTheSubstation',
         component: AroundTheSubstation
+      },
+      {
+        path: '/waterSupplyAndDrainage',
+        name: 'waterSupplyAndDrainage',
+        component: WaterSupplyAndDrainage
+      },
+      {
+        path: '/waterSupplySystem',
+        name: 'waterSupplySystem',
+        component: WaterSupplySystem
+      },
+      {
+        path: '/drainageSystem',
+        name: 'drainageSystem',
+        component: DrainageSystem
+      },
+      {
+        path: '/environmentalMonitoring',
+        name: 'environmentalMonitoring',
+        component: EnvironmentalMonitoring
       },
     ]
   },

@@ -582,6 +582,7 @@ export default {
           selected: false,
           disabled: false,
           loading: false,
+          path: '/waterSupplyAndDrainage',
           children: [
             {
               id: 400,
@@ -592,6 +593,7 @@ export default {
               selected: false,
               disabled: false,
               loading: false,
+              path: '/waterSupplySystem',
             },
             {
               id: 401,
@@ -602,6 +604,7 @@ export default {
               selected: false,
               disabled: false,
               loading: false,
+              path: '/drainageSystem',
             },
             {
               id: 402,
@@ -624,6 +627,7 @@ export default {
           selected: false,
           disabled: false,
           loading: false,
+          path: '/environmentalMonitoring',
           children: [
             {
               id: 500,
@@ -678,6 +682,7 @@ export default {
           selected: false,
           disabled: false,
           loading: false,
+          path: '/zhaoming',
           children: [
             {
               id: 600,
