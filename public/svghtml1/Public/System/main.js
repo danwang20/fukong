@@ -353,22 +353,22 @@ function EventOnClickDevicePickerCallback(DomID,Text){
 var MQ_IP="127.0.0.1";
 var MQ_Port="8083";
 
-$.ajax({
-    type: "get",
-    url: "../../../../mci_config.xml",
-    dataType: "xml",
-    timeout: 1000,
-    cache: false,
-    success: function (xml) {
-        $(xml).find("MQ").each(function (i) {
-            let IP = $(this).children("IP");
-            let Port = $(this).children("Port");
-            MQ_IP = IP.text();
-            MQ_Port=Port.text();
-            InitMQ();
-        });
-    }
-});
+// $.ajax({
+//     type: "get",
+//     url: "../../../../mci_config.xml",
+//     dataType: "xml",
+//     timeout: 1000,
+//     cache: false,
+//     success: function (xml) {
+//         $(xml).find("MQ").each(function (i) {
+//             let IP = $(this).children("IP");
+//             let Port = $(this).children("Port");
+//             MQ_IP = IP.text();
+//             MQ_Port=Port.text();
+//             InitMQ();
+//         });
+//     }
+// });
 
 function InitMQ() {
 	// Create a client instance

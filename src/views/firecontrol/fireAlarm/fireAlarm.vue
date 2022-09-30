@@ -59,7 +59,8 @@ export default {
   },
   data() {
     return {
-      htmlSrc: 'svgHtml1/Screen/SHB_HJJC_KTS.html',//E:\wu\fukong1\新建文件夹\src\svg_html\XF_HJ_ZM\Screen\SHB_HJJC_KTS.html
+      htmlSrc: 'svgHtml1/Screen/SHB_HJJC_KTS.html',
+      // htmlSrc: '1.html',
       items: {
         item0: { resDesc: "火灾报警主机", deviceInfo: [] },
         item1: {
