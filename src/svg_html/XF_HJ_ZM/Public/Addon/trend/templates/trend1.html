@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+       <meta charset="utf-8">
+	   <!-- 引入依赖css-->
+		<link rel="stylesheet" href="../../css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../css/bootstrap-table.min.css" />
+		<link rel="stylesheet" href="../../css/bootstrap-datetimepicker.min.css" />
+   </head>
+   <body style="height: 100%; margin: 0">
+   <div class="col-md-2">
+		<label class="control-label">起始时间:</label>
+		<div class="input-group date" id="beginDatePicker">
+			<input id="beginDateIn" type="text" class="form-control" value=""/>
+			<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+		</div>
+	</div>
+	<div class="col-md-2">
+		<label class="control-label">结束时间:</label>
+		<div class="input-group date" id="endDatePicker">
+			<input id="endDateIn" type="text" class="form-control" value=""/>
+			<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+		</div>
+	</div>
+					
+       <div id="container" style="height: 90%"></div>
+       <script type="text/javascript" src="../../js/echarts.min.js"></script>
+	   <script type="text/javascript" src="../../../System/dataadapter.js"></script>
+	   <script type="text/javascript" src="../../../System/timeline.js"></script>
+	   
+	   <!-- 引入依赖js-->
+		<script src="../../js/jquery-3.2.1.min.js"></script>
+		<script src="../../js/tableExport.min.js"></script>
+		<script src="../../js/bootstrap.min.js"></script>
+		<script src="../../js/bootstrap-table.min.js"></script>
+		<script src="../../js/bootstrap-table-export.min.js"></script>
+		<script src="../../js/bootstrap-datetimepicker.min.js"></script>
+		<script src="../../js/jquery.contextMenu.min.js"></script>
+		<!-- 中文包 -->
+		<script src="../../js/bootstrap-table-zh-CN.min.js"></script>
+		<script src="../../js/bootstrap-datetimepicker.zh-CN.js"></script>
+		<!-- 自身组件 -->
+		<script src="../../js/trend.js"></script>
+
+<script type="text/javascript">
+//------配置区（开始）------
+var Subsyetem1="CO2浓度1",Device1="Z01/BAS/CO2/1",Point1="CO2";
+var Subsyetem2="CO2浓度2",Device2="Z01/BAS/CO2/2",Point2="CO2";
+//------配置区（结束）------
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+
+var data1 = [];
+var data2 = [];
+
+var sToday=GetTodayDateString();
+
+document.getElementById('beginDateIn').value=new Date(sToday).Format("yyyy-MM-dd hh:mm");
+document.getElementById('endDateIn').value=new Date().Format("yyyy-MM-dd hh:mm");
+
+ShowTrend();
+
+function ShowTrend(){
+	var sDate=document.getElementById('beginDateIn').value;
+	var eDate=document.getElementById('endDateIn').value;
+	var dateStart=new Date(sDate);
+	var dateEnd=new Date(eDate);
+
+	var arrTV1=GetHISDataTSArray(Device1,Point1,dateStart,dateEnd);
+	var arrTV2=GetHISDataTSArray(Device2,Point2,dateStart,dateEnd);
+
+	data1=ConvertTV2Array(arrTV1);
+	data2=ConvertTV2Array(arrTV2);
+
+	option = {
+		title: {
+			text: ''
+		},
+		tooltip: {
+			trigger: 'axis',
+			formatter: function (params) {
+				params = params[0];
+				var date = new Date(params.name);
+				return date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear() + ' : ' + params.value[1];
+			},
+			axisPointer: {
+				animation: false
+			}
+		},
+		legend: {
+			data:[Subsyetem1,Subsyetem2]
+		},
+		xAxis: {
+			type: 'time',
+			splitLine: {
+				show: false
+			}
+		},
+		yAxis: {
+			type: 'value',
+			boundaryGap: [0, '100%'],
+			splitLine: {
+				show: false
+			}
+		},
+		series: [
+		{
+			name: Subsyetem1,
+			type: 'line',
+			showSymbol: false,
+			hoverAnimation: false,
+			data: data1
+		},
+		{
+			name: Subsyetem2,
+			type: 'line',
+			showSymbol: false,
+			hoverAnimation: false,
+			data: data2
+		},
+		]
+	};
+	
+	if (option && typeof option === "object") {
+		myChart.setOption(option, true);
+	}
+}
+	   
+//获取某个设备下的点的实时值（带时间戳）
+function GetRTDataTS(DeviceName,PointCode) {
+	var oVal=GetRTValueTS(DeviceName,PointCode);
+	var dt=GetLocalTime(oVal.ts);
+	now = new Date(dt);
+	var ts=now.Format("yyyy/MM/dd hh:mm:ss");
+	var val=oVal.val;
+	//console.log(ts+' ' +val);
+	return {
+		name:dt,
+		value:[ts,val]
+	}
+}
+
+//获取某个设备下的点的实时值（带时间戳）
+function GetHISDataTSArray(DeviceName,PointCode,BeginDate,EndDate) {
+	//var sToday=GetTodayDateString();
+	//var sNow = new Date().Format("yyyy/MM/dd hh:mm:ss");
+	var sbDate=BeginDate.Format("yyyy/MM/dd hh:mm:ss");
+	var seDate=EndDate.Format("yyyy/MM/dd hh:mm:ss");
+	
+	var arrVal=GetHISValues(DeviceName,PointCode,sbDate,seDate,10000);
+	
+	var jsonTV=ConvertJsonTimeValue(arrVal);
+	
+	return jsonTV
+}
+
+//得到时间轴的值数组
+function ConvertTV2Array(arrTV){
+	var Arr=[];
+	var len=arrTV.length;
+	
+	for (var i=0;i<len;i++){
+		var v={
+			name:arrTV[i].ts,
+			value:[arrTV[i].ts,arrTV[i].val]
+		};
+		Arr.push(v);
+	}
+	return Arr;
+}
+
+
+
+       </script>
+   </body>
+</html>

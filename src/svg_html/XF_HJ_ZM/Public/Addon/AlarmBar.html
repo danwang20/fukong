@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 引入依赖css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-table.min.css" />
+    <link rel="stylesheet" href="css/jquery.contextMenu.min.css" />
+    <link rel="stylesheet" href="css/alarmStyle.css" />
+    <title>报警栏</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12" style="border-style:ridge;border-color:#0427bf;">
+            <div class="col-md-9">
+                <table id="AlarmBar"></table>
+            </div>
+            <div class="col-md-3">
+                <div class="col-md-12" style="border-style:ridge;border-color:#08bfbb;">
+                    <div class="row buttomRow">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <button id="alarm" type="button" class="btn btn-danger btn-block" onclick="window.location.replace('#[ALARM]')">
+                                <span class="glyphicon glyphicon-fire"></span>&nbsp;报警&nbsp;
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-success btn-block" onclick="window.location.replace('#[LOG]')">
+                                <span class="glyphicon glyphicon-hdd"></span>&nbsp;日志&nbsp;
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-info btn-block" onclick="window.location.replace('#[TREND]')">
+                                <span class="glyphicon glyphicon-send"></span>&nbsp;趋势&nbsp;
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row buttomRow">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-warning btn-block" onclick="window.location.replace('#[DEVICELIST]')">
+                                <span class="glyphicon glyphicon-warning-sign"></span>&nbsp;设备&nbsp;
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-primary btn-block" onclick="window.location.replace('#[REPORT]')">
+                                <span class="glyphicon glyphicon-tasks"></span>&nbsp;报表&nbsp;
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-default btn-block" onclick="window.location.replace('#[LOGOUT]')">
+                                <span class="glyphicon glyphicon-user"></span>&nbsp;登出&nbsp;
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row buttomRow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 引入依赖js-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/tableExport.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-table.min.js"></script>
+<script src="js/bootstrap-table-export.min.js"></script>
+<script src="js/jquery.contextMenu.min.js"></script>
+<!-- 中文包 -->
+<script src="js/bootstrap-table-zh-CN.min.js"></script>
+<!-- 自身组件 -->
+<script src="../System/alarm.js"></script>
+<script src="js/AlarmBar.js"></script>
+</body>
+</html>

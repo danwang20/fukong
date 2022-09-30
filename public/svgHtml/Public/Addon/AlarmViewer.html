@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 引入依赖css-->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-table.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+	<link rel="stylesheet" href="css/jquery.contextMenu.min.css" />
+	<link rel="stylesheet" href="css/alarmStyle.css" />
+	<title>报警日志</title>
+</head>
+<body>
+<div  id="title" class="text-primary">
+	<h1 class="text-center">报警日志<small>ALARM</small></h1>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">条件查询:</h3>
+				</div>
+				<div class="panel-body">
+					<div class="col-md-2">
+						<label class="control-label">起始时间:</label>
+						<div class="input-group date" id="beginDatePicker">
+							<input id="beginDateIn" type="text" class="form-control"/>
+							<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<label class="control-label">结束时间:</label>
+						<div class="input-group date" id="endDatePicker">
+							<input id="endDateIn" type="text" class="form-control"/>
+							<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<label class="control-label">区域:</label>
+						<select id="Area" class="form-control">
+							<option>全部区域</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<label class="control-label">子系统:</label>
+						<select id="Subsystem" class="form-control">
+							<option>全部子系统</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<label class="control-label">设备类:</label>
+						<select id="Devicetype" class="form-control">
+							<option>全部设备类</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<label class="control-label"></label>
+						<button id="select" type="button" class="btn btn-primary form-control" onclick="selectLog()">
+							搜索
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+		<div class="col-md-12">
+			<table id="AlarmViewer"></table>
+		</div>
+	</div>
+</div>
+<!-- 引入依赖js -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/tableExport.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-table.min.js"></script>
+<script src="js/bootstrap-table-export.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/jquery.contextMenu.min.js"></script>
+<!-- 中文包 -->
+<script src="js/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/bootstrap-datetimepicker.zh-CN.js"></script>
+<!-- 自身组件 -->
+<script src="../System/dataadapter.js"></script>
+<script src="js/DataChangeForInfluxdb.js"></script>
+<script src="js/AlarmViewer.js"></script>
+</body>
+</html>

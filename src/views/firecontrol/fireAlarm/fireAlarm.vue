@@ -1,11 +1,19 @@
 <template>
   <div class="fireAlarm">
     <div class="fireAlarm_left">
-      <img
+      <!-- <img
         style="position: relative; top: 60px; width: 65%"
         src="../../../assets/svg/火灾报警网络构架图001.svg"
         alt="111"
-      />
+      /> -->
+      <iframe
+        ref="iframe"
+        :src="htmlSrc"
+        width="800px"
+        height="1000px"
+        frameborder="0"
+      >
+      </iframe>
     </div>
     <div class="fireAlarm_center">
       <section class="fireAlarm_center_1">
@@ -26,13 +34,10 @@
     </div>
     <div class="fireAlarm_right">
       <section class="fireAlarm_right_1">
-        <MessageBox :option="options.option1"
-        />
+        <MessageBox :option="options.option1" />
       </section>
       <section class="fireAlarm_right_2">
-        <MessageBox
-          :option="options.option2"
-        />
+        <MessageBox :option="options.option2" />
       </section>
     </div>
   </div>
@@ -41,7 +46,7 @@
 <script>
 import Gzp from "../../../components/Gzp/Gzp.vue";
 import ButtonMessage from "../../../components/ButtonMessage/ButtonMessage.vue";
-import MessageBox from "../../../components/MessageBox/MessageBox.vue"
+import MessageBox from "../../../components/MessageBox/MessageBox.vue";
 import Descriptions from "../../../components/Descriptions/descriptionsForm.vue";
 import descriptionsFormData from "../../../components/Descriptions/descriptionsFormConfig";
 export default {
@@ -54,8 +59,9 @@ export default {
   },
   data() {
     return {
+      htmlSrc: 'svgHtml1/Screen/SHB_HJJC_KTS.html',//E:\wu\fukong1\新建文件夹\src\svg_html\XF_HJ_ZM\Screen\SHB_HJJC_KTS.html
       items: {
-        item0: {resDesc: "火灾报警主机",deviceInfo: []},
+        item0: { resDesc: "火灾报警主机", deviceInfo: [] },
         item1: {
           resDesc: "生产综合楼1楼",
           deviceInfo: [
@@ -113,16 +119,16 @@ export default {
             {
               devTitle: "18号烟感",
             },
-             {
+            {
               devTitle: "1号收报",
             },
-             {
+            {
               devTitle: "2号收报",
             },
-             {
+            {
               devTitle: "1号声光报警",
             },
-             {
+            {
               devTitle: "2号声光报警",
             },
           ],
@@ -160,7 +166,7 @@ export default {
             {
               devTitle: "4号手报",
             },
-             {
+            {
               devTitle: "3号声光报警器",
             },
             {
@@ -207,7 +213,7 @@ export default {
             {
               devTitle: "6号手报",
             },
-             {
+            {
               devTitle: "5号声光报警器",
             },
             {
@@ -248,7 +254,7 @@ export default {
             {
               devTitle: "8号手报",
             },
-             {
+            {
               devTitle: "7号声光报警器",
             },
             {
@@ -257,7 +263,7 @@ export default {
           ],
         },
       },
-       options: {
+      options: {
         option1: {
           title: "火警信息",
           type: "log",
@@ -284,9 +290,7 @@ export default {
       formHeight: 441.5,
     };
   },
-  methods: {
-
-  },
+  methods: {},
 };
 </script>
 

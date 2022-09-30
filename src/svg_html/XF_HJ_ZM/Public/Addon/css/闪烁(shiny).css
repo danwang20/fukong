@@ -1,0 +1,14 @@
+.shiny{
+	animation: shinyStyle 1s infinite;
+}  
+@keyframes shinyStyle{  
+    0%,45%{  
+        opacity: 0;  
+    } 
+	50%,95%{  
+        opacity: 1;  
+    }	
+    100%{  
+        opacity: 0;  
+    }  
+}  

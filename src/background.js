@@ -11,7 +11,9 @@ import {
   screen,
 } from "electron";
 // 加载程序窗口导航工具配置
-import installExtension, { VUEJS_DEVTOOLS } from "electron-devtools-installer";
+import installExtension, {
+  VUEJS_DEVTOOLS
+} from "electron-devtools-installer";
 import buildMenu from "./buildMenu";
 import {
   createProtocol,
@@ -28,9 +30,13 @@ let newWindow;
 
 // Scheme must be registered before the app is ready
 // 注册协议
-protocol.registerSchemesAsPrivileged([
-  { scheme: "app", privileges: { secure: true, standard: true } },
-]);
+protocol.registerSchemesAsPrivileged([{
+  scheme: "app",
+  privileges: {
+    secure: true,
+    standard: true
+  }
+}, ]);
 
 function createWindow() {
   // Create the browser window.
@@ -45,6 +51,7 @@ function createWindow() {
       nodeIntegration: true,
       contextIsolation: false,
       enableRemoteModule: true,
+      // webSecurity: false
     },
   });
   Menu.setApplicationMenu(Menu.buildFromTemplate(buildMenu(win)));
@@ -91,7 +98,7 @@ function createWindow() {
   });
 
   win.on("closed", () => {
-    win=null
+    win = null
   });
 
   // 非开发环境启动更新服务器
@@ -101,7 +108,10 @@ function createWindow() {
   // 以下是打印功能的相关代码，参考：https://juejin.im/entry/5aa1e9196fb9a028d70032bd
   // TODO 理想情况下，子窗口的大小应该不能大于父窗口。所以父、子窗口理论上应该都要限制最小宽高，可根据根据之后的实际情况再进行设置
   let printWindow = null;
-  ipcMain.on("printOpenWindow", (event, { printHtml, origin }) => {
+  ipcMain.on("printOpenWindow", (event, {
+    printHtml,
+    origin
+  }) => {
     printWindow = new BrowserWindow({
       width: 1200,
       height: 700,
@@ -122,8 +132,11 @@ function createWindow() {
   });
 
   ipcMain.on("printAction", () => {
-    printWindow.webContents.print(
-      { silent: false, printBackground: false, deviceName: "" },
+    printWindow.webContents.print({
+        silent: false,
+        printBackground: false,
+        deviceName: ""
+      },
       printCloseWindow
     );
   });
@@ -158,6 +171,7 @@ function createWindow() {
   ipcMain.on("minWin", () => {
     win.minimize();
   });
+
   function printCloseWindow() {
     if (!printWindow) return;
     printWindow.hide();
@@ -310,7 +324,9 @@ if (!gotTheLock) {
       } catch (e) {
         console.error("Vue Devtools failed to install:", e.toString());
       }
-      const { globalShortcut } = require("electron");
+      const {
+        globalShortcut
+      } = require("electron");
       globalShortcut.register("Ctrl+A", function () {
         win.webContents.openDevTools();
       });

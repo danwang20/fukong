@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 引入依赖css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-table.min.css" />
+    <link rel="stylesheet" href="css/jquery.contextMenu.min.css" />
+    <link rel="stylesheet" href="css/alarmStyle.css" />
+    <title>报警管理器</title>
+</head>
+<body>
+<div  id="title" class="text-primary">
+    <h1 class="text-center">报警管理器<small>ALARM</small></h1>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="toolbar" class="btn-group">
+                <button id="btn_confirm" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;报警确认&nbsp;
+                </button>
+                <!--功能暂未明确 button id="btn_unsound" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-volume-off" aria-hidden="true"></span>&nbsp;报警消音&nbsp;
+                </button>
+                <button id="btn_sound" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>&nbsp;取消消音&nbsp;
+                </button>
+                <button id="btn_1" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>&nbsp;报警抑制&nbsp;
+                </button>
+                <button id="btn_2" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>&nbsp;取消抑制&nbsp;
+                </button-->
+            </div>
+            <table id="AlarmManager"></table>
+        </div>
+    </div>
+</div>
+<!-- 引入依赖js-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/tableExport.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-table.min-alarm.js"></script>
+<script src="js/bootstrap-table-export.min.js"></script>
+<script src="js/jquery.contextMenu.min.js"></script>
+<!-- 中文包 -->
+<script src="js/bootstrap-table-zh-CN.min.js"></script>
+<!-- 自身组件 -->
+<script src="../System/alarm.js"></script>
+<script src="js/DataChangeForInfluxdb.js"></script>
+<script src="js/AlarmManager.js"></script>
+</body>
+</html>

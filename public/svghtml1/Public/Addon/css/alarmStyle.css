@@ -1,0 +1,60 @@
+.firstlevelStyle{
+    animation: firstlevelShiny 1s infinite;}
+.secondlevelStyle{
+    animation: secondlevelShiny 1s infinite;}
+.thirdlevelStyle{
+    animation: thirdlevelShiny 1s infinite;}
+.fourthlevelStyle{
+    animation: fourthlevelShiny 1s infinite;}
+@keyframes firstlevelShiny{
+    0%,45%{
+        background-color: #ff0000;
+    }
+    65%,80%{
+        background-color: #ffffff;
+    }
+    100%{
+        background-color: #ff0000;
+    }
+}
+@keyframes secondlevelShiny{
+    0%,45%{
+        background-color: #ff9300;
+    }
+    65%,80%{
+        background-color: #ffffff;
+    }
+    100%{
+        background-color: #ff9300;
+    }
+}
+@keyframes thirdlevelShiny{
+    0%,45%{
+        background-color: #fff800;
+    }
+    65%,80%{
+        background-color: #ffffff;
+    }
+    100%{
+        background-color: #fff800;
+    }
+}
+@keyframes fourthlevelShiny{
+    0%,45%{
+        background-color: #00ff00;
+    }
+    65%,80%{
+        background-color: #ffffff;
+    }
+    100%{
+        background-color: #00ff00;
+    }
+}
+.firstlevelStyle_His{
+    background-color: #ff0000;}
+.secondlevelStyle_His{
+    background-color: #ff9300;}
+.thirdlevelStyle_His{
+    background-color: #fff800;}
+.fourthlevelStyle_His{
+    background-color: #00ff00;}

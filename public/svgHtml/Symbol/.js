@@ -1,0 +1,1 @@
+var json_action_ = {"act_g": [{"eleid":"1","display":[{"expression":"","display_gid":"____g70590-3"},{"expression":"","display_gid":"____g31259"}]}],"act_text": [{"textid": "____text29334-7","display_text": ""},{"textid": "____text29334-3-1","display_text": ""}]};

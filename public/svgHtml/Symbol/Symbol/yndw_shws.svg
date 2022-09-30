@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1000,1000,200,200">
+  <text id="__YNDW_SHWS__text12224" y="1029.03236269132" x="1038.42000711104" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.54574966px;line-height:125%;font-family:'Microsoft YaHei';-inkscape-font-specification:'Microsoft YaHei, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" xml:space="preserve" transform="matrix(1,0,0,1,0,0)" xmlns="http://www.w3.org/2000/svg">
+    <desc id="__YNDW_SHWS__desc9213">湿度</desc>
+    <tspan id="__YNDW_SHWS__tspan12226" x="1038.42000711104" y="1029.03236269132">湿度%</tspan>
+  </text>
+  <text id="__YNDW_SHWS__text12232" y="1012.40606669132" x="1038.67361211104" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.54574966px;line-height:125%;font-family:'Microsoft YaHei';-inkscape-font-specification:'Microsoft YaHei, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" xml:space="preserve" transform="matrix(1,0,0,1,0,0)" xmlns="http://www.w3.org/2000/svg">
+    <tspan id="__YNDW_SHWS__tspan12234" x="1038.67361211104" y="1012.40606669132">温度℃</tspan>
+    <desc id="__YNDW_SHWS__desc9215">温度</desc>
+  </text>
+  <g transform="matrix(2.5359299,0,0,3.0553305,0,0)" id="__YNDW_SHWS__g70590-3" xmlns="http://www.w3.org/2000/svg">
+    <desc id="__YNDW_SHWS__desc9725">正常</desc>
+    <g transform="matrix(-1,0,0,1,0,0)" id="__YNDW_SHWS__g69837-1-07">
+      <path id="__YNDW_SHWS__path69256-7-80" d="m -407.381349050951 328.797019411894 -1.099675 -0.0041 c -0.798286 0.26715 -0.744733 0.540384 0 0.818555 l 1.149284 -0.0041 z" style="opacity:1;fill:#e1e1e1;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+      <ellipse ry="0.12402347" rx="0.13784441" cy="329.193097411894" cx="-408.569757050951" id="__YNDW_SHWS__path69310-3-7" style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    </g>
+    <g transform="matrix(-1,0,0,1,0,0)" id="__YNDW_SHWS__g69837-1-0-7">
+      <path id="__YNDW_SHWS__path69256-7-2-9" d="m -407.381339050951 332.220066321894 -1.099675 -0.0041 c -0.798286 0.26715 -0.744733 0.540384 0 0.818555 l 1.149284 -0.0041 z" style="opacity:1;fill:#e1e1e1;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+      <ellipse ry="0.12402347" rx="0.13784441" cy="332.616144321894" cx="-408.569747050951" id="__YNDW_SHWS__path69310-3-4-0" style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    </g>
+    <g transform="matrix(-1,0,0,1,0,0)" id="__YNDW_SHWS__g69837-1-4-6">
+      <path id="__YNDW_SHWS__path69256-7-8-5" d="m -407.348279050951 335.907696521894 -1.099675 -0.0041 c -0.798286 0.26715 -0.744733 0.540384 0 0.818555 l 1.149284 -0.0041 z" style="opacity:1;fill:#e1e1e1;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+      <ellipse ry="0.12402347" rx="0.13784441" cy="336.303774521894" cx="-408.536687050951" id="__YNDW_SHWS__path69310-3-6-3" style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    </g>
+    <g id="__YNDW_SHWS__g69837-8">
+      <path id="__YNDW_SHWS__path69256-8" d="m 396.355679050951 328.788784821894 -1.099675 -0.0041 c -0.798286 0.26715 -0.744733 0.540384 0 0.818555 l 1.149284 -0.0041 z" style="opacity:1;fill:#e1e1e1;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+      <ellipse ry="0.12402347" rx="0.13784441" cy="329.184862821894" cx="395.167271050951" id="__YNDW_SHWS__path69310-4" style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    </g>
+    <g id="__YNDW_SHWS__g69837-0-4">
+      <path id="__YNDW_SHWS__path69256-1-9" d="m 396.343293320951 332.253139221894 -1.099675 -0.0041 c -0.798286 0.26715 -0.744733 0.540384 0 0.818555 l 1.149284 -0.0041 z" style="opacity:1;fill:#e1e1e1;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+      <ellipse ry="0.12402347" rx="0.13784441" cy="332.649217221894" cx="395.154885320951" id="__YNDW_SHWS__path69310-7-1" style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    </g>
+    <g id="__YNDW_SHWS__g69837-3-0">
+      <path id="__YNDW_SHWS__path69256-5-4" d="m 396.392902690951 335.940769421894 -1.099675 -0.0041 c -0.798286 0.26715 -0.744733 0.540384 0 0.818555 l 1.149284 -0.0041 z" style="opacity:1;fill:#e1e1e1;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+      <ellipse ry="0.12402347" rx="0.13784441" cy="336.336847421894" cx="395.204494690951" id="__YNDW_SHWS__path69310-6-5" style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    </g>
+    <path id="__YNDW_SHWS__path69991-9" d="m 398.546760050951 336.825503821894 0 1.141015 c 0.839821 0.501056 1.425159 0.311375 1.95957 -0.01654 l 0 -1.124479 z" style="opacity:1;fill:#e3e3e3;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path69991-7-0" d="m 403.313395050951 336.870304821894 0 1.141015 c 0.839821 0.501056 1.425159 0.311375 1.95957 -0.01654 l 0 -1.124479 z" style="fill:#e3e3e3;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path69254-3" d="m 396.349104050951 328.104765821894 c 4.077345 -0.795868 7.590693 -0.463743 11.061617 -0.04677 l 0.02339 8.933483 -11.085003 -0.02339 z" style="opacity:1;fill:#d6d6d6;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70015-0" d="m 406.062580050951 332.509487821894 -3.522266 3.356901 c -0.03472 0.182261 0.08135 0.16347 0.181902 0.165365 L 406.211408050951,332.658315821894 c 0.02371 -0.105397 0.0056 -0.178942 -0.148828 -0.148828 z" style="opacity:1;fill:#e3e3e3;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70015-4-8" d="m 406.354885050951 333.240861821894 -3.039849 2.922282 c -0.01609 0.14799 0.07518 0.139052 0.156988 0.143955 L 406.483329050951,333.370419821894 C 406.509919050951,333.253205821894 406.444259050951,333.234385821894 406.354885050951,333.240861821894" style="fill:#e3e3e3;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70015-8-8" d="m 406.713582050951 334.024093821894 -2.523775 2.4208 c 4.7e-4 0.07045 0.02172 0.126054 0.130336 0.119251 l 2.500078 -2.432724 c 0.02182 -0.08856 -0.03175 -0.107751 -0.106639 -0.107327 z" style="fill:#e3e3e3;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70052-8" d="m 397.083283050951 329.375828821894 9.723438 -0.0083 -0.0038 2.257728 -9.719598 -0.000501" style="opacity:1;fill:#6c6c6c;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70108-6" d="m 398.149885050951 330.012482821894 0 0.438216 0.818555 0.0083 0.01654 -0.429948" style="opacity:1;fill:#505050;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70108-8-6" d="m 399.658836050951 330.020735821894 0 0.438216 0.818555 0.0083 0.01654 -0.429948" style="fill:#505050;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70108-1-1" d="m 401.138849050951 330.045540821894 0 0.438216 0.818555 0.0083 0.01654 -0.429948" style="fill:#505050;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70108-87-5" d="m 402.362547050951 330.029003821894 0 0.438216 0.818555 0.0083 0.01654 -0.429948" style="fill:#505050;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70108-17-2" d="m 403.718536050951 330.029003821894 0 0.438216 0.818555 0.0083 0.01654 -0.429948" style="fill:#505050;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70108-3-6" d="m 405.049721050951 330.062076821894 0 0.438216 0.818555 0.0083 0.01654 -0.429948" style="fill:#505050;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70508-5" d="m 399.283843050951 331.064223821894 -0.01095 0.184151 3.350138 -0.0039 -0.0124 -0.186035" style="opacity:1;fill:#505050;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70508-3-4" d="m 402.981581050951 331.063625821894 -0.0055 0.184151 1.678033 -0.0039 -0.0062 -0.186035" style="fill:#505050;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+  </g>
+  <g transform="matrix(3.5433071,0,0,3.5433071,0,0)" id="__YNDW_SHWS__g31259" xmlns="http://www.w3.org/2000/svg">
+    <desc id="__YNDW_SHWS__desc9799">故障</desc>
+    <g id="__YNDW_SHWS__g31224">
+      <path id="__YNDW_SHWS__path69256-7-80-3" d="m 291.480469921908 283.50538735184 0.787032 -0.004 c 0.57133 0.23036 0.533003 0.46596 0 0.70582 l -0.822537 -0.004 z" style="fill:#ff4b4b;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+      <ellipse transform="matrix(-1,0,0,1,0,0)" ry="0.10694323" rx="0.098654665" cy="283.84691735184" cx="-292.331007921908" id="__YNDW_SHWS__path69310-3-7-8" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    </g>
+    <g id="__YNDW_SHWS__g31220">
+      <path id="__YNDW_SHWS__path69256-7-2-9-5" d="m 291.480462921908 286.45701735184 0.787032 -0.004 c 0.57133 0.23036 0.533003 0.46596 0 0.70582 l -0.822537 -0.004 z" style="fill:#ff4b4b;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+      <ellipse transform="matrix(-1,0,0,1,0,0)" ry="0.10694323" rx="0.098654665" cy="286.79854735184" cx="-292.331000921908" id="__YNDW_SHWS__path69310-3-4-0-1" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    </g>
+    <g id="__YNDW_SHWS__g31216">
+      <path id="__YNDW_SHWS__path69256-7-8-5-3" d="m 291.456801921908 289.63679735184 0.787032 -0.004 c 0.57133 0.23036 0.533003 0.46596 0 0.70582 l -0.822537 -0.004 z" style="fill:#ff4b4b;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+      <ellipse transform="matrix(-1,0,0,1,0,0)" ry="0.10694323" rx="0.098654665" cy="289.97832735184" cx="-292.307339921908" id="__YNDW_SHWS__path69310-3-6-3-1" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    </g>
+    <g id="__YNDW_SHWS__g31204">
+      <path id="__YNDW_SHWS__path69256-8-6" d="m 283.589443921908 283.49828735184 -0.787032 -0.004 c -0.57133 0.23036 -0.533003 0.46596 0 0.70582 l 0.822537 -0.004 z" style="fill:#ff4b4b;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+      <ellipse ry="0.10694323" rx="0.098654665" cy="283.83982735184" cx="282.738905921908" id="__YNDW_SHWS__path69310-4-4" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    </g>
+    <g id="__YNDW_SHWS__g31208">
+      <path id="__YNDW_SHWS__path69256-1-9-3" d="m 283.580579921908 286.48553735184 -0.787032 -0.004 c -0.57133 0.23036 -0.533003 0.46596 0 0.70582 l 0.822537 -0.004 z" style="fill:#ff4b4b;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+      <ellipse ry="0.10694323" rx="0.098654665" cy="286.82706735184" cx="282.730042921908" id="__YNDW_SHWS__path69310-7-1-0" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    </g>
+    <g id="__YNDW_SHWS__g31212">
+      <path id="__YNDW_SHWS__path69256-5-4-6" d="m 283.616084921908 289.66531735184 -0.787032 -0.004 c -0.57133 0.23035 -0.533003 0.46596 0 0.70582 l 0.822537 -0.004 z" style="fill:#ff4b4b;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+      <ellipse ry="0.10694323" rx="0.098654665" cy="290.00684735184" cx="282.765545921908" id="__YNDW_SHWS__path69310-6-5-8" style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    </g>
+    <path id="__YNDW_SHWS__path69991-9-8" d="m 285.157591921908 290.42820735184 0 0.98388 c 0.601056 0.43205 1.01998 0.26849 1.402456 -0.0143 l 0 -0.96962 z" style="fill:#ff4b4b;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path69991-7-0-1" d="m 288.569051921908 290.46683735184 0 0.98388 c 0.601057 0.43205 1.019981 0.26849 1.402456 -0.0143 l 0 -0.96962 z" style="fill:#ff4b4b;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path69254-3-4" d="m 283.584738921908 282.90846735184 c 2.918138 -0.68626 5.432627 -0.39987 7.916752 -0.0403 l 0.01674 7.70318 -7.933489 -0.0202 z" style="fill:#ff2020;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70015-0-3" d="m 290.536632921908 286.70658735184 -2.520871 2.89459 c -0.02485 0.15716 0.05822 0.14096 0.130186 0.14259 l 2.4972 -2.90885 c 0.01697 -0.0909 0.004 -0.1543 -0.106515 -0.12833 z" style="fill:#e3e3e3;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70015-4-8-9" d="m 290.745833921908 287.33723735184 -2.175607 2.51983 c -0.01152 0.12761 0.05381 0.1199 0.112356 0.12413 l 2.155178 -2.53225 c 0.01903 -0.10107 -0.02796 -0.1173 -0.09193 -0.11171 z" style="fill:#e3e3e3;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70015-8-8-3" d="m 291.002551921908 288.01260735184 -1.806255 2.08741 c 3.36e-4 0.0607 0.01554 0.10869 0.09328 0.10283 l 1.789295 -2.0977 c 0.01562 -0.0764 -0.02272 -0.0929 -0.07632 -0.0925 z" style="fill:#e3e3e3;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70052-8-9" d="m 284.110187921908 284.00448735184 6.959023 -0.007 -0.0027 1.9468 -6.956275 -0.00043" style="fill:#c10000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70108-6-1" d="m 284.873549921908 284.55345735184 0 0.37787 0.585836 0.007 0.01184 -0.37074" style="fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70108-8-6-5" d="m 285.953499921908 284.56057735184 0 0.37787 0.585836 0.007 0.01184 -0.37073" style="fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70108-1-1-5" d="m 287.012738921908 284.58196735184 0 0.37787 0.585836 0.007 0.01184 -0.37073" style="fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70108-87-5-0" d="m 287.888534921908 284.56770735184 0 0.37787 0.585836 0.007 0.01184 -0.37073" style="fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70108-17-2-2" d="m 288.859009921908 284.56770735184 0 0.37787 0.585836 0.007 0.01184 -0.37073" style="fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70108-3-6-6" d="m 289.811733921908 284.59622735184 0 0.37786 0.585836 0.007 0.01184 -0.37073" style="fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70508-5-1" d="m 285.685118921908 285.46035735184 -0.0078 0.15879 2.39768 -0.003 -0.0089 -0.16042" style="fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <path id="__YNDW_SHWS__path70508-3-4-9" d="m 288.331574921908 285.45984735184 -0.0039 0.15879 1.200961 -0.003 -0.0044 -0.16041" style="fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+  </g>
+</svg>

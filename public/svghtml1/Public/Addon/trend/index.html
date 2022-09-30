@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>趋势</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <script src="static/script/jquery-1.11.1.js"></script>
+    <script src="static/script/bootstrap.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <a href="#" class="navbar-brand">趋势</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li id="page1" onclick="activePage(this)" class="active"><a href="templates/trend1.html" target="mainiframe">趋势组1</a></li>
+        <li id="page2" onclick="activePage(this)"><a href="templates/trend2.html" target="mainiframe">趋势组2</a></li>
+        <li id="page3" onclick="activePage(this)"><a href="templates/trend3.html" target="mainiframe">趋势组3</a></li>
+    </ul>
+
+</nav>
+<div>
+    <iframe name="mainiframe" src="templates/trend1.html" id="mainiframe" scrolling="no" onload="resizeFrameHeight()" frameborder="0" width="100%"></iframe>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+
+    function resizeFrameHeight(){
+        var ifm = document.getElementById("mainiframe");
+        ifm.height = document.documentElement.clientHeight - 80;
+    }
+
+    window.onresize=function(){
+        resizeFrameHeight();
+    }
+	
+	function activePage(page){
+		page1.className="";
+		page2.className="";
+		page3.className="";
+        page.className="active";
+    }
+</script>
+
+
+
+
+</body>
+</html>
